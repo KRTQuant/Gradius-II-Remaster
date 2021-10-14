@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: a4d1820233b87794096b7ec361722c59
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8128112608072329083
+    second: Balance
+  - first:
+      213: -6383526114294278963
+    second: BalToDown_1
+  - first:
+      213: -4834285572665360938
+    second: BalToDown_2
+  - first:
+      213: 7700236336270367458
+    second: BalToDown_3
+  - first:
+      213: -5828294590127541797
+    second: BalToUp_1
+  - first:
+      213: 999156399499369488
+    second: BalToUp_2
+  - first:
+      213: 8641364045601028432
+    second: BalToUp_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +62,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,9 +96,168 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Balance
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 481
+        width: 1935
+        height: 1167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77668a3a5bdcc070800000000000000
+      internalID: 8128112608072329083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BalToDown_1
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 481
+        width: 1935
+        height: 1167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc45f0702d82967a0800000000000000
+      internalID: -6383526114294278963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BalToDown_2
+      rect:
+        serializedVersion: 2
+        x: 4028
+        y: 481
+        width: 1935
+        height: 1167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd3c7282ea29ecb0800000000000000
+      internalID: -4834285572665360938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BalToDown_3
+      rect:
+        serializedVersion: 2
+        x: 6053
+        y: 481
+        width: 1935
+        height: 1167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea53f5762cbcda60800000000000000
+      internalID: 7700236336270367458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BalToUp_1
+      rect:
+        serializedVersion: 2
+        x: 8022
+        y: 481
+        width: 1935
+        height: 1167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1fd1d23fcbd1fa0800000000000000
+      internalID: -5828294590127541797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BalToUp_2
+      rect:
+        serializedVersion: 2
+        x: 10039
+        y: 481
+        width: 1935
+        height: 1167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cd73b9377bddd00800000000000000
+      internalID: 999156399499369488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BalToUp_3
+      rect:
+        serializedVersion: 2
+        x: 12062
+        y: 481
+        width: 1935
+        height: 1167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059b1e8c0da4ce770800000000000000
+      internalID: 8641364045601028432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
