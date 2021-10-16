@@ -28,6 +28,8 @@ public class PlayerScript : MonoBehaviour
     #region Laser
     [SerializeField] private LaserGun currentLaser;
     [SerializeField] private enum LaserGun { BULLET, PULSE }
+    [SerializeField] private float laserCooldown;
+    [SerializeField] private float laserTimer;
     #endregion
     #region Option
     [SerializeField] private int OptionAmount;
@@ -41,8 +43,10 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private enum PrimaryGunType { NORMAL, PROJECTILE, LASER }
 
     [Header("Reference")]
+    [SerializeField] private Transform bulletSpawnPos;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
+    [SerializeField] private PoolManager poolManager;
 
 
     private void HandleSelectSkillset(Skillset select)
@@ -84,12 +88,14 @@ public class PlayerScript : MonoBehaviour
     private void Update()
     {
         GetInput();
+        HandleCooldown();
     }
 
     private void GetInput()
     {
         HandleMovement();
         HandleFireArmament();
+        HandleFireMissile();
     }
 
     private void HandleMovement()
@@ -115,7 +121,6 @@ public class PlayerScript : MonoBehaviour
         {
             rb.velocity = new Vector2(velocity, rb.velocity.y);
         }
-
         #endregion
 
         #region GetKeyUP
@@ -138,7 +143,194 @@ public class PlayerScript : MonoBehaviour
 
     private void HandleFireArmament()
     {
+        if(Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Space))
+        {
+            if (primaryGun == PrimaryGunType.NORMAL)
+            {
+                GameObject bullet = poolManager.GetPoolObject(PoolObjectType.NormalBullet);
+                if(bullet.activeSelf)
+                {
+                    Debug.Log("Reloading");
+                }    
+                if(!bullet.activeSelf)
+                {
+                    bullet.transform.position = bulletSpawnPos.position;
+                    bullet.SetActive(true);
+                }
 
+            }
+            if (primaryGun == PrimaryGunType.PROJECTILE)
+            {
+                if (currentProjectile == ProjectileGun.SPLIT)
+                {
+                    GameObject bullet1 = poolManager.GetPoolObject(PoolObjectType.NormalBullet);
+                    GameObject bullet2 = poolManager.GetPoolObject(PoolObjectType.SplitBullet);
+                    bullet2.GetComponent<ArmamentControl>().currentAmmoType = ArmamentControl.AmmoType.SECOND;
+                    if (bullet1.activeSelf)
+                    {
+                        Debug.Log("Reloading");
+                    }
+                    if (!bullet1.activeSelf)
+                    {
+                        bullet1.transform.position = bulletSpawnPos.position;
+                        bullet1.SetActive(true);
+                    }
+                    if (bullet2.activeSelf)
+                    {
+                        Debug.Log("Reloading");
+                    }
+                    if (!bullet2.activeSelf)
+                    {
+                        bullet2.transform.position = bulletSpawnPos.position;
+                        bullet2.SetActive(true);
+                    }
+                }
+
+                if (currentProjectile == ProjectileGun.TAIL)
+                {
+                    GameObject bullet1 = poolManager.GetPoolObject(PoolObjectType.NormalBullet);
+                    GameObject bullet2 = poolManager.GetPoolObject(PoolObjectType.TailBullet);
+                    bullet2.GetComponent<ArmamentControl>().currentAmmoType = ArmamentControl.AmmoType.TAIL;
+                    if (bullet1.activeSelf)
+                    {
+                        Debug.Log("Reloading");
+                    }
+                    if (!bullet1.activeSelf)
+                    {
+                        bullet1.transform.position = bulletSpawnPos.position;
+                        bullet1.SetActive(true);
+                    }
+                    if (bullet2.activeSelf)
+                    {
+                        Debug.Log("Reloading");
+                    }
+                    if (!bullet2.activeSelf)
+                    {
+                        bullet2.transform.position = bulletSpawnPos.position;
+                        bullet2.SetActive(true);
+                    }
+                }
+            }
+            if (primaryGun == PrimaryGunType.LASER)
+            {
+                if (currentLaser == LaserGun.BULLET)
+                {
+                    GameObject bullet1 = poolManager.GetPoolObject(PoolObjectType.LaserBullet);
+                    if (bullet1.activeSelf)
+                    {
+                        Debug.Log("Reloading");
+                    }
+                    if (!bullet1.activeSelf)
+                    {
+                        bullet1.transform.position = bulletSpawnPos.position;
+                        bullet1.SetActive(true);
+                    }
+                }
+
+                if (currentLaser == LaserGun.PULSE && laserTimer <= 0)
+                {
+                    GameObject bullet1 = poolManager.GetPoolObject(PoolObjectType.LaserPulse);
+                    if (bullet1.activeSelf)
+                    {
+                        Debug.Log("Reloading");
+                    }
+                    if (!bullet1.activeSelf)
+                    {
+                        bullet1.transform.position = bulletSpawnPos.position;
+                        bullet1.SetActive(true);
+                        laserTimer = laserCooldown;
+                    }
+                }
+            }
+        }
+
+    }
+
+    private void HandleCooldown()
+    {
+        if (laserTimer > 0)
+            laserTimer -= Time.deltaTime;
+        if (missileTimer > 0)
+            missileTimer -= Time.deltaTime;
+    }
+
+    private void HandleFireMissile()
+    {
+        if(isMissileActive)
+        {
+            if ((Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Space)) && missileTimer <= 0)
+            {
+                if (currentMissile == MissileType.MISSILE)
+                {
+                    GameObject missile = poolManager.GetPoolObject(PoolObjectType.Missile);
+                    if (missile.activeSelf)
+                    {
+                        Debug.Log("Reloading");
+                    }
+                    if (!missile.activeSelf)
+                    {
+                        missile.transform.position = bulletSpawnPos.position;
+                        missile.SetActive(true);
+                    }
+                }
+
+                if (currentMissile == MissileType.BOMB)
+                {
+                    GameObject missile = poolManager.GetPoolObject(PoolObjectType.Bomb);
+                    if (missile.activeSelf)
+                    {
+                        Debug.Log("Reloading");
+                    }
+                    if (!missile.activeSelf)
+                    {
+                        missile.transform.position = bulletSpawnPos.position;
+                        missile.SetActive(true);
+                    }
+                }
+
+                if (currentMissile == MissileType.TORPEDO)
+                {
+                    GameObject missile = poolManager.GetPoolObject(PoolObjectType.Torpedo);
+                    if (missile.activeSelf)
+                    {
+                        Debug.Log("Reloading");
+                    }
+                    if (!missile.activeSelf)
+                    {
+                        missile.transform.position = bulletSpawnPos.position;
+                        missile.SetActive(true);
+                    }
+                }
+
+                if (currentMissile == MissileType.TWOWAY)
+                {
+                    GameObject missile1 = poolManager.GetPoolObject(PoolObjectType.Missile);
+                    GameObject missile2 = poolManager.GetPoolObject(PoolObjectType.Missile);
+                    missile1.GetComponent<ArmamentControl>().currentAmmoType = ArmamentControl.AmmoType.TWOWAYUP;
+                    missile2.GetComponent<ArmamentControl>().currentAmmoType = ArmamentControl.AmmoType.TWOWAYDOWN;
+                    if (missile1.activeSelf)
+                    {
+                        Debug.Log("Reloading");
+                    }
+                    if (!missile1.activeSelf)
+                    {
+                        missile1.transform.position = bulletSpawnPos.position;
+                        missile1.SetActive(true);
+                    }
+                    if (missile2.activeSelf)
+                    {
+                        Debug.Log("Reloading");
+                    }
+                    if (!missile2.activeSelf)
+                    {
+                        missile2.transform.position = bulletSpawnPos.position;
+                        missile2.SetActive(true);
+                    }
+                }
+
+                missileTimer = missileCooldown;
+            }
+        }
     }
 
 }
