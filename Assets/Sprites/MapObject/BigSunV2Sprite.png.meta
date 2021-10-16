@@ -1,0 +1,840 @@
+fileFormatVersion: 2
+guid: e3d8b541be611754686426ed8906c592
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2978255502340111421
+    second: BigSunSprite_0
+  - first:
+      213: -1281600564902162752
+    second: BigSunSprite_1
+  - first:
+      213: -8466154113572541525
+    second: BigSunSprite_2
+  - first:
+      213: -27178948834801413
+    second: BigSunSprite_3
+  - first:
+      213: 5136078274879514474
+    second: BigSunSprite_4
+  - first:
+      213: -1498203768918070872
+    second: BigSunSprite_5
+  - first:
+      213: -3462244506547568408
+    second: BigSunSprite_6
+  - first:
+      213: 8274739206705307952
+    second: BigSunSprite_7
+  - first:
+      213: 2284519133007273157
+    second: BigSunSprite_8
+  - first:
+      213: -3396727997344363211
+    second: BigSunSprite_9
+  - first:
+      213: -6870310438703858569
+    second: BigSunSprite_10
+  - first:
+      213: 4958652401480216812
+    second: BigSunSprite_11
+  - first:
+      213: 1679550690469618134
+    second: BigSunSprite_12
+  - first:
+      213: -4970611857671343473
+    second: BigSunSprite_13
+  - first:
+      213: 236691564522834426
+    second: BigSunSprite_14
+  - first:
+      213: 788266791763512807
+    second: BigSunSprite_15
+  - first:
+      213: 5780270008305244276
+    second: BigSunSprite_16
+  - first:
+      213: 1817855043706712546
+    second: BigSunSprite_17
+  - first:
+      213: -6307505619815667920
+    second: BigSunSprite_18
+  - first:
+      213: -4219788632469627815
+    second: BigSunSprite_19
+  - first:
+      213: 5907064926546711147
+    second: BigSunSprite_20
+  - first:
+      213: -2645996468184670651
+    second: BigSunSprite_21
+  - first:
+      213: 9152345375769713464
+    second: BigSunSprite_22
+  - first:
+      213: -5450464523600816860
+    second: BigSunSprite_23
+  - first:
+      213: 5046112250262876206
+    second: BigSunSprite_24
+  - first:
+      213: 7968561639429450465
+    second: BigSunSprite_25
+  - first:
+      213: 7392543101509632860
+    second: BigSunSprite_26
+  - first:
+      213: 3444244747663543447
+    second: BigSunSprite_27
+  - first:
+      213: 8858551156247198881
+    second: BigSunSprite_28
+  - first:
+      213: -5032342102076212562
+    second: BigSunSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigSunSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1121
+        width: 799
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3cb5539993e45920800000000000000
+      internalID: 2978255502340111421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_1
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1121
+        width: 799
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce01119317d63ee0800000000000000
+      internalID: -1281600564902162752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1121
+        width: 799
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babebc670bd228a80800000000000000
+      internalID: -8466154113572541525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_3
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1121
+        width: 799
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf84559d3e07f9ff0800000000000000
+      internalID: -27178948834801413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_4
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1121
+        width: 799
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a676bc89af3074740800000000000000
+      internalID: 5136078274879514474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_5
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1121
+        width: 799
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9ac782c9f453be0800000000000000
+      internalID: -1498203768918070872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 841
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e04fad07f2a3ffc0800000000000000
+      internalID: -3462244506547568408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_7
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 841
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031eaa09777c5d270800000000000000
+      internalID: 8274739206705307952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_8
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 841
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc5b7d2c0e34bf10800000000000000
+      internalID: 2284519133007273157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_9
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 841
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d4aaf02e56cd0d0800000000000000
+      internalID: -3396727997344363211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_10
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 841
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cf5647e01c7a0a0800000000000000
+      internalID: -6870310438703858569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_11
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 841
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0bdda461ca0d440800000000000000
+      internalID: 4958652401480216812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 561
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d124bf4476fe4710800000000000000
+      internalID: 1679550690469618134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_13
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 561
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82b723d9d6d40bb0800000000000000
+      internalID: -4970611857671343473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_14
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 561
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af907b059b5e84300800000000000000
+      internalID: 236691564522834426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_15
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 561
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed0d4f787c70fa00800000000000000
+      internalID: 788266791763512807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_16
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 561
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478d0e682f4a73050800000000000000
+      internalID: 5780270008305244276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_17
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 561
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e17a45e7815a3910800000000000000
+      internalID: 1817855043706712546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 281
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0376b10be0d3778a0800000000000000
+      internalID: -6307505619815667920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_19
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 281
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c9a6e989c4075c0800000000000000
+      internalID: -4219788632469627815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_20
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 281
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b625cf3f04c1af150800000000000000
+      internalID: 5907064926546711147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_21
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 281
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e1ae43b38874bd0800000000000000
+      internalID: -2645996468184670651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_22
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 281
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b5178c0a9a30f70800000000000000
+      internalID: 9152345375769713464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_23
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 281
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42597e1c46f0c54b0800000000000000
+      internalID: -5450464523600816860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e207aad2b54670640800000000000000
+      internalID: 5046112250262876206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea2ff08794069e60800000000000000
+      internalID: 7968561639429450465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_26
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c530f3098c6979660800000000000000
+      internalID: 7392543101509632860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_27
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c8dff795a6ccf20800000000000000
+      internalID: 3444244747663543447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_28
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac7dbc8755efea70800000000000000
+      internalID: 8858551156247198881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigSunSprite_29
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1
+        width: 799
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa31894587892ab0800000000000000
+      internalID: -5032342102076212562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
