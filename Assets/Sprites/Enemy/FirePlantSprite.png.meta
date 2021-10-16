@@ -1,0 +1,1560 @@
+fileFormatVersion: 2
+guid: ff12f2ebaa91a154b91c948020e800f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6306488061902359058
+    second: FirePlantSprite_0
+  - first:
+      213: 4864433745048346417
+    second: FirePlantSprite_1
+  - first:
+      213: -1599531977164828148
+    second: FirePlantSprite_2
+  - first:
+      213: -4563159267400628322
+    second: FirePlantSprite_3
+  - first:
+      213: -2638954023535315784
+    second: FirePlantSprite_4
+  - first:
+      213: -3783615974447635905
+    second: FirePlantSprite_5
+  - first:
+      213: -8252204262792556225
+    second: FirePlantSprite_6
+  - first:
+      213: -8650198875408786594
+    second: FirePlantSprite_7
+  - first:
+      213: -5062922765865534731
+    second: FirePlantSprite_8
+  - first:
+      213: -5764971622672812716
+    second: FirePlantSprite_9
+  - first:
+      213: -2790664625226383596
+    second: FirePlantSprite_10
+  - first:
+      213: 8785522430511297369
+    second: FirePlantSprite_11
+  - first:
+      213: 7371845319515329418
+    second: FirePlantSprite_12
+  - first:
+      213: 7564362079231997457
+    second: FirePlantSprite_13
+  - first:
+      213: -6725036602017971705
+    second: FirePlantSprite_14
+  - first:
+      213: -4103047868888196689
+    second: FirePlantSprite_15
+  - first:
+      213: -7488377775051535065
+    second: FirePlantSprite_16
+  - first:
+      213: -2770455481293887767
+    second: FirePlantSprite_17
+  - first:
+      213: -5087043911777537382
+    second: FirePlantSprite_18
+  - first:
+      213: 1042707801464230592
+    second: FirePlantSprite_19
+  - first:
+      213: 4027053493017098082
+    second: FirePlantSprite_20
+  - first:
+      213: -5161061504615151105
+    second: FirePlantSprite_21
+  - first:
+      213: 860715444364297692
+    second: FirePlantSprite_22
+  - first:
+      213: 7535320785891914921
+    second: FirePlantSprite_23
+  - first:
+      213: -5183299195907256855
+    second: FirePlantSprite_24
+  - first:
+      213: 698136965770282510
+    second: FirePlantSprite_25
+  - first:
+      213: 8179200425762705370
+    second: FirePlantSprite_26
+  - first:
+      213: 8272603827878060453
+    second: FirePlantSprite_27
+  - first:
+      213: -1240866120010128635
+    second: FirePlantSprite_28
+  - first:
+      213: -2014285162017669493
+    second: FirePlantSprite_29
+  - first:
+      213: 2330947940989989531
+    second: FirePlantSprite_30
+  - first:
+      213: 2080958701688154646
+    second: FirePlantSprite_31
+  - first:
+      213: -5042567792775902017
+    second: FirePlantSprite_32
+  - first:
+      213: 8685422034323427614
+    second: FirePlantSprite_33
+  - first:
+      213: 4743159036220939426
+    second: FirePlantSprite_34
+  - first:
+      213: 4432698593183568436
+    second: FirePlantSprite_35
+  - first:
+      213: 6789553074029241763
+    second: FirePlantSprite_36
+  - first:
+      213: -8193704064073242097
+    second: FirePlantSprite_37
+  - first:
+      213: -7561152451672897078
+    second: FirePlantSprite_38
+  - first:
+      213: 6222180637028084540
+    second: FirePlantSprite_39
+  - first:
+      213: -7618401169832756156
+    second: FirePlantSprite_40
+  - first:
+      213: -3111739332430261766
+    second: FirePlantSprite_41
+  - first:
+      213: -9194517642895628533
+    second: FirePlantSprite_42
+  - first:
+      213: -5545575068578510459
+    second: FirePlantSprite_43
+  - first:
+      213: -4719930788523907992
+    second: FirePlantSprite_44
+  - first:
+      213: -3592719261091175263
+    second: FirePlantSprite_45
+  - first:
+      213: 3418789404622490127
+    second: FirePlantSprite_46
+  - first:
+      213: -5244725382181217157
+    second: FirePlantSprite_47
+  - first:
+      213: 3180778676684762000
+    second: FirePlantSprite_48
+  - first:
+      213: -1632081652333187084
+    second: FirePlantSprite_49
+  - first:
+      213: 9017983381682541475
+    second: FirePlantSprite_50
+  - first:
+      213: -1753929390154258020
+    second: FirePlantSprite_51
+  - first:
+      213: 4724708593827035452
+    second: FirePlantSprite_52
+  - first:
+      213: -4150353275093667711
+    second: FirePlantSprite_53
+  - first:
+      213: 8777664814329880548
+    second: FirePlantSprite_54
+  - first:
+      213: 3470829799534774418
+    second: FirePlantSprite_55
+  - first:
+      213: 5105471768493900612
+    second: FirePlantSprite_56
+  - first:
+      213: 7804985178631588816
+    second: FirePlantSprite_57
+  - first:
+      213: 3425777049912342145
+    second: FirePlantSprite_58
+  - first:
+      213: -2842201455474665193
+    second: FirePlantSprite_59
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FirePlantSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2270
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5711a558ada78a0800000000000000
+      internalID: -6306488061902359058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_1
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 2270
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f970fd7b0f18340800000000000000
+      internalID: 4864433745048346417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_2
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2270
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02563634225dc9e0800000000000000
+      internalID: -1599531977164828148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 2270
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97cd0da2d66ca0c0800000000000000
+      internalID: -4563159267400628322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2270
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4f6902c4d806bd0800000000000000
+      internalID: -2638954023535315784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 2270
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f322e845155ed7bc0800000000000000
+      internalID: -3783615974447635905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_6
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2270
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31194ee1f74a7d80800000000000000
+      internalID: -8252204262792556225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_7
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 2270
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b96ca14f154f780800000000000000
+      internalID: -8650198875408786594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_8
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2270
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fab857a192ecb9b0800000000000000
+      internalID: -5062922765865534731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1895
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45531627ad4beffa0800000000000000
+      internalID: -5764971622672812716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_10
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1895
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ff1261f419549d0800000000000000
+      internalID: -2790664625226383596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_11
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1895
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9533ad45a127ce970800000000000000
+      internalID: 8785522430511297369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_12
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1895
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8356d8a24e0e4660800000000000000
+      internalID: 7371845319515329418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_13
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1895
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116fe0dbb330af860800000000000000
+      internalID: 7564362079231997457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_14
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1895
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702083b57dedba2a0800000000000000
+      internalID: -6725036602017971705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_15
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1895
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9de7eb3bb0f07c0800000000000000
+      internalID: -4103047868888196689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_16
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 1895
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d8f16b610f31890800000000000000
+      internalID: -7488377775051535065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1895
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6a1731b6d5d89d0800000000000000
+      internalID: -2770455481293887767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1520
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92bfa9b3803769b0800000000000000
+      internalID: -5087043911777537382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_19
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1520
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2ddce8831787e00800000000000000
+      internalID: 1042707801464230592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_20
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1520
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267b7cec0d7f2e730800000000000000
+      internalID: 4027053493017098082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_21
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1520
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff98871f7e93068b0800000000000000
+      internalID: -5161061504615151105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_22
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1520
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5c60ae220e1fb00800000000000000
+      internalID: 860715444364297692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_23
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1520
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a474b7b456d29860800000000000000
+      internalID: 7535320785891914921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_24
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1520
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed4167f7d83118b0800000000000000
+      internalID: -5183299195907256855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_25
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 1520
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e068e491fd740b900800000000000000
+      internalID: 698136965770282510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_26
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1520
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf4f44b37b528170800000000000000
+      internalID: 8179200425762705370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1145
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a16530f9513ec270800000000000000
+      internalID: 8272603827878060453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_28
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1145
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503aaf696de87cee0800000000000000
+      internalID: -1240866120010128635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_29
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1145
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8eb8993152db04e0800000000000000
+      internalID: -2014285162017669493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_30
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1145
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92f2ac6dc0395020800000000000000
+      internalID: 2330947940989989531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_31
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1145
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a616ee9ec01ec10800000000000000
+      internalID: 2080958701688154646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_32
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1145
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc44c32f43350ab0800000000000000
+      internalID: -5042567792775902017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_33
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1145
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11d238a251d88870800000000000000
+      internalID: 8685422034323427614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_34
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 1145
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac122b530613d140800000000000000
+      internalID: 4743159036220939426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_35
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1145
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432941392eb148d30800000000000000
+      internalID: 4432698593183568436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 770
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5ac295c86593e50800000000000000
+      internalID: 6789553074029241763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_37
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 770
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a6d3ad09d1a4e80800000000000000
+      internalID: -8193704064073242097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_38
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 770
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac98679e7e3611790800000000000000
+      internalID: -7561152451672897078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_39
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 770
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b6f56a250a95650800000000000000
+      internalID: 6222180637028084540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_40
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 770
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44cb2b30080064690800000000000000
+      internalID: -7618401169832756156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_41
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 770
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af112e85091e0d4d0800000000000000
+      internalID: -3111739332430261766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_42
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 770
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07e42e1be2866080800000000000000
+      internalID: -9194517642895628533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_43
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 770
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5898d1a5bd82a03b0800000000000000
+      internalID: -5545575068578510459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_44
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 770
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8646a9184ff6f7eb0800000000000000
+      internalID: -4719930788523907992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 395
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4e4f8fdd8142ec0800000000000000
+      internalID: -3592719261091175263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_46
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 395
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a846899daf17f20800000000000000
+      internalID: 3418789404622490127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_47
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 395
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c1d9a7d0ef637b0800000000000000
+      internalID: -5244725382181217157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_48
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 395
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09baeec9a55642c20800000000000000
+      internalID: 3180778676684762000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_49
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 395
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff6f34626ea959e0800000000000000
+      internalID: -1632081652333187084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_50
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 395
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a350973b10562d70800000000000000
+      internalID: 9017983381682541475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_51
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 395
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99ecba238ac8a7e0800000000000000
+      internalID: -1753929390154258020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_52
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 395
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39bb4afe69819140800000000000000
+      internalID: 4724708593827035452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_53
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 395
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180b9a19fabf666c0800000000000000
+      internalID: -4150353275093667711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efd39f74a780d970800000000000000
+      internalID: 8777664814329880548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_55
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 20
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2984c1d305dda2030800000000000000
+      internalID: 3470829799534774418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_56
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 20
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4434dd306874ad640800000000000000
+      internalID: 5105471768493900612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_57
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 20
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db4689daa0e05c60800000000000000
+      internalID: 7804985178631588816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_58
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 20
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186f5bb831eca8f20800000000000000
+      internalID: 3425777049912342145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FirePlantSprite_59
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 20
+        width: 355
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719955ab5d87e88d0800000000000000
+      internalID: -2842201455474665193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
