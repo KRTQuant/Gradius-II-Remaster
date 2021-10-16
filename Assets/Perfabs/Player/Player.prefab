@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 13
+  m_SortingOrder: 1
   m_Sprite: {fileID: 8128112608072329083, guid: a4d1820233b87794096b7ec361722c59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -93,7 +93,7 @@ Animator:
   m_GameObject: {fileID: 4716388435773250757}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6f3328470aa8e4846b18a2f26ee78362, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7f8f98ea565b3234aa46d315a73ee2d8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -149,20 +149,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedSkillset: 0
   speedLevel: 1
-  speedMaxLevel: 0
-  speedAddon: 10
+  speedMaxLevel: 7
+  speedAddon: 75
   speed: 100
-  isMissileActive: 0
+  isMissileActive: 1
   missileTimer: 0
-  missileCooldown: 0
+  missileCooldown: 2
   currentMissile: 0
-  currentProjectile: 0
+  currentProjectile: 1
   currentLaser: 0
+  laserCooldown: 2
+  laserTimer: 0
   OptionAmount: 0
   isForceFieldActive: 0
-  primaryGun: 0
+  primaryGun: 1
+  bulletSpawnPos: {fileID: 4716388436938529895}
   rb: {fileID: 4716388436938529896}
   animator: {fileID: 4716388435773250759}
+  poolManager: {fileID: 0}
 --- !u!50 &4716388436938529896
 Rigidbody2D:
   serializedVersion: 4
