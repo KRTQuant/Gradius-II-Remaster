@@ -37,7 +37,9 @@ public class HordeManager : MonoBehaviour
         {
             //instantiate fleet leader
             Transform fleet = info.fleet.transform;
-            GameObject leader = Instantiate(info.prefab, fleet.position, fleet.rotation, fleet);
+            GameObject parent = new GameObject();
+            parent.name = info.type.ToString();
+            GameObject leader = Instantiate(info.prefab, fleet.position, fleet.rotation, parent.transform);
             SpriteRenderer sprite = leader.GetComponentInChildren<SpriteRenderer>();
             info.listofHorde.Add(leader);
             if (info.amount > 0)
@@ -45,8 +47,7 @@ public class HordeManager : MonoBehaviour
                 Debug.Log("amount more than 0");
                 for (int i = 0; i < info.amount - 1; i++)
                 {
-                    GameObject spawned = Instantiate(info.singleUnit, fleet.position, fleet.rotation, fleet);
-                    
+                    GameObject spawned = Instantiate(info.singleUnit, fleet.position, fleet.rotation, parent.transform);
                     //adjust position
                     if (info.axis == HordeInfo.rowAxis.HORIZONTAL)
                     {
@@ -70,7 +71,7 @@ public class HordeManager : MonoBehaviour
         }
         else // independent
         {
-
+            GameObject leader = Instantiate(info.prefab, new Vector2(0, 0), Quaternion.identity);
         }
     }
 
@@ -78,5 +79,15 @@ public class HordeManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Keypad0))
             GenerateHorde(listofHorde[0]);
+        if (Input.GetKeyDown(KeyCode.Keypad1))
+            GenerateHorde(listofHorde[1]);
+        if (Input.GetKeyDown(KeyCode.Keypad2))
+            GenerateHorde(listofHorde[2]);
+        if (Input.GetKeyDown(KeyCode.Keypad3))
+            GenerateHorde(listofHorde[3]);
+        if (Input.GetKeyDown(KeyCode.Keypad4))
+            GenerateHorde(listofHorde[4]);
+        if (Input.GetKeyDown(KeyCode.Keypad5))
+            GenerateHorde(listofHorde[5]);
     }
 }

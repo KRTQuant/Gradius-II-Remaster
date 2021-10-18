@@ -17,7 +17,7 @@ public class GarunEnemy : MonoBehaviour
     private void Update()
     {
         HandleMove();
-        Debug.Log("Test");
+        //Debug.Log("Test");
     }
 
     private void HandleMove()

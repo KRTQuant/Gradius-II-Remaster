@@ -9,6 +9,11 @@ public class RugalEnemy : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float rotateSpeed;
 
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+    }
+
     private void Update()
     {
         if(player == null)

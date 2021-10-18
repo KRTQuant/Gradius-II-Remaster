@@ -49,7 +49,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private PoolManager poolManager;
 
 
-    private void HandleSelectSkillset(Skillset select)
+    public void HandleSelectSkillset(Skillset select)
     {
         switch(select)
         {
@@ -57,24 +57,28 @@ public class PlayerScript : MonoBehaviour
                 currentMissile = MissileType.MISSILE;
                 currentProjectile = ProjectileGun.SPLIT;
                 currentLaser = LaserGun.BULLET;
+                Debug.Log("Skillset was set to A");
                 break;
 
             case Skillset.SET_B:
                 currentMissile = MissileType.BOMB;
                 currentProjectile = ProjectileGun.TAIL;
                 currentLaser = LaserGun.BULLET;
+                Debug.Log("Skillset was set to B");
                 break;
 
             case Skillset.SET_C:
                 currentMissile = MissileType.TORPEDO;
                 currentProjectile = ProjectileGun.SPLIT;
                 currentLaser = LaserGun.PULSE;
+                Debug.Log("Skillset was set to C");
                 break;
 
             case Skillset.SET_D:
                 currentMissile = MissileType.TWOWAY;
                 currentProjectile = ProjectileGun.TAIL;
                 currentLaser = LaserGun.PULSE;
+                Debug.Log("Skillset was set to D");
                 break;
         }
     }
