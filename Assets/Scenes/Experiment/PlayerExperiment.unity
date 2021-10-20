@@ -299,6 +299,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &992083578 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3456441777175118813, guid: 0a3dc7f64d23ab34daa3b694bb9155c0, type: 3}
+  m_PrefabInstance: {fileID: 3456441777739184203}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1419365358
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,9 +499,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: primaryGun
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
       propertyPath: poolManager
       value: 
       objectReference: {fileID: 49497138}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: powerupBorder
+      value: 
+      objectReference: {fileID: 992083578}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: laserPulseCooldown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: laserBulletCooldown
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
 --- !u!1001 &8597533106635892337

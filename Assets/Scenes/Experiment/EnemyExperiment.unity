@@ -608,6 +608,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 892638299}
+    - target: {fileID: 6362304916083703730, guid: cf245ce7bf9f99f4abc8cf9c24952926, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362304916083703733, guid: cf245ce7bf9f99f4abc8cf9c24952926, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3747
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf245ce7bf9f99f4abc8cf9c24952926, type: 3}
 --- !u!1 &202275112
@@ -3869,9 +3877,41 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: maxCapsule
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: speedLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
       propertyPath: poolManager
       value: 
       objectReference: {fileID: 2012535665}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: laserMaxLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: speedMaxLevel
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: optionMaxLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: missileMaxLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: forcefieldMaxLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716388436938529897, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
+      propertyPath: projectileMaxLevel
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1829c74b01f6ec49bba99b440b65817, type: 3}
 --- !u!1 &1272039560

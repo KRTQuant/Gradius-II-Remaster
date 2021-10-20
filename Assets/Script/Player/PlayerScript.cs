@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -9,8 +10,6 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] public Skillset selectedSkillset;
     [SerializeField] public enum Skillset { SET_A, SET_B, SET_C, SET_D }
     #region Speed
-    [SerializeField] private int speedLevel;
-    [SerializeField] private int speedMaxLevel;
     [SerializeField] private int speedAddon;
     [SerializeField] private int speed;
     #endregion
@@ -28,8 +27,10 @@ public class PlayerScript : MonoBehaviour
     #region Laser
     [SerializeField] private LaserGun currentLaser;
     [SerializeField] private enum LaserGun { BULLET, PULSE }
-    [SerializeField] private float laserCooldown;
-    [SerializeField] private float laserTimer;
+    [SerializeField] private float laserPulseCooldown;
+    [SerializeField] private float laserPulseTimer;
+    [SerializeField] private float laserBulletCooldown;
+    [SerializeField] private float laserBulletTimer;
     #endregion
     #region Option
     [SerializeField] private int OptionAmount;
@@ -38,15 +39,50 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private bool isForceFieldActive;
     #endregion
     #endregion
-
+    [Header("Gun Weapon")]
+    #region Gun Weapon
     [SerializeField] private PrimaryGunType primaryGun;
     [SerializeField] private enum PrimaryGunType { NORMAL, PROJECTILE, LASER }
+    #endregion
+    [Header("Lives")]
+    #region Lives
+    [SerializeField] private float maxLive;
+    [SerializeField] private float currentLive;
+    [SerializeField] private Text liveText;
+    #endregion
+    [Header("Capsule")]
+    #region Capsule
+    [SerializeField] private int currentCapsule;
+    [SerializeField] private float maxCapsule;
+    #endregion
+    [Header("PowerUp Level")]
+    #region PowerUp Level
+    [SerializeField] private PowerupList currentPowerup;
+    [SerializeField] private enum PowerupList { NULL, SPEED, MISSILE, DOUBLE, LASER, OPTION, FORCEFIELD }
+    [SerializeField] public int speedLevel;
+    [SerializeField] private int speedMaxLevel;
+    [SerializeField] private int missileLevel;
+    [SerializeField] private int missileMaxLevel;
+    [SerializeField] public float projectileLevel;
+    [SerializeField] private int projectileMaxLevel;
+    [SerializeField] public float laserLevel;
+    [SerializeField] private float laserMaxLevel;
+    [SerializeField] public float optionLevel;
+    [SerializeField] private float optionMaxLevel;
+    [SerializeField] public float forcefieldLevel;
+    [SerializeField] private float forcefieldMaxLevel;
+
+    [SerializeField] private SpriteRenderer powerupBorder;
+    #endregion
+    [Header("Pause")]
+    [SerializeField] private bool isPause;
 
     [Header("Reference")]
     [SerializeField] private Transform bulletSpawnPos;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
     [SerializeField] private PoolManager poolManager;
+    [SerializeField] private SpriteRenderer sprite;
 
 
     public void HandleSelectSkillset(Skillset select)
@@ -87,6 +123,9 @@ public class PlayerScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+
+        SetMaxLive();
+
     }
 
     private void Update()
@@ -95,11 +134,19 @@ public class PlayerScript : MonoBehaviour
         HandleCooldown();
     }
 
+    private void FixedUpdate()
+    {
+       // HandlePause();
+    }
+
     private void GetInput()
     {
         HandleMovement();
         HandleFireArmament();
         HandleFireMissile();
+        HandlePowerup();
+        HandleDebug();
+        HandlePause();
     }
 
     private void HandleMovement()
@@ -217,7 +264,7 @@ public class PlayerScript : MonoBehaviour
             }
             if (primaryGun == PrimaryGunType.LASER)
             {
-                if (currentLaser == LaserGun.BULLET)
+                if (currentLaser == LaserGun.BULLET && laserBulletTimer <= 0)
                 {
                     GameObject bullet1 = poolManager.GetPoolObject(PoolObjectType.LaserBullet);
                     if (bullet1.activeSelf)
@@ -228,10 +275,14 @@ public class PlayerScript : MonoBehaviour
                     {
                         bullet1.transform.position = bulletSpawnPos.position;
                         bullet1.SetActive(true);
+                        laserBulletTimer = laserBulletCooldown;
                     }
+
+                    //tab => call 2 bullet
+                    //hold => call all viable bullet
                 }
 
-                if (currentLaser == LaserGun.PULSE && laserTimer <= 0)
+                if (currentLaser == LaserGun.PULSE && laserPulseTimer <= 0)
                 {
                     GameObject bullet1 = poolManager.GetPoolObject(PoolObjectType.LaserPulse);
                     if (bullet1.activeSelf)
@@ -242,7 +293,7 @@ public class PlayerScript : MonoBehaviour
                     {
                         bullet1.transform.position = bulletSpawnPos.position;
                         bullet1.SetActive(true);
-                        laserTimer = laserCooldown;
+                        laserPulseTimer = laserPulseCooldown;
                     }
                 }
             }
@@ -252,12 +303,16 @@ public class PlayerScript : MonoBehaviour
 
     private void HandleCooldown()
     {
-        if (laserTimer > 0)
-            laserTimer -= Time.deltaTime;
+        if (laserPulseTimer > 0)
+            laserPulseTimer -= Time.deltaTime;
+        
         if (missileTimer > 0)
             missileTimer -= Time.deltaTime;
-    }
 
+        if (laserBulletCooldown > 0)
+            laserBulletTimer -= Time.fixedDeltaTime;
+    }
+     
     private void HandleFireMissile()
     {
         if(isMissileActive)
@@ -335,6 +390,149 @@ public class PlayerScript : MonoBehaviour
                 missileTimer = missileCooldown;
             }
         }
+    }
+
+    private void HandlePowerup()
+    {
+        SetPowerupBorderPosition();
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            if (currentCapsule == 0)
+            {
+                Debug.Log("Cannot upgrade any shit");
+            }
+            HandleIncreaseLevel((PowerupList)currentCapsule);
+            Debug.Log((PowerupList)(currentCapsule));
+            currentCapsule = 0;
+        }
+    }
+
+    private void HandlePause()
+    {
+        if(Input.GetKeyDown(KeyCode.Return))
+        {
+            if (isPause)
+            {
+                Time.timeScale = 1;
+                isPause = false;
+            }
+            else
+            {
+                Time.timeScale = 0;
+                isPause = true;
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("PowerUp"))
+        {
+            currentCapsule++;
+            if(currentCapsule > 6)
+            {
+                currentCapsule = 1;
+            }
+            collision.gameObject.SetActive(false);
+        }
+    }
+
+    private void HandleIncreaseLevel(PowerupList type)
+    {
+        if(type == PowerupList.SPEED)
+        {
+            if (speedLevel < speedMaxLevel)
+                speedLevel++;
+            else
+            {
+                Debug.Log("Max speed");
+            }
+        }
+        if (type == PowerupList.MISSILE)
+        {
+            if (missileLevel < missileMaxLevel)
+                missileLevel++;
+            else
+            {
+                Debug.Log("Max MISSILE");
+            }
+        }
+        if (type == PowerupList.DOUBLE)
+        {
+            if (projectileLevel < projectileMaxLevel)
+                projectileLevel++;
+            else
+            {
+                Debug.Log("Max DOUBLE");
+            }
+        }
+        if (type == PowerupList.LASER)
+        {
+            if (laserLevel < laserMaxLevel)
+                laserLevel++;
+            else
+            {
+                Debug.Log("Max LASER");
+            }
+        }
+        if (type == PowerupList.OPTION)
+        {
+            if (optionLevel < optionMaxLevel)
+                optionLevel++;
+            else
+            {
+                Debug.Log("Max OPTION");
+            }
+        }
+        if (type == PowerupList.FORCEFIELD)
+        {
+            if (forcefieldLevel < forcefieldMaxLevel)
+                forcefieldLevel++;
+            else
+            {
+                Debug.Log("Max FORCEFIELD");
+            }
+        }
+
+    }
+
+    private void HandleDebug()
+    {
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            Debug.Log("Increase current capsule");
+            currentCapsule++;
+
+            if(currentCapsule > maxCapsule)
+            {
+                currentCapsule = 1;
+            }
+        }
+
+    }
+
+    private void SetPowerupBorderPosition()
+    {
+        if (currentCapsule == 0)
+            powerupBorder.gameObject.SetActive(false);
+        if (currentCapsule > 0)
+        {
+            Debug.Log("Active Power-Up Border");
+            powerupBorder.gameObject.SetActive(true);
+        }
+        powerupBorder.transform.localPosition = new Vector3(-3645 + ((currentCapsule-1) * 1478.4f), -405, 0);
+        Debug.Log(powerupBorder.transform.localPosition);
+    }
+
+    private void SetLive()
+    {
+        liveText.text = "Life : 0" + currentLive;
+    }
+
+    private void SetMaxLive()
+    {
+        currentLive = maxLive;
+        SetLive();
     }
 
 }

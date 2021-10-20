@@ -56,7 +56,7 @@ public class ArmamentControl : MonoBehaviour
         if (currentAmmoType == AmmoType.TORPEDO)
         {
             rb.velocity = new Vector2(rb.velocity.x, speed * Time.deltaTime);
-            Debug.Log(rb.velocity);
+            //Debug.Log(rb.velocity);
         }
         if (currentAmmoType == AmmoType.TWOWAYUP)
         {
