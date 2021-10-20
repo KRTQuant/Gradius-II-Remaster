@@ -25,6 +25,9 @@ public class AnimateObjectMenu : MonoBehaviour
     public Text ExitTxt;
     public GameObject ExitTextObj;
 
+    public Text TmTxt;
+    public GameObject TmTextObj;
+
     public SpriteRenderer BackGroundSprite;
     public GameObject BackGroundObj;
 
@@ -49,6 +52,9 @@ public class AnimateObjectMenu : MonoBehaviour
         ExitTextObj = GameObject.Find("ExitText");
         ExitTxt = ExitTextObj.GetComponent<Text>();
 
+        TmTextObj = GameObject.Find("TmText");
+        TmTxt = TmTextObj.GetComponent<Text>();
+
         BackGroundObj = GameObject.Find("BGMenu");
         BackGroundSprite = BackGroundObj.GetComponent<SpriteRenderer>();
     }
@@ -63,7 +69,9 @@ public class AnimateObjectMenu : MonoBehaviour
             PlayTxt.enabled = false;
             OnePlayerTxt.enabled = false;
             ExitTxt.enabled = false;
+            TmTxt.enabled = false;
             BackGroundSprite.enabled = false;
+
         }
         if (LogoGame.AnimateEnd == true)
         {
@@ -72,6 +80,7 @@ public class AnimateObjectMenu : MonoBehaviour
             PlayTxt.enabled = true;
             OnePlayerTxt.enabled = true;
             ExitTxt.enabled = true;
+            TmTxt.enabled = true;
             BackGroundSprite.enabled = true;
         }
     }
