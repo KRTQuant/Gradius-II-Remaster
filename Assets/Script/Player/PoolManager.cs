@@ -38,7 +38,7 @@ public class PoolManager : MonoBehaviour
     {
         for(int i = 0; i < listofPool.Count; i++)
         {
-
+            FillPool(listofPool[i]);
         }
     }
 

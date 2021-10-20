@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: b46fb8d688c72cf48a2cf29733fa819c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1109653567743940653
+    second: Ripple,Laser,Normal_0
+  - first:
+      213: 6458281457037254138
+    second: Ripple,Laser,Normal_1
+  - first:
+      213: 306259018449242009
+    second: Ripple,Laser,Normal_2
+  - first:
+      213: -8712671382694591949
+    second: Ripple,Laser,Normal_3
+  - first:
+      213: -3154528968710860248
+    second: Ripple,Laser,Normal_4
+  - first:
+      213: -4963155917370083836
+    second: Ripple,Laser,Normal_5
+  - first:
+      213: 339294571624050138
+    second: Ripple,Laser,Normal_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +62,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,9 +96,168 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ripple,Laser,Normal_0
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 669
+        width: 39
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d285f196a08466f00800000000000000
+      internalID: 1109653567743940653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ripple,Laser,Normal_1
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 646
+        width: 52
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd923a84cc60a950800000000000000
+      internalID: 6458281457037254138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ripple,Laser,Normal_2
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 613
+        width: 71
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9974de364fc004400800000000000000
+      internalID: 306259018449242009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ripple,Laser,Normal_3
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 592
+        width: 96
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33207c50a8f561780800000000000000
+      internalID: -8712671382694591949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ripple,Laser,Normal_4
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 553
+        width: 132
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8225f4acd9cd834d0800000000000000
+      internalID: -3154528968710860248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ripple,Laser,Normal_5
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 240
+        width: 402
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40637443df35f1bb0800000000000000
+      internalID: -4963155917370083836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ripple,Laser,Normal_6
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 245
+        width: 128
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addaedf7d9a65b400800000000000000
+      internalID: 339294571624050138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
