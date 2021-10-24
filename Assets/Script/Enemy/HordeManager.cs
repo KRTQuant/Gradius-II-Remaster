@@ -31,13 +31,18 @@ public class HordeManager : MonoBehaviour
 {
     [SerializeField] private List<HordeInfo> listofHorde;
 
+    [SerializeField] private float timer;
+    [SerializeField] private bool isCallFleet1;
+    [SerializeField] private bool isCallFleet2;
+    [SerializeField] private bool isCallFleet3;
+
     private void GenerateHorde(HordeInfo info)
     {
         if(info.isReqFleet) // require fleet 
         {
             //instantiate fleet leader
-            Transform fleet = info.fleet.transform;
             GameObject parent = new GameObject();
+            Transform fleet = parent.transform;
             parent.name = info.type.ToString();
             GameObject leader = Instantiate(info.prefab, fleet.position, fleet.rotation, parent.transform);
             SpriteRenderer sprite = leader.GetComponentInChildren<SpriteRenderer>();
@@ -53,7 +58,7 @@ public class HordeManager : MonoBehaviour
                     {
                         float width = sprite.bounds.extents.x * 2;
                         spawned.transform.position = new Vector3(leader.transform.GetChild(0).transform.position.x + (width * i), leader.transform.GetChild(0).transform.position.y, transform.position.z);
-                        Debug.Log(spawned.transform.position);
+                        //Debug.Log(spawned.transform.position);
                     }
                     if (info.axis == HordeInfo.rowAxis.VERTICAL)
                     {
@@ -62,7 +67,7 @@ public class HordeManager : MonoBehaviour
                     }
                     if (info.type == HordeEnemyType.FAN_UP || info.type == HordeEnemyType.FAN_DOWN)
                     {
-                        Debug.Log("Set duplicated's destination");
+                        //Debug.Log("Set duplicated's destination");
                         spawned.GetComponent<FanEnemyScript>().destination = leader.GetComponentInChildren<FanEnemyScript>().destination;
                     }
                     info.listofHorde.Add(spawned);
@@ -77,6 +82,12 @@ public class HordeManager : MonoBehaviour
 
     private void Update()
     {
+        HandleInput();
+        HandleSpawnFleet();
+    }
+
+    private void HandleInput()
+    {
         if (Input.GetKeyDown(KeyCode.Keypad0))
             GenerateHorde(listofHorde[0]);
         if (Input.GetKeyDown(KeyCode.Keypad1))
@@ -89,5 +100,23 @@ public class HordeManager : MonoBehaviour
             GenerateHorde(listofHorde[4]);
         if (Input.GetKeyDown(KeyCode.Keypad5))
             GenerateHorde(listofHorde[5]);
+    }
+
+    private void HandleSpawnFleet()
+    {
+        timer += Time.deltaTime;
+
+        if(timer > 1 && !isCallFleet1)
+        {
+            GenerateHorde(listofHorde[0]);
+            isCallFleet1 = true;
+        }
+
+        if (timer > 5 && !isCallFleet2)
+        {
+            GenerateHorde(listofHorde[1]);
+            isCallFleet2 = true;
+        }
+
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8002721913327311546}
   - component: {fileID: 8002721913327311551}
   - component: {fileID: 8002721913327311544}
+  - component: {fileID: 5475462157353067800}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -132,6 +133,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5475462157353067800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8002721913327311547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c33e478023de74bb17429373f7f841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  rb: {fileID: 8002721913327311544}
+  speed: 5
+  rotateSpeed: 200
 --- !u!1 &8002721914469042912
 GameObject:
   m_ObjectHideFlags: 0

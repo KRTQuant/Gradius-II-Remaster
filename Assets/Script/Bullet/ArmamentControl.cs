@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ArmamentControl : MonoBehaviour
 {
+    [SerializeField] public float damage;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private BoxCollider2D col;
     [SerializeField] private SpriteRenderer sprite;
@@ -82,44 +83,44 @@ public class ArmamentControl : MonoBehaviour
     {
         if(currentAmmoType == AmmoType.SINGLE)
         {
-            StartCoroutine(Deactive());
+            //StartCoroutine(Deactive());
         }
         if (currentAmmoType == AmmoType.PULSE)
         {
-            StartCoroutine(Deactive());
+            //StartCoroutine(Deactive());
             StartCoroutine(ScaleUp());
         }
         if (currentAmmoType == AmmoType.BEAM)
         {
-            StartCoroutine(Deactive());
+            //StartCoroutine(Deactive());
         }
         if (currentAmmoType == AmmoType.TAIL)
         {
-            StartCoroutine(Deactive());
+            //StartCoroutine(Deactive());
         }
         if (currentAmmoType == AmmoType.SECOND)
         {
-            StartCoroutine(Deactive());
+            //StartCoroutine(Deactive());
         }
         if (currentAmmoType == AmmoType.MISSILE)
         {
-            StartCoroutine(Deactive());
+            //StartCoroutine(Deactive());
         }
         if (currentAmmoType == AmmoType.SPREAD)
         {
-            StartCoroutine(Deactive());
+            //StartCoroutine(Deactive());
         }
         if (currentAmmoType == AmmoType.TORPEDO)
         {
-            StartCoroutine(Deactive());
+            //StartCoroutine(Deactive());
         }
         if (currentAmmoType == AmmoType.TWOWAYDOWN)
         {
-            StartCoroutine(Deactive());
+            //StartCoroutine(Deactive());
         }
         if (currentAmmoType == AmmoType.TWOWAYUP)
         {
-            StartCoroutine(Deactive());
+            //StartCoroutine(Deactive());
         }
     }
 

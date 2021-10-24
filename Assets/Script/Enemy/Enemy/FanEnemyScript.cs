@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class FanEnemyScript : MonoBehaviour
 {
+    [Header("Reference")]
+    [SerializeField] private GameObject capsule;
+
+    [Header("Health")]
+    [SerializeField] private float health;
+    [SerializeField] private float maxHealth;
+
     [Header("Animation")]
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private float rotateSpeed;
@@ -18,10 +25,16 @@ public class FanEnemyScript : MonoBehaviour
     [SerializeField] private enum enemyStatus { MOVE, ARRIVED, STOP, DEAD }
     [SerializeField] private enemyStatus currentStatus;
 
+    private void Start()
+    {
+        SetHealth();
+    }
+
     void Update()
     {
         ControlAnim();
         Move();
+        HandleActive();
     }
 
     private void ControlAnim()
@@ -66,5 +79,38 @@ public class FanEnemyScript : MonoBehaviour
 
         }
 
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage(collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
+        }
+    }
+
+    private void TakeDamage(float damage)
+    {
+        health -= damage;
+        if (health < 0)
+        {
+            Debug.Log("Spawn power up capsule");
+            this.gameObject.SetActive(false);
+            Instantiate(capsule, transform.position, transform.rotation);
+            Debug.Log("Spawn power up capsule");
+        }
+    }
+
+    private void SetHealth()
+    {
+        health = maxHealth;
+    }
+
+    private void HandleActive()
+    {
+        if (sprite.isVisible)
+            this.gameObject.SetActive(true);
     }
 }

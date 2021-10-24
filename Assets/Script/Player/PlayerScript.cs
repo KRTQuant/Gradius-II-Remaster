@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -60,17 +61,17 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private PowerupList currentPowerup;
     [SerializeField] private enum PowerupList { NULL, SPEED, MISSILE, DOUBLE, LASER, OPTION, FORCEFIELD }
     [SerializeField] public int speedLevel;
-    [SerializeField] private int speedMaxLevel;
+    [HideInInspector] private int speedMaxLevel = 7;
     [SerializeField] private int missileLevel;
-    [SerializeField] private int missileMaxLevel;
+    [HideInInspector] private int missileMaxLevel = 1;
     [SerializeField] public float projectileLevel;
-    [SerializeField] private int projectileMaxLevel;
+    [HideInInspector] private int projectileMaxLevel = 2;
     [SerializeField] public float laserLevel;
-    [SerializeField] private float laserMaxLevel;
+    [HideInInspector] private float laserMaxLevel = 2;
     [SerializeField] public float optionLevel;
-    [SerializeField] private float optionMaxLevel;
+    [HideInInspector] private float optionMaxLevel = 4;
     [SerializeField] public float forcefieldLevel;
-    [SerializeField] private float forcefieldMaxLevel;
+    [HideInInspector] private float forcefieldMaxLevel = 1;
 
     [SerializeField] private SpriteRenderer powerupBorder;
     #endregion
@@ -132,6 +133,7 @@ public class PlayerScript : MonoBehaviour
     {
         GetInput();
         HandleCooldown();
+        HandleForceField();
     }
 
     private void FixedUpdate()
@@ -305,12 +307,18 @@ public class PlayerScript : MonoBehaviour
     {
         if (laserPulseTimer > 0)
             laserPulseTimer -= Time.deltaTime;
-        
+        if (laserPulseTimer <= 0)
+            laserPulseTimer = 0;
+
         if (missileTimer > 0)
             missileTimer -= Time.deltaTime;
+        if (missileTimer <= 0)
+            missileTimer = 0;
 
-        if (laserBulletCooldown > 0)
+        if (laserBulletTimer > 0)
             laserBulletTimer -= Time.fixedDeltaTime;
+        if (laserBulletTimer <= 0)
+            laserBulletTimer = 0;
     }
      
     private void HandleFireMissile()
@@ -426,14 +434,23 @@ public class PlayerScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("PowerUp"))
+        if(collision.CompareTag("Capsule"))
         {
+            Debug.Log("Compare with capsule");
             currentCapsule++;
             if(currentCapsule > 6)
             {
                 currentCapsule = 1;
             }
             collision.gameObject.SetActive(false);
+        }
+
+        if (collision.CompareTag("Enemy"))
+        {
+            Debug.Log("collide enemy");
+            currentLive--;
+            StartCoroutine(Delay());
+            sprite.enabled = false;
         }
     }
 
@@ -452,6 +469,8 @@ public class PlayerScript : MonoBehaviour
         {
             if (missileLevel < missileMaxLevel)
                 missileLevel++;
+            if (missileLevel >= 0)
+                isMissileActive = true;
             else
             {
                 Debug.Log("Max MISSILE");
@@ -461,6 +480,11 @@ public class PlayerScript : MonoBehaviour
         {
             if (projectileLevel < projectileMaxLevel)
                 projectileLevel++;
+            if (projectileLevel >= 0)
+            {
+                primaryGun = PrimaryGunType.PROJECTILE;
+                laserLevel = 0;
+            }
             else
             {
                 Debug.Log("Max DOUBLE");
@@ -470,6 +494,11 @@ public class PlayerScript : MonoBehaviour
         {
             if (laserLevel < laserMaxLevel)
                 laserLevel++;
+            if (laserLevel >= 0)
+            {
+                primaryGun = PrimaryGunType.LASER;
+                projectileLevel = 0;
+            }
             else
             {
                 Debug.Log("Max LASER");
@@ -488,6 +517,10 @@ public class PlayerScript : MonoBehaviour
         {
             if (forcefieldLevel < forcefieldMaxLevel)
                 forcefieldLevel++;
+            if(forcefieldLevel != 0)
+            {
+                isForceFieldActive = true;
+            }
             else
             {
                 Debug.Log("Max FORCEFIELD");
@@ -517,11 +550,11 @@ public class PlayerScript : MonoBehaviour
             powerupBorder.gameObject.SetActive(false);
         if (currentCapsule > 0)
         {
-            Debug.Log("Active Power-Up Border");
+            //Debug.Log("Active Power-Up Border");
             powerupBorder.gameObject.SetActive(true);
         }
         powerupBorder.transform.localPosition = new Vector3(-3645 + ((currentCapsule-1) * 1478.4f), -405, 0);
-        Debug.Log(powerupBorder.transform.localPosition);
+        //Debug.Log(powerupBorder.transform.localPosition);
     }
 
     private void SetLive()
@@ -533,6 +566,28 @@ public class PlayerScript : MonoBehaviour
     {
         currentLive = maxLive;
         SetLive();
+    }
+
+    private void HandleForceField()
+    {
+        GameObject forcefield = poolManager.GetPoolObject(PoolObjectType.ForceField);
+        if (isForceFieldActive)
+        {
+            forcefield.transform.position = transform.position;
+            forcefield.SetActive(true);
+        }
+        else
+        {
+            forcefield.SetActive(false);
+        }
+    }
+
+    IEnumerator Delay()
+    {
+        Debug.Log("call delay");
+        yield return new WaitForSeconds(2);
+        Debug.Log("Finish delay");
+        SceneManager.LoadScene("UI_Menu");
     }
 
 }
