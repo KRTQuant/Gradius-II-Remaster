@@ -85,5 +85,15 @@ public class GarunEnemy : MonoBehaviour
             gameObject.SetActive(true);
     }
 
+    private void OnBecameVisible()
+    {
+        Debug.Log("Display me");
+    }
+
+    private void OnBecameInvisible()
+    {
+        Debug.Log("Hide me");
+    }
+
 
 }

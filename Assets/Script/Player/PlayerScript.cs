@@ -132,13 +132,14 @@ public class PlayerScript : MonoBehaviour
     private void Update()
     {
         GetInput();
-        HandleCooldown();
+
         HandleForceField();
     }
 
     private void FixedUpdate()
     {
-       // HandlePause();
+        // HandlePause();
+        HandleCooldown();
     }
 
     private void GetInput()

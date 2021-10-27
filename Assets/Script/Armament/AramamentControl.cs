@@ -9,96 +9,55 @@ public class AramamentControl : MonoBehaviour
     [SerializeField] private float bulletSpeed;
     [SerializeField] private float waitTime; //wait time before disappear
     [SerializeField] private float speedMultily;
-    [SerializeField] private GameObject bulletSpawnPoint;
     [SerializeField] private enum AmmoType { SINGLE, PULSE, BEAM, TAIL, SECOND, MISSILE, SPREAD, TORPEDO, TWOWAYUP, TWOWAYDOWN }
     [SerializeField] private AmmoType currentAmmoType;
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if(currentAmmoType == AmmoType.PULSE)
-        {
-            rb.velocity = new Vector2(bulletSpeed * speedMultily * Time.deltaTime, rb.velocity.y);
+        if(currentAmmoType == AmmoType.PULSE) {
+            rb.velocity = new Vector2(bulletSpeed * Time.deltaTime, rb.velocity.y);
         }
         if (currentAmmoType == AmmoType.TAIL)
         {
             //Debug.Log("Tail: " + rb.velocity.x);
-            rb.velocity = new Vector2(-bulletSpeed * speedMultily * Time.deltaTime, rb.velocity.y);
+            rb.velocity = new Vector2(-bulletSpeed * Time.deltaTime, rb.velocity.y);
         }
         if (currentAmmoType == AmmoType.SECOND)
         {
-            rb.velocity = VectorFromAngle(45) * speedMultily * bulletSpeed * Time.deltaTime;
+            rb.velocity = VectorFromAngle(45) * bulletSpeed * Time.deltaTime;
         }
         if (currentAmmoType == AmmoType.MISSILE)
         {
-            rb.velocity = VectorFromAngle(315) * speedMultily * bulletSpeed * Time.deltaTime;
+            rb.velocity = VectorFromAngle(315) * bulletSpeed * Time.deltaTime;
         }
         if (currentAmmoType == AmmoType.SPREAD)
         {
             rb.gravityScale = 1;
-            rb.velocity = new Vector2(bulletSpeed * speedMultily * Time.deltaTime, rb.velocity.y);
+            rb.velocity = new Vector2(bulletSpeed * Time.deltaTime, rb.velocity.y);
         }
         if (currentAmmoType == AmmoType.TORPEDO)
         {
-            rb.velocity = new Vector2(rb.velocity.x, bulletSpeed * speedMultily * Time.deltaTime);
-            Debug.Log(rb.velocity);
+            rb.velocity = new Vector2(rb.velocity.x, bulletSpeed* Time.deltaTime);
         }
         if (currentAmmoType == AmmoType.TWOWAYUP)
         {
-            rb.velocity = VectorFromAngle(45) * speedMultily * bulletSpeed * Time.deltaTime;
+            rb.velocity = VectorFromAngle(45)* bulletSpeed * Time.deltaTime;
         }
         if (currentAmmoType == AmmoType.TWOWAYDOWN)
         {
-            rb.velocity = VectorFromAngle(-45) * speedMultily * bulletSpeed * Time.deltaTime;
+            rb.velocity = VectorFromAngle(-45)* bulletSpeed * Time.deltaTime;
         }
-        bulletSpawnPoint = GameObject.Find("BulletSpawnPos");
         if(currentAmmoType == AmmoType.SINGLE)
         {
-            rb.velocity = new Vector2(bulletSpeed * speedMultily * Time.deltaTime, rb.velocity.y);
+            rb.velocity = new Vector2(bulletSpeed* Time.deltaTime, rb.velocity.y);
         }
     }
 
     private void OnEnable()
     {
-        if(currentAmmoType == AmmoType.SINGLE)
-        {
-            StartCoroutine(Deactive());
-        }
         if (currentAmmoType == AmmoType.PULSE)
         {
-            StartCoroutine(Deactive());
             StartCoroutine(ScaleUp());
-        }
-        if (currentAmmoType == AmmoType.BEAM)
-        {
-            StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.TAIL)
-        {
-            StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.SECOND)
-        {
-            StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.MISSILE)
-        {
-            StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.SPREAD)
-        {
-            StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.TORPEDO)
-        {
-            StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.TWOWAYDOWN)
-        {
-            StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.TWOWAYUP)
-        {
-            StartCoroutine(Deactive());
         }
     }
 
@@ -126,11 +85,5 @@ public class AramamentControl : MonoBehaviour
     Vector2 VectorFromAngle(float theta)
     {
         return new Vector2(Mathf.Cos(theta), Mathf.Sin(theta)); // Trig is fun
-    }
-
-    IEnumerator Deactive()
-    {
-        yield return new WaitForSeconds(waitTime);
-        this.gameObject.SetActive(false);
     }
 }
