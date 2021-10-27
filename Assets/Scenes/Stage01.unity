@@ -2486,31 +2486,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d35e30e5d76164b89eb88e013d16a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listofPhase:
-  - phase: 0
-    sceneInPhase: 0
-    currentBackground: 0
-    listofScene:
-    - {fileID: 886442201}
-    - {fileID: 1317539915}
-    - {fileID: 916795345}
-    - {fileID: 1307890291}
-    - {fileID: 168474167}
-    - {fileID: 2074192082}
-    - {fileID: 6986105}
-    - {fileID: 663245091}
-    timeInScene: 0
-  - phase: 1
-    sceneInPhase: 0
-    currentBackground: 0
-    listofScene: []
-    timeInScene: 0
-  - phase: 2
-    sceneInPhase: 0
-    currentBackground: 0
-    listofScene: []
-    timeInScene: 0
-  currentType: 0
+  backgroundHierachy: {fileID: 0}
+  bgMovespeed: 0
 --- !u!4 &874658072
 Transform:
   m_ObjectHideFlags: 0
@@ -4222,7 +4199,7 @@ Transform:
   - {fileID: 202275113}
   - {fileID: 1042542037}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1579295771
 PrefabInstance:
