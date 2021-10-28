@@ -822,7 +822,7 @@ TextureImporter:
         serializedVersion: 2
         x: 627
         y: 1604
-        width: 948
+        width: 306
         height: 168
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -885,8 +885,8 @@ TextureImporter:
         serializedVersion: 2
         x: 184
         y: 1342
-        width: 1390
-        height: 206
+        width: 180
+        height: 69
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1064,6 +1064,153 @@ TextureImporter:
       bones: []
       spriteID: ea21d823862fb0300800000000000000
       internalID: 219535536196227758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienFloorsSprite_13
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1342
+        width: 591
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76248d59912e51920800000000000000
+      internalID: 2960520929582006887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienFloorsSprite_14
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1340
+        width: 257
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f6b4c4486f85640800000000000000
+      internalID: 5069072428681621276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienFloorsSprite_15
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1340
+        width: 197
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1c43244078ca850800000000000000
+      internalID: 6389630423692263848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienFloorsSprite_16
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 1340
+        width: 344
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3917399adce69a640800000000000000
+      internalID: 5091722683311419795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienFloorsSprite_17
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1342
+        width: 458
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b30cb507fe5ac20800000000000000
+      internalID: 3217240774680787775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienFloorsSprite_18
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1604
+        width: 293
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4eae6b3e9314fcd0800000000000000
+      internalID: -2525371920725135794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienFloorsSprite_19
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 1604
+        width: 349
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b7fd8ec744ca450800000000000000
+      internalID: 6101326898453773132
       vertices: []
       indices: 
       edges: []

@@ -20,6 +20,42 @@ TextureImporter:
   - first:
       213: -4199234347183270834
     second: AlienWallSprite_5
+  - first:
+      213: 8646513973246263247
+    second: AlienWallSprite_6
+  - first:
+      213: -665677660214063530
+    second: AlienWallSprite_7
+  - first:
+      213: 8819038972574508486
+    second: AlienWallSprite_8
+  - first:
+      213: -2892509896206145101
+    second: AlienWallSprite_9
+  - first:
+      213: 3764878982405290150
+    second: AlienWallSprite_10
+  - first:
+      213: -5135763172813663724
+    second: AlienWallSprite_11
+  - first:
+      213: 8607933854423383215
+    second: AlienWallSprite_12
+  - first:
+      213: 7185308914910109261
+    second: AlienWallSprite_13
+  - first:
+      213: -8527791610864306785
+    second: AlienWallSprite_14
+  - first:
+      213: -5540236725596783898
+    second: AlienWallSprite_15
+  - first:
+      213: 4023521491294248890
+    second: AlienWallSprite_16
+  - first:
+      213: 4992818616641185723
+    second: AlienWallSprite_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -145,10 +181,10 @@ TextureImporter:
       name: AlienWallSprite_1
       rect:
         serializedVersion: 2
-        x: 880
-        y: 544
-        width: 640
-        height: 669
+        x: 941
+        y: 688
+        width: 516
+        height: 525
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,7 +204,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1565
         y: 1006
-        width: 1620
+        width: 400
         height: 200
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -210,7 +246,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1584
         y: 666
-        width: 2331
+        width: 972
         height: 238
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -231,7 +267,7 @@ TextureImporter:
         serializedVersion: 2
         x: 11
         y: 50
-        width: 3964
+        width: 623
         height: 405
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -242,6 +278,258 @@ TextureImporter:
       bones: []
       spriteID: e4495871c9259b5c0800000000000000
       internalID: -4199234347183270834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWallSprite_6
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1009
+        width: 556
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf7bc0c5a69ef770800000000000000
+      internalID: 8646513973246263247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWallSprite_7
+      rect:
+        serializedVersion: 2
+        x: 2782
+        y: 1005
+        width: 403
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e0708e1b903c6f0800000000000000
+      internalID: -665677660214063530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWallSprite_8
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 665
+        width: 822
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c521a46835836a70800000000000000
+      internalID: 8819038972574508486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWallSprite_9
+      rect:
+        serializedVersion: 2
+        x: 3378
+        y: 667
+        width: 544
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9a457139dbbd7d0800000000000000
+      internalID: -2892509896206145101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWallSprite_10
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 692
+        width: 60
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8f990cc798f3430800000000000000
+      internalID: 3764878982405290150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWallSprite_11
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 547
+        width: 211
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41298e1da9a1ab8b0800000000000000
+      internalID: -5135763172813663724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWallSprite_12
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 690
+        width: 60
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facf6fadb36857770800000000000000
+      internalID: 8607933854423383215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWallSprite_13
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 547
+        width: 215
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e1aa2836857b360800000000000000
+      internalID: 7185308914910109261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWallSprite_14
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 544
+        width: 206
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9570eb46b237a980800000000000000
+      internalID: -8527791610864306785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWallSprite_15
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 49
+        width: 362
+        height: 407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eafa3f2d002d13b0800000000000000
+      internalID: -5540236725596783898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWallSprite_16
+      rect:
+        serializedVersion: 2
+        x: 3109
+        y: 50
+        width: 868
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf5eb29a7b66d730800000000000000
+      internalID: 4023521491294248890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienWallSprite_17
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 547
+        width: 634
+        height: 666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7ead8241e0a4540800000000000000
+      internalID: 4992818616641185723
       vertices: []
       indices: 
       edges: []
