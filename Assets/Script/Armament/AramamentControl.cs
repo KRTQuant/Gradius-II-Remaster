@@ -9,13 +9,25 @@ public class AramamentControl : MonoBehaviour
     [SerializeField] private float bulletSpeed;
     [SerializeField] private float waitTime; //wait time before disappear
     [SerializeField] private float speedMultily;
-    [SerializeField] private enum AmmoType { SINGLE, PULSE, BEAM, TAIL, SECOND, MISSILE, SPREAD, TORPEDO, TWOWAYUP, TWOWAYDOWN }
-    [SerializeField] private AmmoType currentAmmoType;
+    [SerializeField] public enum AmmoType { SINGLE, PULSE, BEAM, TAIL, SECOND, MISSILE, SPREAD, TORPEDO, TWOWAYUP, TWOWAYDOWN }
+    [SerializeField] public AmmoType currentAmmoType;
+
+    [SerializeField] public GameObject player;
+
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+    }
 
     private void FixedUpdate()
     {
         if(currentAmmoType == AmmoType.PULSE) {
             rb.velocity = new Vector2(bulletSpeed * Time.deltaTime, rb.velocity.y);
+        }
+        if (currentAmmoType == AmmoType.BEAM)
+        {
+            rb.velocity = new Vector2(bulletSpeed * Time.deltaTime, rb.velocity.y);
+            transform.position = new Vector3(transform.position.x, player.transform.position.y);
         }
         if (currentAmmoType == AmmoType.TAIL)
         {

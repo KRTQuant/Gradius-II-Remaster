@@ -50,7 +50,7 @@ public enum ProjectileWeapon
 public class SkillManager : MonoBehaviour
 {
     [Header("Weapon")]
-    [SerializeField] private ProjectileWeapon weapon; 
+    [SerializeField] public ProjectileWeapon weapon; 
 
     [Header("Speed")]
     [SerializeField] public int speedLevel;
@@ -63,14 +63,17 @@ public class SkillManager : MonoBehaviour
     [SerializeField] private bool isMissileActive;
 
     [Header("Double")]
-    [SerializeField] private DoubleType doubleType;
+    [SerializeField] public DoubleType doubleType;
     [SerializeField] private int doubleLevel;
     [SerializeField] private int doubleMaxLevel = 2;
 
     [Header("Laser")]
-    [SerializeField] private LaserType laserType;
+    [SerializeField] public LaserType laserType;
     [SerializeField] private int laserLevel;
     [SerializeField] private int laserMaxLevel = 2;
+    [SerializeField] public float laserBulletDelay;
+    [SerializeField] public float laserPulseDelay;
+    [SerializeField] public float laserTimer;
 
     [Header("Option")]
     [SerializeField] private int optionAmount;
@@ -83,15 +86,16 @@ public class SkillManager : MonoBehaviour
     [Header("Force Field")]
     [SerializeField] private int ffLevel;
     [SerializeField] private int ffMaxLevel = 1;
-    [SerializeField] private bool isFieldActive;
+    [SerializeField] public bool isFieldActive;
 
     [Header("Capsule")]
-    [SerializeField] private int heldCapsule;
+    [SerializeField] public int heldCapsule;
     [SerializeField] private int maxCapsule;
 
     [Header("Reference")]
     [SerializeField] private SpriteRenderer powerupFrame;
     [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private PoolManager poolManager;
 
     private void Start()
     {
@@ -103,6 +107,13 @@ public class SkillManager : MonoBehaviour
     private void FixedUpdate()
     {
         ActiveFunnelFlow();
+    }
+
+    private void Update()
+    {
+        HandleTimer();
+        GameObject forcefield = poolManager.GetPoolObject(PoolObjectType.ForceField);
+        forcefield.transform.position = gameObject.transform.position;
     }
 
     //trigger when collide with 
@@ -132,7 +143,7 @@ public class SkillManager : MonoBehaviour
     }
 
     //Increase number of capsule that player held
-    private void IncreaseCapsule()
+    public void IncreaseCapsule()
     {
         heldCapsule++;
         if (heldCapsule == 0)
@@ -211,6 +222,7 @@ public class SkillManager : MonoBehaviour
                 if (doubleLevel < doubleMaxLevel)
                 {
                     doubleLevel++;
+                    laserLevel = 0;
                     weapon = ProjectileWeapon.DOUBLE;
                 }
                 break;
@@ -219,6 +231,7 @@ public class SkillManager : MonoBehaviour
                 if (laserLevel < laserMaxLevel)
                 {
                     laserLevel++;
+                    doubleLevel = 0;
                     weapon = ProjectileWeapon.LASER;
                 }
                 break;
@@ -239,19 +252,26 @@ public class SkillManager : MonoBehaviour
                 if (ffLevel < ffMaxLevel)
                 {
                     ffLevel++;
-
+                    if (ffLevel != 0)
+                    {
+                        isFieldActive = true;
+                        ActiveForceField();
+                    }
                 }
                 break;
         }
     }
 
+    //Active when press X
     public void HandleUpgradeSkill()
     {
-        if(heldCapsule <= 0)
+        IncreaseSkillLevel((SkillBar)heldCapsule);
+        if (heldCapsule <= 0)
         {
             Debug.Log("You cannot upgrade anything");
         }
-        IncreaseSkillLevel((SkillBar)heldCapsule);
+        powerupFrame.gameObject.SetActive(false);
+        heldCapsule = 0;
     }
 
     private void ActiveFunnelFlow()
@@ -265,6 +285,47 @@ public class SkillManager : MonoBehaviour
         {
             funnelFlowTimer = funnelFlowDuration;
             isFunnelFlowActive = false;
+        }
+    }
+
+    private void HandleTimer()
+    {
+        if (laserTimer > 0)
+        {
+            laserTimer -= Time.deltaTime;
+            if (laserTimer < 0)
+                laserTimer = 0;
+        }
+
+        if (funnelFlowTimer > 0)
+        {
+            funnelFlowTimer -= Time.deltaTime;
+            if (laserTimer < 0)
+                isFunnelFlowActive = false;
+        }
+    }
+
+    private void ActiveForceField()
+    {
+        if (isFieldActive)
+        {
+            Debug.Log("Call Force Field");
+            GameObject forcefield = poolManager.GetPoolObject(PoolObjectType.ForceField);
+            forcefield.SetActive(true);
+        }
+    }
+
+    public void DisableField()
+    {
+        isFieldActive = false;
+        GameObject forcefield = poolManager.GetPoolObject(PoolObjectType.ForceField);
+        if(forcefield.activeSelf)
+        {
+            forcefield.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Disable force field was call but force field doesn't active");
         }
     }
 }
