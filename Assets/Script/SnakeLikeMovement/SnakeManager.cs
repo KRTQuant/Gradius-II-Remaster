@@ -28,10 +28,6 @@ public class SnakeManager : MonoBehaviour
 
     void SnakeMovement()
     {
-        snakeBody[0].GetComponent<Rigidbody2D>().velocity = snakeBody[0].transform.right * speed * Time.deltaTime;
-        if(Input.GetAxis("Horizontal") != 0)
-            snakeBody[0].transform.Rotate(new Vector3(0, 0, -turnSpeed * Time.deltaTime * Input.GetAxis("Horizontal")));
-
         if(snakeBody.Count > 1)
         {
             for(int i = 1; i < snakeBody.Count; i++)

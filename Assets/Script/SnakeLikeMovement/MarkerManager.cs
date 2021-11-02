@@ -25,7 +25,15 @@ public class MarkerManager : MonoBehaviour
 
     public void UpdateMarkerList()
     {
-        markerList.Add(new Marker(transform.position, transform.rotation));
+        if(Vector2.Distance(transform.position, markerList[markerList.Count-1].position) > 1)
+        {
+            markerList.Add(new Marker(transform.position, transform.rotation));
+        }
+        else
+        {
+            return;
+        }
+
     }
 
     public void ClearMarkerList()

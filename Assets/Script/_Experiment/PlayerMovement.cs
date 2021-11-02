@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        GetInput();
+        GetInput(); 
     }
 
     private void FixedUpdate()

@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
+    [SerializeField] public int live;
+    [SerializeField] private int maxLive;
+
     [SerializeField] private PoolManager poolManager;
     [SerializeField] private SkillManager skillManager;
+
+    private void Start()
+    {
+        live = maxLive;
+    }
 
     public void HandleFireGun()
     {

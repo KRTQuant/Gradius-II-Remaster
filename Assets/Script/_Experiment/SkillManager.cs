@@ -76,12 +76,14 @@ public class SkillManager : MonoBehaviour
     [SerializeField] public float laserTimer;
 
     [Header("Option")]
-    [SerializeField] private int optionAmount;
-    [SerializeField] private int optionLevel;
+    [SerializeField] private GameObject funnelPrefab;
+    [SerializeField] private int funnelAmount;
+    [SerializeField] private int funnelLevel;
     [SerializeField] private int optionMaxLevel = 5;
     [SerializeField] private bool isFunnelFlowActive;
     [SerializeField] private float funnelFlowTimer;
     [SerializeField] private float funnelFlowDuration;
+    [SerializeField] private List<GameObject> ListofOption;
 
     [Header("Force Field")]
     [SerializeField] private int ffLevel;
@@ -138,7 +140,7 @@ public class SkillManager : MonoBehaviour
         missileLevel = 0;
         doubleLevel = 0;
         laserLevel = 0;
-        optionLevel = 0;
+        funnelLevel = 0;
         ffLevel = 0;
     }
 
@@ -237,11 +239,11 @@ public class SkillManager : MonoBehaviour
                 break;
 
             case SkillBar.OPTION:
-                if (optionLevel < optionMaxLevel)
+                if (funnelLevel < optionMaxLevel)
                 {
-                    optionLevel++;
-                    optionAmount++;
-                    if(optionLevel > 4)
+                    funnelLevel++;
+                    CreateFunnel();
+                    if(funnelLevel > 4)
                     {
                         isFunnelFlowActive = true;
                     }
@@ -326,6 +328,17 @@ public class SkillManager : MonoBehaviour
         else
         {
             Debug.Log("Disable force field was call but force field doesn't active");
+        }
+    }
+
+    private void CreateFunnel()
+    {
+        if(funnelLevel > funnelAmount)
+        {
+            GameObject funnel = poolManager.GetPoolObject(PoolObjectType.Option);
+            funnel.transform.position = gameObject.transform.position;
+            funnel.SetActive(true);
+            Debug.Log("Create funnel");
         }
     }
 }
