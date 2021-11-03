@@ -15,10 +15,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float addonSpeed;
 
     [Header("Input")]
-    [SerializeField] private bool isUpArrowPressed;
-    [SerializeField] private bool isDownArrowPressed;
-    [SerializeField] private bool isLeftArrowPressed;
-    [SerializeField] private bool isRightArrowPressed;
+    [SerializeField] public bool isUpArrowPressed;
+    [SerializeField] public bool isDownArrowPressed;
+    [SerializeField] public bool isLeftArrowPressed;
+    [SerializeField] public bool isRightArrowPressed;
 
     private void Start()
     {
@@ -109,6 +109,13 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Z) || Input.GetKey(KeyCode.Z))
         {
             playerCombat.HandleFireGun();
+            if(skillManager.listofFunnel.Count > 0)
+            {
+                foreach(var funnel in skillManager.listofFunnel)
+                {
+                    funnel.GetComponent<OptionFollowScript>().HandleFireGun();
+                }
+            }
         }
 
         if(Input.GetKeyDown(KeyCode.Escape))

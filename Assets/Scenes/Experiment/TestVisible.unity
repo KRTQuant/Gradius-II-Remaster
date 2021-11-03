@@ -325,7 +325,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 807182153, guid: 0a3dc7f64d23ab34daa3b694bb9155c0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 807182154, guid: 0a3dc7f64d23ab34daa3b694bb9155c0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -454,6 +454,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4cff8a0a181dc49b70759abd741ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1900139117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 807182153, guid: 0a3dc7f64d23ab34daa3b694bb9155c0, type: 3}
+  m_PrefabInstance: {fileID: 1477786050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1900139120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900139117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecdfc6c8a8db40746aaf52f96716a4f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followTransform: {fileID: 958651296851967057}
+  frameDelay: 30
 --- !u!1 &2114779215
 GameObject:
   m_ObjectHideFlags: 0

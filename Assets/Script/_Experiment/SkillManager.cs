@@ -83,7 +83,8 @@ public class SkillManager : MonoBehaviour
     [SerializeField] private bool isFunnelFlowActive;
     [SerializeField] private float funnelFlowTimer;
     [SerializeField] private float funnelFlowDuration;
-    [SerializeField] private List<GameObject> ListofOption;
+    [SerializeField] public List<GameObject> listofFunnel;
+    [SerializeField] public GameObject FunnelPoolParent;
 
     [Header("Force Field")]
     [SerializeField] private int ffLevel;
@@ -336,7 +337,8 @@ public class SkillManager : MonoBehaviour
         if(funnelLevel > funnelAmount)
         {
             GameObject funnel = poolManager.GetPoolObject(PoolObjectType.Option);
-            funnel.transform.position = gameObject.transform.position;
+            funnel.GetComponent<OptionFollowScript>().frameDelay = funnel.GetComponent<OptionFollowScript>().frameDelay * funnelLevel;
+            listofFunnel.Add(funnel);
             funnel.SetActive(true);
             Debug.Log("Create funnel");
         }
