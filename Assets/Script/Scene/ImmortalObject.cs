@@ -9,6 +9,7 @@ public class ImmortalObject : MonoBehaviour
     [SerializeField] float skillSelectedType = 0;
     [SerializeField] float waitSec;
     [SerializeField] bool isParamsWasPass;
+    [SerializeField] private Scene Level_1;
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);

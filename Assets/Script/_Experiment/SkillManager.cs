@@ -340,7 +340,7 @@ public class SkillManager : MonoBehaviour
             funnel.GetComponent<OptionFollowScript>().frameDelay = funnel.GetComponent<OptionFollowScript>().frameDelay * funnelLevel;
             listofFunnel.Add(funnel);
             funnel.SetActive(true);
-            Debug.Log("Create funnel");
+            //Debug.Log("Create funnel");
         }
     }
 }

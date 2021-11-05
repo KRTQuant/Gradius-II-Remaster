@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1520506132525957275}
   - component: {fileID: 1520506132525957268}
   - component: {fileID: 8921084051192609408}
+  - component: {fileID: 7191620184460457772}
   m_Layer: 0
   m_Name: Missile
   m_TagString: PlayerBullet
@@ -155,7 +156,9 @@ MonoBehaviour:
   speed: 5
   waitTime: 0
   currentAmmoType: 5
+  isStop: 0
   player: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!61 &8921084051192609408
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -182,6 +185,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6325, y: 0.20333333}
   m_EdgeRadius: 0
+--- !u!95 &7191620184460457772
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6069077505982088154}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6069077505988312287
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,7 +375,9 @@ MonoBehaviour:
   speed: 5
   waitTime: 5
   currentAmmoType: 1
+  isStop: 0
   player: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &6069077506162184555
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +541,7 @@ GameObject:
   - component: {fileID: 1520506133169989019}
   - component: {fileID: 1520506133169989012}
   - component: {fileID: 8921084052334096854}
+  - component: {fileID: 6127890389215167501}
   m_Layer: 0
   m_Name: NormalBullet
   m_TagString: PlayerBullet
@@ -629,7 +654,9 @@ MonoBehaviour:
   speed: 5
   waitTime: 5
   currentAmmoType: 0
+  isStop: 0
   player: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!61 &8921084052334096854
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -656,6 +683,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.512, y: 0.532}
   m_EdgeRadius: 0
+--- !u!95 &6127890389215167501
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6069077506412340954}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6069077506435804279
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +745,7 @@ GameObject:
   - component: {fileID: 1520506133017926987}
   - component: {fileID: 1520506133017926980}
   - component: {fileID: 8921084051388719645}
+  - component: {fileID: 2090328401591729575}
   m_Layer: 0
   m_Name: Torpedo
   m_TagString: PlayerBullet
@@ -811,7 +858,9 @@ MonoBehaviour:
   speed: -5
   waitTime: 0
   currentAmmoType: 7
+  isStop: 0
   player: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!61 &8921084051388719645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -838,6 +887,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.67, y: 0.086666666}
   m_EdgeRadius: 0
+--- !u!95 &2090328401591729575
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6069077506600017418}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6069077506714153945
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +919,7 @@ GameObject:
   - component: {fileID: 1520506133941432470}
   - component: {fileID: 1520506133941432471}
   - component: {fileID: 8921084051374674063}
+  - component: {fileID: 4407741652734874416}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: PlayerBullet
@@ -963,7 +1032,9 @@ MonoBehaviour:
   speed: 5
   waitTime: 0
   currentAmmoType: 6
+  isStop: 0
   player: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!61 &8921084051374674063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -990,6 +1061,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1725, y: 0.17333333}
   m_EdgeRadius: 0
+--- !u!95 &4407741652734874416
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6069077506714153945}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6069077506838387822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1289,7 @@ GameObject:
   - component: {fileID: 1520506134138139821}
   - component: {fileID: 1520506134138139822}
   - component: {fileID: 8921084051671132764}
+  - component: {fileID: 2848972564256643027}
   m_Layer: 0
   m_Name: LaserBullet
   m_TagString: PlayerBullet
@@ -1311,7 +1402,9 @@ MonoBehaviour:
   speed: 10
   waitTime: 3
   currentAmmoType: 2
+  isStop: 0
   player: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!61 &8921084051671132764
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1338,6 +1431,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.608, y: 0.568}
   m_EdgeRadius: 0
+--- !u!95 &2848972564256643027
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6069077507594270704}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8387272530626422967
 GameObject:
   m_ObjectHideFlags: 0

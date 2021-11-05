@@ -51,14 +51,14 @@ public class PlayerCombat : MonoBehaviour
         {
             if(skillManager.laserTimer > 0)
             {
-                Debug.Log("Laser is reloading");
+                //.Log("Laser is reloading");
             }
             if(skillManager.laserTimer <= 0)
             {
                 GameObject bullet = poolManager.GetPoolObject(type);
                 if (bullet.activeSelf)
                 {
-                    Debug.Log("Reloading");
+                    //Debug.Log("Reloading");
                 }
                 if (!bullet.activeSelf)
                 {
@@ -72,14 +72,14 @@ public class PlayerCombat : MonoBehaviour
         {
             if (skillManager.laserTimer > 0)
             {
-                Debug.Log("Laser is reloading");
+                //Debug.Log("Laser is reloading");
             }
             if (skillManager.laserTimer <= 0)
             {
                 GameObject bullet = poolManager.GetPoolObject(type);
                 if (bullet.activeSelf)
                 {
-                    Debug.Log("Reloading");
+                    //Debug.Log("Reloading");
                 }
                 if (!bullet.activeSelf)
                 {
@@ -95,7 +95,7 @@ public class PlayerCombat : MonoBehaviour
             bullet.GetComponent<ArmamentControl>().currentAmmoType = ArmamentControl.AmmoType.SECOND;
             if (bullet.activeSelf)
             {
-                Debug.Log("Reloading");
+                //Debug.Log("Reloading");
             }
             if (!bullet.activeSelf)
             {
@@ -110,7 +110,7 @@ public class PlayerCombat : MonoBehaviour
             bullet.GetComponent<ArmamentControl>().currentAmmoType = ArmamentControl.AmmoType.TAIL;
             if (bullet.activeSelf)
             {
-                Debug.Log("Reloading");
+                //Debug.Log("Reloading");
             }
             if (!bullet.activeSelf)
             {
@@ -124,7 +124,7 @@ public class PlayerCombat : MonoBehaviour
             GameObject bullet = poolManager.GetPoolObject(type);
             if (bullet.activeSelf)
             {
-                Debug.Log("Reloading");
+                //Debug.Log("Reloading");
             }
             if (!bullet.activeSelf)
             {
