@@ -98,3 +98,7 @@ MonoBehaviour:
     fleet: {fileID: 0}
     isDead: 0
     listofHorde: []
+  timer: 0
+  isCallFleet1: 0
+  isCallFleet2: 0
+  isCallFleet3: 0

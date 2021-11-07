@@ -7,6 +7,8 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] public int live;
     [SerializeField] private int maxLive;
 
+    [SerializeField] public int score;
+
     [SerializeField] private PoolManager poolManager;
     [SerializeField] private SkillManager skillManager;
 
@@ -132,5 +134,10 @@ public class PlayerCombat : MonoBehaviour
                 bullet.SetActive(true);
             }
         }
+    }
+
+    public void IncreaseScore(int score)
+    {
+        this.score += score;
     }
 }

@@ -2,14 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FanEnemyScript : MonoBehaviour
+public class FanEnemyScript : UnitAbs
 {
     [Header("Reference")]
     [SerializeField] private GameObject capsule;
-
-    [Header("Health")]
-    [SerializeField] private float health;
-    [SerializeField] private float maxHealth;
+    [SerializeField] private GameObject player;
 
     [Header("Animation")]
     [SerializeField] private SpriteRenderer sprite;
@@ -74,32 +71,17 @@ public class FanEnemyScript : MonoBehaviour
                 if (transform.position == destination[(int)passedDestination].position)
                     currentStatus = enemyStatus.ARRIVED;
                 break;
-
-            //case enemyStatus.ARRIVED:
-
         }
-
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("PlayerBullet"))
         {
-            TakeDamage(collision.GetComponent<ArmamentControl>().damage);
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
             Debug.Log("Collide with bullet");
-        }
-    }
-
-    private void TakeDamage(float damage)
-    {
-        health -= damage;
-        if (health < 0)
-        {
-            Debug.Log("Spawn power up capsule");
-            this.gameObject.SetActive(false);
-            Instantiate(capsule, transform.position, transform.rotation);
-            Debug.Log("Spawn power up capsule");
+            player = GameObject.Find("Player");
+            player.GetComponent<PlayerCombat>().IncreaseScore(score);
         }
     }
 
@@ -112,5 +94,14 @@ public class FanEnemyScript : MonoBehaviour
     {
         if (sprite.isVisible)
             this.gameObject.SetActive(true);
+    }
+
+    public override void TriggerOnDeath()
+    {
+        if (health < 0)
+        {
+
+            this.gameObject.SetActive(false);
+        }
     }
 }

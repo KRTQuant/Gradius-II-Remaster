@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ImmortalObject : MonoBehaviour
 {
-    [SerializeField] PlayerScript mc_controller;
+    [SerializeField] SkillManager skillManager;
     [SerializeField] float skillSelectedType = 0;
     [SerializeField] float waitSec;
     [SerializeField] bool isParamsWasPass;
@@ -24,10 +24,10 @@ public class ImmortalObject : MonoBehaviour
 
     public void PassPowersetSelection()
     {
-        if (GameObject.Find("playerScript"))
+        if (GameObject.Find("SkillManager"))
         {
-            mc_controller = GameObject.Find("Player").GetComponent<PlayerScript>();
-            mc_controller.selectedSkillset = (PlayerScript.Skillset)skillSelectedType;
+            skillManager = GameObject.Find("Player").GetComponent<SkillManager>();
+            skillManager.SetSkillPreset((Skillset)skillSelectedType);
         }
     }
     IEnumerator HandleSkillSelected()
@@ -45,8 +45,7 @@ public class ImmortalObject : MonoBehaviour
             Debug.Log("Begin passing powerset");
             PassPowersetSelection();
             isParamsWasPass = true;
-            Debug.Log((PlayerScript.Skillset)skillSelectedType);
-            GameObject.Find("Player").GetComponent<PlayerScript>().HandleSelectSkillset((PlayerScript.Skillset)skillSelectedType);
+            Debug.Log((Skillset)skillSelectedType);
         }
     }
 }
