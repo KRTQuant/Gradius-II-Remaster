@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FanEnemyScript : UnitAbs
+public class Fan_Enemy : UnitAbs
 {
     [Header("Reference")]
-    [SerializeField] private GameObject capsule;
     [SerializeField] private GameObject player;
-
-    [Header("Animation")]
     [SerializeField] private SpriteRenderer sprite;
-    [SerializeField] private float rotateSpeed;
-    //[SerializeField] private FleetControl fleetControl;
     [SerializeField] private Rigidbody2D rb;
+
+    [Header("Rotate")]
+    [SerializeField] private float rotateSpeed;
 
     [Header("Movement")]
     [SerializeField] private float moveSpeed;
@@ -24,24 +22,37 @@ public class FanEnemyScript : UnitAbs
 
     private void Start()
     {
+        SetReference();
         SetHealth();
     }
 
-    void Update()
+    private void Update()
     {
-        ControlAnim();
+        RotateSprite();
+        CheckDeath();
         Move();
-        HandleActive();
     }
 
-    private void ControlAnim()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
+            player = GameObject.Find("Player");
+            player.GetComponent<PlayerCombat>().IncreaseScore(score);
+        }
+    }
 
+    private void RotateSprite()
+    {
+        sprite = GetComponentInChildren<SpriteRenderer>();
+        sprite.transform.Rotate(transform.forward * rotateSpeed * Time.deltaTime);
     }
 
     public void Move()
     {
-        if(currentStatus == enemyStatus.MOVE)
+        if (currentStatus == enemyStatus.MOVE)
         {
             transform.position = Vector3.MoveTowards(transform.position, destination[(int)passedDestination].position, moveSpeed * Time.deltaTime);
             if (transform.position == destination[(int)passedDestination].position)
@@ -63,7 +74,7 @@ public class FanEnemyScript : UnitAbs
             return;
         }
 
-        switch(currentStatus)
+        switch (currentStatus)
         {
             case enemyStatus.MOVE:
                 transform.position = Vector3.MoveTowards(transform.position, destination[(int)passedDestination].position, moveSpeed * Time.deltaTime);
@@ -73,34 +84,18 @@ public class FanEnemyScript : UnitAbs
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void CheckDeath()
     {
-        if(collision.CompareTag("PlayerBullet"))
+        if(health < 0)
         {
-            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
-            Debug.Log("Collide with bullet");
-            player = GameObject.Find("Player");
-            player.GetComponent<PlayerCombat>().IncreaseScore(score);
+            TriggerOnDeath();
         }
     }
 
-    public void SetHealth()
+    private void SetReference()
     {
-        //health = maxHealth;
-    }
-
-    private void HandleActive()
-    {
-        if (sprite.isVisible)
-            this.gameObject.SetActive(true);
-    }
-
-    public override void TriggerOnDeath()
-    {
-        if (health < 0)
-        {
-
-            this.gameObject.SetActive(false);
-        }
+        player = GameObject.Find("Player");
+        sprite = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
 }

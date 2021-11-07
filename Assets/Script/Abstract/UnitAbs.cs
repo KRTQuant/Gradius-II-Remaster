@@ -8,6 +8,11 @@ public class UnitAbs : MonoBehaviour
     [SerializeField] public int health;
     [SerializeField] public int maxHealth;
 
+    public void SetHealth()
+    {
+        health = maxHealth;
+    }
+
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -15,9 +20,12 @@ public class UnitAbs : MonoBehaviour
 
     public virtual void TriggerOnDeath()
     {
-        if (health < 0)
-        {
-            this.gameObject.SetActive(false);
-        }
+        this.gameObject.SetActive(false);
+    }
+
+    public virtual void OnBecameVisible()
+    {
+        Debug.Log(name + " Activated");
+        gameObject.SetActive(true);
     }
 }
