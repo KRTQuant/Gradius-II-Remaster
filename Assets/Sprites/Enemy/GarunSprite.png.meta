@@ -1,7 +1,103 @@
 fileFormatVersion: 2
 guid: 1825f6d616426864289bedcf52c89d61
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3670021536149167948
+    second: GarunSprite_0
+  - first:
+      213: 5394484576650416624
+    second: GarunSprite_1
+  - first:
+      213: -1112010729347913024
+    second: GarunSprite_2
+  - first:
+      213: 6239045964609584932
+    second: GarunSprite_3
+  - first:
+      213: -3612536927381854067
+    second: GarunSprite_4
+  - first:
+      213: -3298792841070747847
+    second: GarunSprite_5
+  - first:
+      213: 9060346478778950556
+    second: GarunSprite_6
+  - first:
+      213: -5956768226326417545
+    second: GarunSprite_7
+  - first:
+      213: -8791024316350603737
+    second: GarunSprite_8
+  - first:
+      213: 7493313865062973544
+    second: GarunSprite_9
+  - first:
+      213: 982805294257955585
+    second: GarunSprite_10
+  - first:
+      213: 6091778500653839694
+    second: GarunSprite_11
+  - first:
+      213: 4020558650869796519
+    second: GarunSprite_12
+  - first:
+      213: 475933041454840647
+    second: GarunSprite_13
+  - first:
+      213: -3746555687483906227
+    second: GarunSprite_14
+  - first:
+      213: -1759256392999311043
+    second: GarunSprite_15
+  - first:
+      213: -4134063622266060053
+    second: GarunSprite_16
+  - first:
+      213: 5983106920410349709
+    second: GarunSprite_17
+  - first:
+      213: -711432460116317357
+    second: GarunSprite_18
+  - first:
+      213: 949379991835505124
+    second: GarunSprite_19
+  - first:
+      213: 3323185936279221861
+    second: GarunSprite_20
+  - first:
+      213: 7723546362350860922
+    second: GarunSprite_21
+  - first:
+      213: 4924814884448513052
+    second: GarunSprite_22
+  - first:
+      213: -6819511426117329338
+    second: GarunSprite_23
+  - first:
+      213: 4709716016441708445
+    second: GarunSprite_24
+  - first:
+      213: 1643649193844238140
+    second: GarunSprite_25
+  - first:
+      213: 8317491157204102984
+    second: GarunSprite_26
+  - first:
+      213: -3661032357206917977
+    second: GarunSprite_27
+  - first:
+      213: -1804588835325943829
+    second: GarunSprite_28
+  - first:
+      213: 5973761237217834958
+    second: GarunSprite_29
+  - first:
+      213: -9162699677552195905
+    second: GarunSprite_30
+  - first:
+      213: -5640636610015422976
+    second: GarunSprite_31
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +137,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 350
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -65,7 +161,31 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -77,7 +197,679 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GarunSprite_0
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 757
+        width: 311
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0abc38bd6711dc0800000000000000
+      internalID: -3670021536149167948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_1
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 726
+        width: 318
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f15299242f0dda40800000000000000
+      internalID: 5394484576650416624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 704
+        width: 320
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca6bc222285190f0800000000000000
+      internalID: -1112010729347913024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 681
+        width: 319
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f73e9bf3b859650800000000000000
+      internalID: 6239045964609584932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 671
+        width: 318
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d886c69fdc0bdddc0800000000000000
+      internalID: -3612536927381854067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_5
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 681
+        width: 320
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f506883655832d0800000000000000
+      internalID: -3298792841070747847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_6
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 700
+        width: 320
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93a4916e11dcbd70800000000000000
+      internalID: 9060346478778950556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_7
+      rect:
+        serializedVersion: 2
+        x: 3005
+        y: 728
+        width: 318
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fea74cbde455da0800000000000000
+      internalID: -5956768226326417545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_8
+      rect:
+        serializedVersion: 2
+        x: 3417
+        y: 747
+        width: 311
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ed91c06f1000680800000000000000
+      internalID: -8791024316350603737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_9
+      rect:
+        serializedVersion: 2
+        x: 3801
+        y: 709
+        width: 318
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860869d42499df760800000000000000
+      internalID: 7493313865062973544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_10
+      rect:
+        serializedVersion: 2
+        x: 4190
+        y: 704
+        width: 319
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1036e9f3530a3ad00800000000000000
+      internalID: 982805294257955585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_11
+      rect:
+        serializedVersion: 2
+        x: 4570
+        y: 681
+        width: 320
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4575dd45485a8450800000000000000
+      internalID: 6091778500653839694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_12
+      rect:
+        serializedVersion: 2
+        x: 4957
+        y: 671
+        width: 318
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aec7b78ac4ebc730800000000000000
+      internalID: 4020558650869796519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_13
+      rect:
+        serializedVersion: 2
+        x: 5329
+        y: 681
+        width: 319
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b79c0649ada9600800000000000000
+      internalID: 475933041454840647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_14
+      rect:
+        serializedVersion: 2
+        x: 5753
+        y: 700
+        width: 320
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d476d4cc37f810cc0800000000000000
+      internalID: -3746555687483906227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_15
+      rect:
+        serializedVersion: 2
+        x: 6166
+        y: 728
+        width: 318
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39e07aa1add597e0800000000000000
+      internalID: -1759256392999311043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_16
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 240
+        width: 311
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be287fbe90bd0a6c0800000000000000
+      internalID: -4134063622266060053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_17
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 209
+        width: 318
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d808d345b04480350800000000000000
+      internalID: 5983106920410349709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_18
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 187
+        width: 320
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ba51562fb7026f0800000000000000
+      internalID: -711432460116317357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_19
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 164
+        width: 319
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1f7329210ec2d00800000000000000
+      internalID: 949379991835505124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_20
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 154
+        width: 319
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5663f7680045e1e20800000000000000
+      internalID: 3323185936279221861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_21
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 164
+        width: 320
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7afe26de7c8f2b60800000000000000
+      internalID: 7723546362350860922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_22
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 183
+        width: 320
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c2c1c6b05785440800000000000000
+      internalID: 4924814884448513052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_23
+      rect:
+        serializedVersion: 2
+        x: 3005
+        y: 211
+        width: 318
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e1f804d7a3c51a0800000000000000
+      internalID: -6819511426117329338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_24
+      rect:
+        serializedVersion: 2
+        x: 3417
+        y: 230
+        width: 311
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fc9f883c54c5140800000000000000
+      internalID: 4709716016441708445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_25
+      rect:
+        serializedVersion: 2
+        x: 3801
+        y: 192
+        width: 318
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37617ebb3a6fc610800000000000000
+      internalID: 1643649193844238140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_26
+      rect:
+        serializedVersion: 2
+        x: 4190
+        y: 187
+        width: 319
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f6a97b32aad6370800000000000000
+      internalID: 8317491157204102984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_27
+      rect:
+        serializedVersion: 2
+        x: 4570
+        y: 164
+        width: 320
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac7875d776613dc0800000000000000
+      internalID: -3661032357206917977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_28
+      rect:
+        serializedVersion: 2
+        x: 4957
+        y: 154
+        width: 319
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: befd2c0f300d4f6e0800000000000000
+      internalID: -1804588835325943829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_29
+      rect:
+        serializedVersion: 2
+        x: 5329
+        y: 164
+        width: 320
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7fd55e13017e250800000000000000
+      internalID: 5973761237217834958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_30
+      rect:
+        serializedVersion: 2
+        x: 5753
+        y: 183
+        width: 320
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb64ae7703d87d080800000000000000
+      internalID: -9162699677552195905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GarunSprite_31
+      rect:
+        serializedVersion: 2
+        x: 6166
+        y: 211
+        width: 318
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00697f873ee68b1b0800000000000000
+      internalID: -5640636610015422976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
