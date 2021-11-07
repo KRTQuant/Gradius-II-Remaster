@@ -1,46 +1,58 @@
 fileFormatVersion: 2
-guid: 2d02f1b8986cb2749b8a613c3eeb9e2f
+guid: ce119f159ab4b7443a8fa4c6142fe4b1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1650982504817406821
-    second: HatchSprite_0
+      213: 4331948526653587079
+    second: Dee01NormalSprite_0
   - first:
-      213: 4870606747616538838
-    second: HatchSprite_1
+      213: -2253496461787480790
+    second: Dee01NormalSprite_1
   - first:
-      213: 8446230381309588455
-    second: HatchSprite_2
+      213: 261667339566509983
+    second: Dee01NormalSprite_2
   - first:
-      213: 1612266295153282493
-    second: HatchSprite_3
+      213: -1133073135174266084
+    second: Dee01NormalSprite_3
   - first:
-      213: -4811011992637691170
-    second: HatchSprite_4
+      213: -6598511017368906029
+    second: Dee01NormalSprite_4
   - first:
-      213: -7555776214695162744
-    second: HatchSprite_5
+      213: 6201734554730943990
+    second: Dee01NormalSprite_5
   - first:
-      213: 5708157865065548933
-    second: HatchSprite_6
+      213: 8404303453660341327
+    second: Dee01NormalSprite_6
   - first:
-      213: 2009208153953872800
-    second: HatchSprite_7
+      213: 2048681403441953440
+    second: Dee01NormalSprite_7
   - first:
-      213: -9018554764238792671
-    second: HatchSprite_8
+      213: 7402241707522919732
+    second: Dee01NormalSprite_8
   - first:
-      213: -1607326000368968406
-    second: HatchSprite_9
+      213: 1982436596324784824
+    second: Dee01NormalSprite_9
   - first:
-      213: -8150736882829037170
-    second: HatchSprite_10
+      213: 2489671521598202465
+    second: Dee01NormalSprite_10
   - first:
-      213: 1414622785756343062
-    second: HatchSprite_11
+      213: 163681849677614034
+    second: Dee01NormalSprite_11
   - first:
-      213: -8399802660725106525
-    second: HatchSprite_12
+      213: -5680355946449345311
+    second: Dee01NormalSprite_12
+  - first:
+      213: 5474583894283429248
+    second: Dee01NormalSprite_13
+  - first:
+      213: -8899925761301091065
+    second: Dee01NormalSprite_14
+  - first:
+      213: 8120535859565377487
+    second: Dee01NormalSprite_15
+  - first:
+      213: -1515150285443931664
+    second: Dee01NormalSprite_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,7 +154,112 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HatchSprite_0
+      name: Dee01NormalSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78eb67cbb3c2e1c30800000000000000
+      internalID: 4331948526653587079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dee01NormalSprite_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2dbe8458e8f9b0e0800000000000000
+      internalID: -2253496461787480790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dee01NormalSprite_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9fee281f01a1a300800000000000000
+      internalID: 261667339566509983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dee01NormalSprite_3
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c135661acf38640f0800000000000000
+      internalID: -1133073135174266084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dee01NormalSprite_4
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6993ba0316d64a0800000000000000
+      internalID: -6598511017368906029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dee01NormalSprite_5
       rect:
         serializedVersion: 2
         x: 0
@@ -156,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9c49fdb8288619e0800000000000000
-      internalID: -1650982504817406821
+      spriteID: 6f5d00628bcf01650800000000000000
+      internalID: 6201734554730943990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatchSprite_1
+      name: Dee01NormalSprite_6
       rect:
         serializedVersion: 2
         x: 1000
@@ -177,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d0fd48080fd79340800000000000000
-      internalID: 4870606747616538838
+      spriteID: f446304967512a470800000000000000
+      internalID: 8404303453660341327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatchSprite_2
+      name: Dee01NormalSprite_7
       rect:
         serializedVersion: 2
         x: 2000
@@ -198,14 +315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e3f11128c9073570800000000000000
-      internalID: 8446230381309588455
+      spriteID: 0aa3b1ec1e06e6c10800000000000000
+      internalID: 2048681403441953440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatchSprite_3
+      name: Dee01NormalSprite_8
       rect:
         serializedVersion: 2
         x: 3000
@@ -219,14 +336,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbd42fd37abef5610800000000000000
-      internalID: 1612266295153282493
+      spriteID: 43d0c7e3d9b0ab660800000000000000
+      internalID: 7402241707522919732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatchSprite_4
+      name: Dee01NormalSprite_9
       rect:
         serializedVersion: 2
         x: 4000
@@ -240,14 +357,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edaafa0251adb3db0800000000000000
-      internalID: -4811011992637691170
+      spriteID: 8ba5ca9b497038b10800000000000000
+      internalID: 1982436596324784824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatchSprite_5
+      name: Dee01NormalSprite_10
       rect:
         serializedVersion: 2
         x: 0
@@ -261,14 +378,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88ccfb0a09d742790800000000000000
-      internalID: -7555776214695162744
+      spriteID: 162644cde071d8220800000000000000
+      internalID: 2489671521598202465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatchSprite_6
+      name: Dee01NormalSprite_11
       rect:
         serializedVersion: 2
         x: 1000
@@ -282,14 +399,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58c851dc553773f40800000000000000
-      internalID: 5708157865065548933
+      spriteID: 2db863a66c3854200800000000000000
+      internalID: 163681849677614034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatchSprite_7
+      name: Dee01NormalSprite_12
       rect:
         serializedVersion: 2
         x: 2000
@@ -303,14 +420,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ab2d38bb2422eb10800000000000000
-      internalID: 2009208153953872800
+      spriteID: 1e4eb1ecc525b21b0800000000000000
+      internalID: -5680355946449345311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatchSprite_8
+      name: Dee01NormalSprite_13
       rect:
         serializedVersion: 2
         x: 3000
@@ -324,14 +441,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128d32a6938a7d280800000000000000
-      internalID: -9018554764238792671
+      spriteID: 085a6d7db01a9fb40800000000000000
+      internalID: 5474583894283429248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatchSprite_9
+      name: Dee01NormalSprite_14
       rect:
         serializedVersion: 2
         x: 4000
@@ -345,14 +462,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2d12c5c481a1b9e0800000000000000
-      internalID: -1607326000368968406
+      spriteID: 70dec468cac1d7480800000000000000
+      internalID: -8899925761301091065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatchSprite_10
+      name: Dee01NormalSprite_15
       rect:
         serializedVersion: 2
         x: 0
@@ -366,14 +483,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e81fc415df3c2ee80800000000000000
-      internalID: -8150736882829037170
+      spriteID: fc7373ff650f1b070800000000000000
+      internalID: 8120535859565377487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatchSprite_11
+      name: Dee01NormalSprite_16
       rect:
         serializedVersion: 2
         x: 1000
@@ -387,29 +504,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61b2e2cbdefb1a310800000000000000
-      internalID: 1414622785756343062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HatchSprite_12
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a85910fbf7ed6b80800000000000000
-      internalID: -8399802660725106525
+      spriteID: 0f168cec7da19fae0800000000000000
+      internalID: -1515150285443931664
       vertices: []
       indices: 
       edges: []
