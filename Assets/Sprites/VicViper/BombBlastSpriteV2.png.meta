@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 7eef425d013dcec4da93885beb0b21c4
+guid: bed6e165a04cdc24cad2b865724751da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1137218923782602090
-    second: BombBlastSprites_0
+      213: 7259874254480777794
+    second: BombBlastSpriteV2_0
   - first:
-      213: 4594155265554341405
-    second: BombBlastSprites_1
+      213: 2701165284610878881
+    second: BombBlastSpriteV2_1
   - first:
-      213: 1076954187719605169
-    second: BombBlastSprites_2
+      213: 4236973432727213792
+    second: BombBlastSpriteV2_2
   - first:
-      213: -5567844693937191454
-    second: BombBlastSprites_3
+      213: 1017695732165843913
+    second: BombBlastSpriteV2_3
   - first:
-      213: 4374409807857693355
-    second: BombBlastSprites_4
+      213: -5034832130220030581
+    second: BombBlastSpriteV2_4
   - first:
-      213: -5906467937361407722
-    second: BombBlastSprites_5
+      213: -7131774853642961247
+    second: BombBlastSpriteV2_5
   - first:
-      213: -2920497615760732571
-    second: BombBlastSprites_6
+      213: 1297575872949124841
+    second: BombBlastSpriteV2_6
   - first:
-      213: -5095705666432521720
-    second: BombBlastSprites_7
+      213: -6789200636260060108
+    second: BombBlastSpriteV2_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -70,7 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 650
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -89,7 +89,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -101,7 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -113,7 +113,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -127,7 +127,91 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BombBlastSprites_0
+      name: BombBlastSpriteV2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242a4548b2140c460800000000000000
+      internalID: 7259874254480777794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombBlastSpriteV2_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad29d4d3877c7520800000000000000
+      internalID: 2701165284610878881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombBlastSpriteV2_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6197c73e0ccca30800000000000000
+      internalID: 4236973432727213792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombBlastSpriteV2_3
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb1d2d50e49f1e00800000000000000
+      internalID: 1017695732165843913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombBlastSpriteV2_4
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6df9eff59638cf00800000000000000
-      internalID: 1137218923782602090
+      spriteID: b85038e6adea02ab0800000000000000
+      internalID: -5034832130220030581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BombBlastSprites_1
+      name: BombBlastSpriteV2_5
       rect:
         serializedVersion: 2
         x: 1000
@@ -162,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1e5b568fd7b1cf30800000000000000
-      internalID: 4594155265554341405
+      spriteID: 1ae3c8e6e88d60d90800000000000000
+      internalID: -7131774853642961247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BombBlastSprites_2
+      name: BombBlastSpriteV2_6
       rect:
         serializedVersion: 2
         x: 2000
@@ -183,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bb7566b02c12fe00800000000000000
-      internalID: 1076954187719605169
+      spriteID: 9eeff30b16ae10210800000000000000
+      internalID: 1297575872949124841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BombBlastSprites_3
+      name: BombBlastSpriteV2_7
       rect:
         serializedVersion: 2
         x: 3000
@@ -204,92 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e5845520ca0bb2b0800000000000000
-      internalID: -5567844693937191454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BombBlastSprites_4
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba2b75b2b8605bc30800000000000000
-      internalID: 4374409807857693355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BombBlastSprites_5
-      rect:
-        serializedVersion: 2
-        x: 5000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 611d65c64b2080ea0800000000000000
-      internalID: -5906467937361407722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BombBlastSprites_6
-      rect:
-        serializedVersion: 2
-        x: 6000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56ec43554ee4877d0800000000000000
-      internalID: -2920497615760732571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BombBlastSprites_7
-      rect:
-        serializedVersion: 2
-        x: 7000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80a2850d1ba6849b0800000000000000
-      internalID: -5095705666432521720
+      spriteID: 434fcd6fdf9e7c1a0800000000000000
+      internalID: -6789200636260060108
       vertices: []
       indices: 
       edges: []
