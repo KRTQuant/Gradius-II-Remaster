@@ -1,0 +1,840 @@
+fileFormatVersion: 2
+guid: fdf028384059a6d41bd28589cade0779
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6867185737506367456
+    second: 2_WaySprite_0
+  - first:
+      213: -8549735833653509830
+    second: 2_WaySprite_1
+  - first:
+      213: -4073871790461050753
+    second: 2_WaySprite_2
+  - first:
+      213: -7548733227532158815
+    second: 2_WaySprite_3
+  - first:
+      213: -5413676242457388343
+    second: 2_WaySprite_4
+  - first:
+      213: 188424916885293338
+    second: 2_WaySprite_5
+  - first:
+      213: 8505574843260129474
+    second: 2_WaySprite_6
+  - first:
+      213: -8397762555653241922
+    second: 2_WaySprite_7
+  - first:
+      213: -6803595727143853639
+    second: 2_WaySprite_8
+  - first:
+      213: 7725861554996134662
+    second: 2_WaySprite_9
+  - first:
+      213: 8219002570839015923
+    second: 2_WaySprite_10
+  - first:
+      213: 2574638424604937202
+    second: 2_WaySprite_11
+  - first:
+      213: 6281441296051195651
+    second: 2_WaySprite_12
+  - first:
+      213: -6725449410399905443
+    second: 2_WaySprite_13
+  - first:
+      213: 265238342966088170
+    second: 2_WaySprite_14
+  - first:
+      213: 6292956589575016956
+    second: 2_WaySprite_15
+  - first:
+      213: -859579735528785343
+    second: 2_WaySprite_16
+  - first:
+      213: -1191454573776472378
+    second: 2_WaySprite_17
+  - first:
+      213: 8114975011659692448
+    second: 2_WaySprite_18
+  - first:
+      213: 8461079689506555607
+    second: 2_WaySprite_19
+  - first:
+      213: -4199157632337508940
+    second: 2_WaySprite_20
+  - first:
+      213: -11155632217169514
+    second: 2_WaySprite_21
+  - first:
+      213: -5092967091602141457
+    second: 2_WaySprite_22
+  - first:
+      213: 5037866698303120023
+    second: 2_WaySprite_23
+  - first:
+      213: 4929734977125044085
+    second: 2_WaySprite_24
+  - first:
+      213: 1468713067651355315
+    second: 2_WaySprite_25
+  - first:
+      213: -106105407063027961
+    second: 2_WaySprite_26
+  - first:
+      213: 2370209135020873885
+    second: 2_WaySprite_27
+  - first:
+      213: -7200336851008083523
+    second: 2_WaySprite_28
+  - first:
+      213: 3520225273374847512
+    second: 2_WaySprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2_WaySprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028dd45a4fad2b0a0800000000000000
+      internalID: -6867185737506367456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3187a7ce8c395980800000000000000
+      internalID: -8549735833653509830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70a51dd033b677c0800000000000000
+      internalID: -4073871790461050753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8f1ccdf138d3790800000000000000
+      internalID: -7548733227532158815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca1b5fe322ced4b0800000000000000
+      internalID: -5413676242457388343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19c7cda67b6d9200800000000000000
+      internalID: 188424916885293338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0d407614fd90670800000000000000
+      internalID: 8505574843260129474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3463ae277257b80800000000000000
+      internalID: -8397762555653241922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1a930bbb5c491a0800000000000000
+      internalID: -6803595727143853639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6034461a626c73b60800000000000000
+      internalID: 7725861554996134662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1c1e2ca43cf0270800000000000000
+      internalID: 8219002570839015923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb06a39104fab320800000000000000
+      internalID: 2574638424604937202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fc99804992c2750800000000000000
+      internalID: 6281441296051195651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59d04ae4676aa2a0800000000000000
+      internalID: -6725449410399905443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae19e4d1ed05ea300800000000000000
+      internalID: 265238342966088170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1929c3da2155750800000000000000
+      internalID: 6292956589575016956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14abea7e8c82214f0800000000000000
+      internalID: -859579735528785343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6f904b06a177fe0800000000000000
+      internalID: -1191454573776472378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9b52337ce2e9070800000000000000
+      internalID: 8114975011659692448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d68f4d162bcb6570800000000000000
+      internalID: 8461079689506555607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b507a8a16899b5c0800000000000000
+      internalID: -4199157632337508940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6916378f20e58dff0800000000000000
+      internalID: -11155632217169514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feecc44f9652259b0800000000000000
+      internalID: -5092967091602141457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_23
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792a02202191ae540800000000000000
+      internalID: 5037866698303120023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f4b54c7dfe96440800000000000000
+      internalID: 4929734977125044085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b25552e0cae16410800000000000000
+      internalID: 1468713067651355315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f8247c1b9078ef0800000000000000
+      internalID: -106105407063027961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_27
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d981e4086aca4e020800000000000000
+      internalID: 2370209135020873885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_28
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9228478c3431c90800000000000000
+      internalID: -7200336851008083523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_WaySprite_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8123cd43c3a5ad030800000000000000
+      internalID: 3520225273374847512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

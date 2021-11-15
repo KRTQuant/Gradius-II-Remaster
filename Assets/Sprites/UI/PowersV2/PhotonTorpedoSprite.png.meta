@@ -1,0 +1,1080 @@
+fileFormatVersion: 2
+guid: 3a00158f8fe0c1d4a9322f3a1e9b5ece
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3772961633328317808
+    second: PhotonTorpedoSprite_0
+  - first:
+      213: 3374469684245614978
+    second: PhotonTorpedoSprite_1
+  - first:
+      213: -2292852197261993567
+    second: PhotonTorpedoSprite_2
+  - first:
+      213: -6102180797988955452
+    second: PhotonTorpedoSprite_3
+  - first:
+      213: 8693083602299919564
+    second: PhotonTorpedoSprite_4
+  - first:
+      213: -6560005389750686824
+    second: PhotonTorpedoSprite_5
+  - first:
+      213: -6216041273235885537
+    second: PhotonTorpedoSprite_6
+  - first:
+      213: -2073177270585127636
+    second: PhotonTorpedoSprite_7
+  - first:
+      213: -6905715161350040303
+    second: PhotonTorpedoSprite_8
+  - first:
+      213: 556978330694414262
+    second: PhotonTorpedoSprite_9
+  - first:
+      213: 5556679408939498461
+    second: PhotonTorpedoSprite_10
+  - first:
+      213: -6629654392205416618
+    second: PhotonTorpedoSprite_11
+  - first:
+      213: -9124963484324890544
+    second: PhotonTorpedoSprite_12
+  - first:
+      213: -5689650728128298132
+    second: PhotonTorpedoSprite_13
+  - first:
+      213: 6001616545515557387
+    second: PhotonTorpedoSprite_14
+  - first:
+      213: 6783449982150048894
+    second: PhotonTorpedoSprite_15
+  - first:
+      213: -8699450145286949236
+    second: PhotonTorpedoSprite_16
+  - first:
+      213: -6631398711911642472
+    second: PhotonTorpedoSprite_17
+  - first:
+      213: -8184944185306607108
+    second: PhotonTorpedoSprite_18
+  - first:
+      213: -7494584877039944619
+    second: PhotonTorpedoSprite_19
+  - first:
+      213: 8020448288729721421
+    second: PhotonTorpedoSprite_20
+  - first:
+      213: 5179885414025288502
+    second: PhotonTorpedoSprite_21
+  - first:
+      213: 2507137255112136925
+    second: PhotonTorpedoSprite_22
+  - first:
+      213: -1667806517169729427
+    second: PhotonTorpedoSprite_23
+  - first:
+      213: -7264639426557319617
+    second: PhotonTorpedoSprite_24
+  - first:
+      213: -1107800274000754982
+    second: PhotonTorpedoSprite_25
+  - first:
+      213: -7297069658676276633
+    second: PhotonTorpedoSprite_26
+  - first:
+      213: 5297627444003925517
+    second: PhotonTorpedoSprite_27
+  - first:
+      213: -8477356895800978561
+    second: PhotonTorpedoSprite_28
+  - first:
+      213: 604330234004793909
+    second: PhotonTorpedoSprite_29
+  - first:
+      213: 6465852858235492041
+    second: PhotonTorpedoSprite_30
+  - first:
+      213: -6115922206066892327
+    second: PhotonTorpedoSprite_31
+  - first:
+      213: -8773471831335442353
+    second: PhotonTorpedoSprite_32
+  - first:
+      213: -690423527379042385
+    second: PhotonTorpedoSprite_33
+  - first:
+      213: -2003646743373354934
+    second: PhotonTorpedoSprite_34
+  - first:
+      213: 1034157500318869224
+    second: PhotonTorpedoSprite_35
+  - first:
+      213: 299476582772234385
+    second: PhotonTorpedoSprite_36
+  - first:
+      213: -893525839037510272
+    second: PhotonTorpedoSprite_37
+  - first:
+      213: -3442017947043796902
+    second: PhotonTorpedoSprite_38
+  - first:
+      213: -2878931716236497569
+    second: PhotonTorpedoSprite_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07546b19d904c5430800000000000000
+      internalID: 3772961633328317808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281d8c29c4684de20800000000000000
+      internalID: 3374469684245614978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a999bb13172e20e0800000000000000
+      internalID: -2292852197261993567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca98ac15e2b05ba0800000000000000
+      internalID: -6102180797988955452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc1cd57a7904a870800000000000000
+      internalID: 8693083602299919564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b234bbadd26f4a0800000000000000
+      internalID: -6560005389750686824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_6
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12bb9f556f2cb9a0800000000000000
+      internalID: -6216041273235885537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d0c5ea1489a33e0800000000000000
+      internalID: -2073177270585127636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11593b716a8f920a0800000000000000
+      internalID: -6905715161350040303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf61ac37d8cab700800000000000000
+      internalID: 556978330694414262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbf09c5b7a4d1d40800000000000000
+      internalID: 5556679408939498461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657ecf8a47cbef3a0800000000000000
+      internalID: -6629654392205416618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_12
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0587760ae0e9d5180800000000000000
+      internalID: -9124963484324890544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_13
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63ceddcecc4a01b0800000000000000
+      internalID: -5689650728128298132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02df8143760a4350800000000000000
+      internalID: 6001616545515557387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cfea981d7a32e50800000000000000
+      internalID: 6783449982150048894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8673fc3f28554780800000000000000
+      internalID: -8699450145286949236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_17
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a0684910a88f3a0800000000000000
+      internalID: -6631398711911642472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_18
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1966011ac396e80800000000000000
+      internalID: -8184944185306607108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cf40923c2edf790800000000000000
+      internalID: -7494584877039944619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_20
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4aef15793b5e4f60800000000000000
+      internalID: 8020448288729721421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b54300756a2e740800000000000000
+      internalID: 5179885414025288502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd85b16dc042bc220800000000000000
+      internalID: 2507137255112136925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_23
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60540e1fc2cad8e0800000000000000
+      internalID: -1667806517169729427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_24
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36e0c66ee0de2b90800000000000000
+      internalID: -7264639426557319617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6ca1a258d40a0f0800000000000000
+      internalID: -1107800274000754982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_26
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762d1559ec99bba90800000000000000
+      internalID: -7297069658676276633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_27
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ee630a714f48940800000000000000
+      internalID: 5297627444003925517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73139771d06a5a80800000000000000
+      internalID: -8477356895800978561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_29
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a62ec5523036800800000000000000
+      internalID: 604330234004793909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_30
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c61211cae25bb950800000000000000
+      internalID: 6465852858235492041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_31
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1a5793821ef1ba0800000000000000
+      internalID: -6115922206066892327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_32
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48ea5e6add5e3680800000000000000
+      internalID: -8773471831335442353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_33
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faffff9b57f1b66f0800000000000000
+      internalID: -690423527379042385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_34
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48ecd517ed9134e0800000000000000
+      internalID: -2003646743373354934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6ef4074c01a5e00800000000000000
+      internalID: 1034157500318869224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_36
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198dfa68d54f72400800000000000000
+      internalID: 299476582772234385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_37
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d4986cbfe8993f0800000000000000
+      internalID: -893525839037510272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_38
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a586febe9ee7b30d0800000000000000
+      internalID: -3442017947043796902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PhotonTorpedoSprite_39
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d2e197bdafb08d0800000000000000
+      internalID: -2878931716236497569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

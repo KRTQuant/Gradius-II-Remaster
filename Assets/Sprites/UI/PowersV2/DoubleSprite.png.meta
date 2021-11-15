@@ -1,0 +1,840 @@
+fileFormatVersion: 2
+guid: ac38448a16b3f0d4abda724e77de4b8d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5813090401495248176
+    second: DoubleSprite_0
+  - first:
+      213: 1367342917073401240
+    second: DoubleSprite_1
+  - first:
+      213: 6557012397687244326
+    second: DoubleSprite_2
+  - first:
+      213: 2918397926768008963
+    second: DoubleSprite_3
+  - first:
+      213: -3275123737722359306
+    second: DoubleSprite_4
+  - first:
+      213: -1338510525320326608
+    second: DoubleSprite_5
+  - first:
+      213: -4685718602020276744
+    second: DoubleSprite_6
+  - first:
+      213: -1292202066561514921
+    second: DoubleSprite_7
+  - first:
+      213: 888412833367809101
+    second: DoubleSprite_8
+  - first:
+      213: -6714702631143794856
+    second: DoubleSprite_9
+  - first:
+      213: -594195373918426941
+    second: DoubleSprite_10
+  - first:
+      213: -1225226485137431172
+    second: DoubleSprite_11
+  - first:
+      213: -2514683073414915105
+    second: DoubleSprite_12
+  - first:
+      213: 7051941260506611690
+    second: DoubleSprite_13
+  - first:
+      213: -218285324835185419
+    second: DoubleSprite_14
+  - first:
+      213: 2793632619686228993
+    second: DoubleSprite_15
+  - first:
+      213: -3315324026399482617
+    second: DoubleSprite_16
+  - first:
+      213: -8482938697265834654
+    second: DoubleSprite_17
+  - first:
+      213: -1784232148872826197
+    second: DoubleSprite_18
+  - first:
+      213: -5275174398076866869
+    second: DoubleSprite_19
+  - first:
+      213: -4631079579176620945
+    second: DoubleSprite_20
+  - first:
+      213: -1819857039095460313
+    second: DoubleSprite_21
+  - first:
+      213: 3609783472359566316
+    second: DoubleSprite_22
+  - first:
+      213: -2959775505589369940
+    second: DoubleSprite_23
+  - first:
+      213: 4325715002854641417
+    second: DoubleSprite_24
+  - first:
+      213: -8943475845377288012
+    second: DoubleSprite_25
+  - first:
+      213: -6236522113624167548
+    second: DoubleSprite_26
+  - first:
+      213: 1550989396190197281
+    second: DoubleSprite_27
+  - first:
+      213: -8286680805451038703
+    second: DoubleSprite_28
+  - first:
+      213: -8972162310301506719
+    second: DoubleSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DoubleSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d294a33411c35fa0800000000000000
+      internalID: -5813090401495248176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8957e4a7327c9f210800000000000000
+      internalID: 1367342917073401240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6260bfff8003ffa50800000000000000
+      internalID: 6557012397687244326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f5e3ab37b308820800000000000000
+      internalID: 2918397926768008963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1fb99105c6c82d0800000000000000
+      internalID: -3275123737722359306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032192ad4c7ac6de0800000000000000
+      internalID: -1338510525320326608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f53429e1cbf8feb0800000000000000
+      internalID: -4685718602020276744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752439c111d211ee0800000000000000
+      internalID: -1292202066561514921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c59c2d3c6445c00800000000000000
+      internalID: 888412833367809101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8571b42788590d2a0800000000000000
+      internalID: -6714702631143794856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c86962a47ef0c7f0800000000000000
+      internalID: -594195373918426941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75abf7d00f1ffee0800000000000000
+      internalID: -1225226485137431172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb9a6e611d0a1dd0800000000000000
+      internalID: -2514683073414915105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefba61b6378dd160800000000000000
+      internalID: 7051941260506611690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc948157ae78fcf0800000000000000
+      internalID: -218285324835185419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1047759f01af4c620800000000000000
+      internalID: 2793632619686228993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d14230d5a9df1d0800000000000000
+      internalID: -3315324026399482617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2651e0a033c864a80800000000000000
+      internalID: -8482938697265834654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba27a9950522d37e0800000000000000
+      internalID: -1784232148872826197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcea46285d0dac6b0800000000000000
+      internalID: -5275174398076866869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6cac94c8a91bbfb0800000000000000
+      internalID: -4631079579176620945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e88ba3aa19eb6e0800000000000000
+      internalID: -1819857039095460313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb611251f6881230800000000000000
+      internalID: 3609783472359566316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_23
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca38176fbd3cce6d0800000000000000
+      internalID: -2959775505589369940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f8ab060e6080c30800000000000000
+      internalID: 4325715002854641417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8100b6a1462e380800000000000000
+      internalID: -8943475845377288012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b209f1e2c6379a0800000000000000
+      internalID: -6236522113624167548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_27
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126705a63a8368510800000000000000
+      internalID: 1550989396190197281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_28
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1100b0056bbcffc80800000000000000
+      internalID: -8286680805451038703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoubleSprite_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163a4535ae97c7380800000000000000
+      internalID: -8972162310301506719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

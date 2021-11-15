@@ -1,0 +1,1080 @@
+fileFormatVersion: 2
+guid: b4cc926c5ffb28b449521f4baf50be84
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7841932679350623477
+    second: SpreadBombSprite_0
+  - first:
+      213: 8484211813001587477
+    second: SpreadBombSprite_1
+  - first:
+      213: -4050906712097254024
+    second: SpreadBombSprite_2
+  - first:
+      213: -2849819796655089061
+    second: SpreadBombSprite_3
+  - first:
+      213: 6280318232219448132
+    second: SpreadBombSprite_4
+  - first:
+      213: -4315271583149093056
+    second: SpreadBombSprite_5
+  - first:
+      213: 6097435029316731187
+    second: SpreadBombSprite_6
+  - first:
+      213: -3595295787931589460
+    second: SpreadBombSprite_7
+  - first:
+      213: -7645037851180061633
+    second: SpreadBombSprite_8
+  - first:
+      213: -1194859727836592933
+    second: SpreadBombSprite_9
+  - first:
+      213: 5231078865308893864
+    second: SpreadBombSprite_10
+  - first:
+      213: -3305110394365295216
+    second: SpreadBombSprite_11
+  - first:
+      213: -2829519273412183859
+    second: SpreadBombSprite_12
+  - first:
+      213: -2899974093323808512
+    second: SpreadBombSprite_13
+  - first:
+      213: -7265658865191216122
+    second: SpreadBombSprite_14
+  - first:
+      213: 2457974108599509879
+    second: SpreadBombSprite_15
+  - first:
+      213: -5096447073135736171
+    second: SpreadBombSprite_16
+  - first:
+      213: 7786456750401940634
+    second: SpreadBombSprite_17
+  - first:
+      213: -1436834616046831353
+    second: SpreadBombSprite_18
+  - first:
+      213: -5228079149715738104
+    second: SpreadBombSprite_19
+  - first:
+      213: -3995363293975289025
+    second: SpreadBombSprite_20
+  - first:
+      213: 7535926174412638946
+    second: SpreadBombSprite_21
+  - first:
+      213: -8873245378432154221
+    second: SpreadBombSprite_22
+  - first:
+      213: 1068774925045185581
+    second: SpreadBombSprite_23
+  - first:
+      213: -6658906777200992735
+    second: SpreadBombSprite_24
+  - first:
+      213: 1668650014257787383
+    second: SpreadBombSprite_25
+  - first:
+      213: -4355239774492950946
+    second: SpreadBombSprite_26
+  - first:
+      213: 8332197724380597794
+    second: SpreadBombSprite_27
+  - first:
+      213: -8781717867445833201
+    second: SpreadBombSprite_28
+  - first:
+      213: -5915066519042890388
+    second: SpreadBombSprite_29
+  - first:
+      213: -6907782050766390281
+    second: SpreadBombSprite_30
+  - first:
+      213: -8532030158576734301
+    second: SpreadBombSprite_31
+  - first:
+      213: 5262407272755127961
+    second: SpreadBombSprite_32
+  - first:
+      213: -3033762908689689141
+    second: SpreadBombSprite_33
+  - first:
+      213: 6712927373160746899
+    second: SpreadBombSprite_34
+  - first:
+      213: -7385739854381172491
+    second: SpreadBombSprite_35
+  - first:
+      213: -6927720310112780367
+    second: SpreadBombSprite_36
+  - first:
+      213: -3892856616824456799
+    second: SpreadBombSprite_37
+  - first:
+      213: 661367600035083480
+    second: SpreadBombSprite_38
+  - first:
+      213: 7874963568539808316
+    second: SpreadBombSprite_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpreadBombSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0367c6c6cbdb2390800000000000000
+      internalID: -7841932679350623477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51be12151b9fdb570800000000000000
+      internalID: 8484211813001587477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8759237dec948c7c0800000000000000
+      internalID: -4050906712097254024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a5f727ef76378d0800000000000000
+      internalID: -2849819796655089061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44379db582c282750800000000000000
+      internalID: 6280318232219448132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f8f01cb531d14c0800000000000000
+      internalID: -4315271583149093056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_6
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1845
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33182738ad07e9450800000000000000
+      internalID: 6097435029316731187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca421e19781fa1ec0800000000000000
+      internalID: -3595295787931589460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c2ff9549e57e590800000000000000
+      internalID: -7645037851180061633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd441ed78610b6fe0800000000000000
+      internalID: -1194859727836592933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a24ac63386889840800000000000000
+      internalID: 5231078865308893864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095c7688b93e122d0800000000000000
+      internalID: -3305110394365295216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_12
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8352756378bb8d0800000000000000
+      internalID: -2829519273412183859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_13
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1476
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00159954de831c7d0800000000000000
+      internalID: -2899974093323808512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c1c19d1c13b2b90800000000000000
+      internalID: -7265658865191216122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7736e2acd6a7c1220800000000000000
+      internalID: 2457974108599509879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a4a2d9368c549b0800000000000000
+      internalID: -5096447073135736171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_17
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c66aaf82d0f0c60800000000000000
+      internalID: 7786456750401940634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_18
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7093b8587865f0ce0800000000000000
+      internalID: -1436834616046831353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802319f76b12277b0800000000000000
+      internalID: -5228079149715738104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_20
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1107
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33e7f1a04e9d88c0800000000000000
+      internalID: -3995363293975289025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea0f67bdecf49860800000000000000
+      internalID: 7535926174412638946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395ccad3756ebd480800000000000000
+      internalID: -8873245378432154221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_23
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cb928b12d05de00800000000000000
+      internalID: 1068774925045185581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_24
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e5e78019fc693a0800000000000000
+      internalID: -6658906777200992735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1394ad85c382710800000000000000
+      internalID: 1668650014257787383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_26
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ef1b900841f83c0800000000000000
+      internalID: -4355239774492950946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_27
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 738
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e06083fa9e1a370800000000000000
+      internalID: 8332197724380597794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02b0398022112680800000000000000
+      internalID: -8781717867445833201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_29
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6564ad175679eda0800000000000000
+      internalID: -5915066519042890388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_30
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbff36e2d0a220a0800000000000000
+      internalID: -6907782050766390281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_31
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af2d1186c3289980800000000000000
+      internalID: -8532030158576734301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_32
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996600c7883d70940800000000000000
+      internalID: 5262407272755127961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_33
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc59bc645b8e5e5d0800000000000000
+      internalID: -3033762908689689141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_34
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 369
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f0e3811eb192d50800000000000000
+      internalID: 6712927373160746899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f83a28dbb4908990800000000000000
+      internalID: -7385739854381172491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_36
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bff774251bcbdf90800000000000000
+      internalID: -6927720310112780367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_37
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a936a0488bc9f9c0800000000000000
+      internalID: -3892856616824456799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_38
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d43b020456ad2900800000000000000
+      internalID: 661367600035083480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpreadBombSprite_39
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3235f964ad794d60800000000000000
+      internalID: 7874963568539808316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
