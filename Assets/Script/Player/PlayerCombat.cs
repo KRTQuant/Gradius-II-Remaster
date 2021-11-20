@@ -7,6 +7,8 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] public int live;
     [SerializeField] private int maxLive;
 
+    [SerializeField] public int score;
+
     [SerializeField] private PoolManager poolManager;
     [SerializeField] private SkillManager skillManager;
 
@@ -51,14 +53,14 @@ public class PlayerCombat : MonoBehaviour
         {
             if(skillManager.laserTimer > 0)
             {
-                Debug.Log("Laser is reloading");
+                //.Log("Laser is reloading");
             }
             if(skillManager.laserTimer <= 0)
             {
                 GameObject bullet = poolManager.GetPoolObject(type);
                 if (bullet.activeSelf)
                 {
-                    Debug.Log("Reloading");
+                    //Debug.Log("Reloading");
                 }
                 if (!bullet.activeSelf)
                 {
@@ -72,14 +74,14 @@ public class PlayerCombat : MonoBehaviour
         {
             if (skillManager.laserTimer > 0)
             {
-                Debug.Log("Laser is reloading");
+                //Debug.Log("Laser is reloading");
             }
             if (skillManager.laserTimer <= 0)
             {
                 GameObject bullet = poolManager.GetPoolObject(type);
                 if (bullet.activeSelf)
                 {
-                    Debug.Log("Reloading");
+                    //Debug.Log("Reloading");
                 }
                 if (!bullet.activeSelf)
                 {
@@ -95,7 +97,7 @@ public class PlayerCombat : MonoBehaviour
             bullet.GetComponent<ArmamentControl>().currentAmmoType = ArmamentControl.AmmoType.SECOND;
             if (bullet.activeSelf)
             {
-                Debug.Log("Reloading");
+                //Debug.Log("Reloading");
             }
             if (!bullet.activeSelf)
             {
@@ -110,7 +112,7 @@ public class PlayerCombat : MonoBehaviour
             bullet.GetComponent<ArmamentControl>().currentAmmoType = ArmamentControl.AmmoType.TAIL;
             if (bullet.activeSelf)
             {
-                Debug.Log("Reloading");
+                //Debug.Log("Reloading");
             }
             if (!bullet.activeSelf)
             {
@@ -124,7 +126,7 @@ public class PlayerCombat : MonoBehaviour
             GameObject bullet = poolManager.GetPoolObject(type);
             if (bullet.activeSelf)
             {
-                Debug.Log("Reloading");
+                //Debug.Log("Reloading");
             }
             if (!bullet.activeSelf)
             {
@@ -132,5 +134,10 @@ public class PlayerCombat : MonoBehaviour
                 bullet.SetActive(true);
             }
         }
+    }
+
+    public void IncreaseScore(int score)
+    {
+        this.score += score;
     }
 }

@@ -14,14 +14,14 @@ public class ArmamentControl : MonoBehaviour
     [SerializeField] public AmmoType currentAmmoType;
     [SerializeField] private bool isStop;
 
-    [SerializeField] private GameObject player;
+    [SerializeField] public GameObject target;
     [SerializeField] private Animator animator;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
-        player = GameObject.Find("Player");
+        target = GameObject.Find("Player");
         animator = GetComponent<Animator>();
     }
 
@@ -48,7 +48,7 @@ public class ArmamentControl : MonoBehaviour
             if (currentAmmoType == AmmoType.BEAM)
             {
                 rb.velocity = new Vector2(speed, rb.velocity.y);
-                transform.position = new Vector3(transform.position.x, player.transform.position.y, transform.position.z);
+                transform.position = new Vector3(transform.position.x, target.transform.position.y, transform.position.z);
             }
             if (currentAmmoType == AmmoType.TAIL)
             {
@@ -96,46 +96,10 @@ public class ArmamentControl : MonoBehaviour
 
     private void OnEnable()
     {
-        if(currentAmmoType == AmmoType.SINGLE)
-        {
-            //StartCoroutine(Deactive());
-        }
         if (currentAmmoType == AmmoType.PULSE)
         {
             //StartCoroutine(Deactive());
             StartCoroutine(ScaleUp());
-        }
-        if (currentAmmoType == AmmoType.BEAM)
-        {
-            //StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.TAIL)
-        {
-            //StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.SECOND)
-        {
-            //StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.MISSILE)
-        {
-            //StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.SPREAD)
-        {
-            //StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.TORPEDO)
-        {
-            //StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.TWOWAYDOWN)
-        {
-            //StartCoroutine(Deactive());
-        }
-        if (currentAmmoType == AmmoType.TWOWAYUP)
-        {
-            //StartCoroutine(Deactive());
         }
     }
 
@@ -173,15 +137,24 @@ public class ArmamentControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Enemy"))
+        if(currentAmmoType != AmmoType.SPREAD)
         {
-            Debug.Log("Collide with player");
-            isStop = true;
-            rb.velocity = Vector2.zero;
-            Debug.Log(isStop);
-            RuntimeAnimatorController rac = Resources.Load("SurfaceShooting") as RuntimeAnimatorController;
-            animator.runtimeAnimatorController = rac;
-            animator.Play("SurfaceShootingEffect");
+            if (collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Enemy"))
+            {
+                //Debug.Log("Collide with player");
+                isStop = true;
+                rb.velocity = Vector2.zero;
+                //Debug.Log(isStop);
+                RuntimeAnimatorController rac = Resources.Load("SurfaceShooting") as RuntimeAnimatorController;
+               
+                animator.runtimeAnimatorController = rac;
+                animator.Play("SurfaceShootingEffect");
+            }
+        }
+
+        if(currentAmmoType == AmmoType.SPREAD)
+        {
+
         }
     }
 

@@ -11,6 +11,9 @@ public class OptionFollowScript : MonoBehaviour
 
     [Header("Combat")]
     [SerializeField] private GameObject funnelPool;
+    [SerializeField] private float laserTimer;
+    [SerializeField] public float laserBulletDelay;
+    [SerializeField] public float laserPulseDelay;
 
     [Header("Reference")]   
     [SerializeField] private PlayerMovement playerMovement;
@@ -36,6 +39,7 @@ public class OptionFollowScript : MonoBehaviour
         }
         UpdatePositionList();
         FollowPlayer();
+        HandleTimer();
     }
 
     private void UpdatePositionList()
@@ -90,44 +94,46 @@ public class OptionFollowScript : MonoBehaviour
     {
         if (type == PoolObjectType.LaserBullet)
         {
-            if (skillManager.laserTimer > 0)
+            if (laserTimer > 0)
             {
-                Debug.Log("Laser is reloading");
+                //Debug.Log("Laser is reloading");
             }
-            if (skillManager.laserTimer <= 0)
+            if (laserTimer <= 0)
             {
                 GameObject bullet = poolManager.GetPoolObject(type);
+                bullet.GetComponent<ArmamentControl>().target = this.gameObject;
+                //Debug.Log(poolManager);
                 if (bullet.activeSelf)
                 {
-                    Debug.Log("Reloading");
+                   // Debug.Log("Reloading");
                 }
                 if (!bullet.activeSelf)
                 {
                     bullet.transform.position = transform.position;
                     bullet.SetActive(true);
                 }
-                skillManager.laserTimer = skillManager.laserBulletDelay;
+                laserTimer = skillManager.laserBulletDelay;
             }
         }
         else if (type == PoolObjectType.LaserPulse)
         {
-            if (skillManager.laserTimer > 0)
+            if (laserTimer > 0)
             {
-                Debug.Log("Laser is reloading");
+                //Debug.Log("Laser is reloading");
             }
-            if (skillManager.laserTimer <= 0)
+            if (laserTimer <= 0)
             {
                 GameObject bullet = poolManager.GetPoolObject(type);
                 if (bullet.activeSelf)
                 {
-                    Debug.Log("Reloading");
+                    //Debug.Log("Reloading");
                 }
                 if (!bullet.activeSelf)
                 {
                     bullet.transform.position = transform.position;
                     bullet.SetActive(true);
                 }
-                skillManager.laserTimer = skillManager.laserPulseDelay;
+                laserTimer = skillManager.laserPulseDelay;
             }
         }
         else if (type == PoolObjectType.SplitBullet)
@@ -143,7 +149,6 @@ public class OptionFollowScript : MonoBehaviour
                 bullet.transform.position = transform.position;
                 bullet.SetActive(true);
             }
-            skillManager.laserTimer = skillManager.laserPulseDelay;
         }
         else if (type == PoolObjectType.TailBullet)
         {
@@ -158,7 +163,6 @@ public class OptionFollowScript : MonoBehaviour
                 bullet.transform.position = transform.position;
                 bullet.SetActive(true);
             }
-            skillManager.laserTimer = skillManager.laserPulseDelay;
         }
         else
         {
@@ -179,5 +183,15 @@ public class OptionFollowScript : MonoBehaviour
     {
         skillManager = GameObject.Find("Player").GetComponent<SkillManager>();
         playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
+    }
+
+    private void HandleTimer()
+    {
+        if (laserTimer > 0)
+        {
+            laserTimer -= Time.deltaTime;
+            if (laserTimer < 0)
+                laserTimer = 0;
+        }
     }
 }
