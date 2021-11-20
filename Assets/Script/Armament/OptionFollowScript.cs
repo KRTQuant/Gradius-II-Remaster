@@ -90,6 +90,31 @@ public class OptionFollowScript : MonoBehaviour
         }
     }
 
+    public void HandleFireMissile()
+    {
+        if (skillManager.isMissileActive)
+        {
+            switch (skillManager.missileType)
+            {
+                case MissileType.MISSILE:
+                    HandleBulletType(PoolObjectType.Missile);
+                    break;
+
+                case MissileType.BOMB:
+                    HandleBulletType(PoolObjectType.Bomb);
+                    break;
+
+                case MissileType.TORPEDO:
+                    HandleBulletType(PoolObjectType.Torpedo);
+                    break;
+
+                case MissileType.TWOWAY:
+                    HandleBulletType(PoolObjectType.Twoway);
+                    break;
+            }
+        }
+    }
+
     public void HandleBulletType(PoolObjectType type)
     {
         if (type == PoolObjectType.LaserBullet)

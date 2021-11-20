@@ -60,7 +60,7 @@ public class SkillManager : MonoBehaviour
     [SerializeField] public MissileType missileType;
     [SerializeField] private int missileLevel;
     [SerializeField] private int missileMaxLevel = 1;
-    [SerializeField] private bool isMissileActive;
+    [SerializeField] public bool isMissileActive;
 
     [Header("Double")]
     [SerializeField] public DoubleType doubleType;
@@ -115,8 +115,7 @@ public class SkillManager : MonoBehaviour
     private void Update()
     {
         HandleTimer();
-        GameObject forcefield = poolManager.GetPoolObject(PoolObjectType.ForceField);
-        forcefield.transform.position = gameObject.transform.position;
+
     }
 
     //trigger when collide with 
@@ -132,6 +131,7 @@ public class SkillManager : MonoBehaviour
     private void AccessComponent()
     {
         playerMovement = GetComponent<PlayerMovement>();
+        powerupFrame = GameObject.Find("border").GetComponent<SpriteRenderer>();
     }
 
     //set skill level to Zero
@@ -314,6 +314,7 @@ public class SkillManager : MonoBehaviour
         {
             Debug.Log("Call Force Field");
             GameObject forcefield = poolManager.GetPoolObject(PoolObjectType.ForceField);
+            forcefield.transform.position = gameObject.transform.position;
             forcefield.SetActive(true);
         }
     }

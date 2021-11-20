@@ -109,11 +109,13 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Z) || Input.GetKey(KeyCode.Z))
         {
             playerCombat.HandleFireGun();
+            playerCombat.HandleFireMissile();
             if(skillManager.listofFunnel.Count > 0)
             {
                 foreach(var funnel in skillManager.listofFunnel)
                 {
                     funnel.GetComponent<OptionFollowScript>().HandleFireGun();
+                    funnel.GetComponent<OptionFollowScript>().HandleFireMissile();
                 }
             }
         }
