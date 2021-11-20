@@ -154,7 +154,17 @@ public class ArmamentControl : MonoBehaviour
 
         if(currentAmmoType == AmmoType.SPREAD)
         {
-
+            if (collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Enemy"))
+            {
+                //Debug.Log("Collide with player");
+                isStop = true;
+                rb.velocity = Vector2.zero;
+                //Debug.Log(isStop);
+                RuntimeAnimatorController rac = Resources.Load("BombBlast") as RuntimeAnimatorController;
+                rb.gravityScale = 0;
+                animator.runtimeAnimatorController = rac;
+                Debug.Log("Triggered");
+            }
         }
     }
 

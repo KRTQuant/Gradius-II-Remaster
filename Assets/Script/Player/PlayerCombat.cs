@@ -7,14 +7,14 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] public int live;
     [SerializeField] private int maxLive;
 
-    [SerializeField] public int score;
-
     [SerializeField] private PoolManager poolManager;
     [SerializeField] private SkillManager skillManager;
 
     private void Start()
     {
         live = maxLive;
+
+        poolManager = GameObject.FindObjectsOfType<PoolManager>()[0];
     }
 
     public void HandleFireGun()
@@ -44,6 +44,31 @@ public class PlayerCombat : MonoBehaviour
                     HandleBulletType(PoolObjectType.LaserBullet);
                 }
                 break;
+        }
+    }
+
+    public void HandleFireMissile()
+    {
+        if(skillManager.isMissileActive)
+        {
+            switch (skillManager.missileType)
+            {
+                case MissileType.MISSILE:
+                    HandleBulletType(PoolObjectType.Missile);
+                    break;
+
+                case MissileType.BOMB:
+                    HandleBulletType(PoolObjectType.Bomb);
+                    break;
+
+                case MissileType.TORPEDO:
+                    HandleBulletType(PoolObjectType.Torpedo);
+                    break;
+
+                case MissileType.TWOWAY:
+                    HandleBulletType(PoolObjectType.Twoway);
+                    break;
+            }
         }
     }
 
@@ -121,6 +146,32 @@ public class PlayerCombat : MonoBehaviour
             }
             skillManager.laserTimer = skillManager.laserPulseDelay;
         }
+
+        else if(type == PoolObjectType.Twoway)
+        {
+            GameObject bullet = poolManager.GetPoolObject(type);
+            GameObject bullet2 = poolManager.GetPoolObject(type);
+            bullet.GetComponent<ArmamentControl>().currentAmmoType = ArmamentControl.AmmoType.TWOWAYDOWN;
+            bullet2.GetComponent<ArmamentControl>().currentAmmoType = ArmamentControl.AmmoType.TWOWAYUP;
+            if (bullet.activeSelf)
+            {
+                //Debug.Log("Reloading");
+            }
+            if (!bullet.activeSelf)
+            {
+                bullet.transform.position = transform.position;
+                bullet.SetActive(true);
+            }
+            if (bullet2.activeSelf)
+            {
+                //Debug.Log("Reloading");
+            }
+            if (!bullet2.activeSelf)
+            {
+                bullet2.transform.position = transform.position;
+                bullet2.SetActive(true);
+            }
+        }
         else
         {
             GameObject bullet = poolManager.GetPoolObject(type);
@@ -134,10 +185,5 @@ public class PlayerCombat : MonoBehaviour
                 bullet.SetActive(true);
             }
         }
-    }
-
-    public void IncreaseScore(int score)
-    {
-        this.score += score;
     }
 }

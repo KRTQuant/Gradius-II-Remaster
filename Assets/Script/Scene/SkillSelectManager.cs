@@ -14,7 +14,7 @@ public class SkillSelectManager : MonoBehaviour
     [SerializeField] private float waitSec;
     [SerializeField] private bool isSelected = false;
 
-    [SerializeField] private ImmortalObject IO;
+    [SerializeField] private GameManager gameManager;
      
     public void OnMouseOver(int value)
     {
@@ -27,7 +27,7 @@ public class SkillSelectManager : MonoBehaviour
     {
         if(!isSelected)
         {
-            IO.HandleSkillSetSelection((int)currentOrder);
+            gameManager.HandleSkillSetSelection((int)currentOrder);
             Debug.Log("sent order : " + value);
             isSelected = true;
         }
@@ -75,7 +75,7 @@ public class SkillSelectManager : MonoBehaviour
         {
             if(!isSelected)
             {
-                IO.HandleSkillSetSelection((int)currentOrder);
+                gameManager.HandleSkillSetSelection((int)currentOrder);
                 isSelected = true;
             }
         }

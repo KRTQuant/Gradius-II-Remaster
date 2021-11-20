@@ -68,7 +68,7 @@ public class HordeManager : MonoBehaviour
                     if (info.type == HordeEnemyType.FAN_UP || info.type == HordeEnemyType.FAN_DOWN)
                     {
                         //Debug.Log("Set duplicated's destination");
-                        spawned.GetComponent<FanEnemyScript>().destination = leader.GetComponentInChildren<FanEnemyScript>().destination;
+                        spawned.GetComponent<Fan_Enemy>().destination = leader.GetComponentInChildren<Fan_Enemy>().destination;
                     }
                     info.listofHorde.Add(spawned);
                 }
@@ -83,7 +83,7 @@ public class HordeManager : MonoBehaviour
     private void Update()
     {
         HandleInput();
-        HandleSpawnFleet();
+        //HandleSpawnFleet();
     }
 
     private void HandleInput()
@@ -102,7 +102,7 @@ public class HordeManager : MonoBehaviour
             GenerateHorde(listofHorde[5]);
     }
 
-    private void HandleSpawnFleet()
+/*    private void HandleSpawnFleet()
     {
         timer += Time.deltaTime;
 
@@ -118,5 +118,5 @@ public class HordeManager : MonoBehaviour
             isCallFleet2 = true;
         }
 
-    }
+    }*/
 }
