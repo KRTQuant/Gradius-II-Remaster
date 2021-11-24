@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8898886814764595458}
   - component: {fileID: 3497854336378499894}
   - component: {fileID: 2834161741402246451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Garun
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -45,16 +45,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9531c969f786ea44abc0b487d76a78b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   score: 0
   health: 0
   maxHealth: 0
-  capsule: {fileID: 0}
+  isStart: 0
   isSpawnCapsule: 0
-  frequency: 6
-  magnitude: 4
+  frequency: 8
+  magnitude: 6
   speed: 5
-  sprite: {fileID: 0}
-  script: {fileID: 0}
+  capsule: {fileID: 0}
 --- !u!212 &3497854336378499894
 SpriteRenderer:
   m_ObjectHideFlags: 0

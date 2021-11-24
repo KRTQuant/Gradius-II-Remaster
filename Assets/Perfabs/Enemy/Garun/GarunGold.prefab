@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 491020304}
   - component: {fileID: 491020306}
   - component: {fileID: 491020305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GarunGold
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -51,9 +51,9 @@ MonoBehaviour:
   health: 0
   maxHealth: 1
   isStart: 0
-  isSpawnCapsule: 1
-  frequency: 6
-  magnitude: 4
+  isSpawnCapsule: 0
+  frequency: 8
+  magnitude: 5
   speed: 5
   capsule: {fileID: 3243220212160933349, guid: e5d397041c6a8fc4797816e5cb48fdcc, type: 3}
 --- !u!61 &491020304
@@ -124,7 +124,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: -4134063622266060053, guid: 1825f6d616426864289bedcf52c89d61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.0733333, y: 0.26666668}
