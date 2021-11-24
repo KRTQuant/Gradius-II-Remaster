@@ -2,25 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hatch_Enemy : MonoBehaviour
+public class Hatch_Enemy : UnitAbs
 {
     [SerializeField] private float detectRange;
     [SerializeField] private GameObject rushPrefab;
     [SerializeField] private float rushAmount;
     [SerializeField] private float waitTime;
 
+    [SerializeField] private float delayAfterActive;
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Keypad0))
-        {
-            Debug.Log("Recieved Input");
-            Takeoff();
-        }
+
     }
 
     private void Detect()
     {
-
 
     }
 
@@ -38,5 +35,10 @@ public class Hatch_Enemy : MonoBehaviour
             Debug.Log("Create at: " + Time.time);
             rush.transform.parent = this.gameObject.transform;
         }
+    }
+
+    public override void OnBecameVisible()
+    {
+        Invoke("Takeoff", delayAfterActive);
     }
 }
