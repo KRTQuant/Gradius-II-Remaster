@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -3460315764156786285, guid: 1041cc8fd1fa72d43bfc6830ff7007e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -120,9 +120,9 @@ MonoBehaviour:
   health: 0
   maxHealth: 0
   isStart: 0
-  frequency: 5
-  magnitude: 0
-  speed: 0
-  divisor: 0
-  waitTime: 0
+  frequency: 10
+  magnitude: 5
+  speed: 3
+  divisor: 50
+  waitTime: 0.3
   rb: {fileID: 0}
