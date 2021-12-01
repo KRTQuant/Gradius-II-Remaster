@@ -1,37 +1,28 @@
 fileFormatVersion: 2
-guid: 1041cc8fd1fa72d43bfc6830ff7007e2
+guid: cfd4990545f39094e90950c053056a37
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3460315764156786285
-    second: BeanSprite_0
+      213: -1354021813677118031
+    second: Boss_Phoenix_NormalSprite_0
   - first:
-      213: 1841716966863254932
-    second: BeanSprite_1
+      213: 759106922952891557
+    second: Boss_Phoenix_NormalSprite_1
   - first:
-      213: -9148235630913398504
-    second: BeanSprite_2
+      213: 5465844196329727322
+    second: Boss_Phoenix_NormalSprite_2
   - first:
-      213: -8935489504718274324
-    second: BeanSprite_3
+      213: 1624856208312897843
+    second: Boss_Phoenix_NormalSprite_3
   - first:
-      213: -6113548852804816282
-    second: BeanSprite_4
+      213: 4110497366683954652
+    second: Boss_Phoenix_NormalSprite_4
   - first:
-      213: -4660549654462771893
-    second: BeanSprite_5
+      213: -2925031926718809156
+    second: Boss_Phoenix_NormalSprite_5
   - first:
-      213: -6567704968007713583
-    second: BeanSprite_6
-  - first:
-      213: -4139709107794711624
-    second: BeanSprite_7
-  - first:
-      213: 1551562834364941527
-    second: BeanSprite_8
-  - first:
-      213: -6533431216714507982
-    second: BeanSprite_9
+      213: -4088238643198078076
+    second: Boss_Phoenix_NormalSprite_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -76,7 +67,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 550
+  spritePixelsToUnits: 190
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,7 +86,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -107,7 +98,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -119,7 +110,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -133,13 +124,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BeanSprite_0
+      name: Boss_Phoenix_NormalSprite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 2000
-        width: 1000
-        height: 1000
+        width: 2000
+        height: 2000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,41 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39910c2652d7affc0800000000000000
-      internalID: -3460315764156786285
+      spriteID: 1bd25a9955c853de0800000000000000
+      internalID: -1354021813677118031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeanSprite_1
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 495b1b2d2d71f8910800000000000000
-      internalID: 1841716966863254932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BeanSprite_2
+      name: Boss_Phoenix_NormalSprite_1
       rect:
         serializedVersion: 2
         x: 2000
         y: 2000
-        width: 1000
-        height: 1000
+        width: 2000
+        height: 2000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 819d5d1c920fa0180800000000000000
-      internalID: -9148235630913398504
+      spriteID: 5ac952979b3e88a00800000000000000
+      internalID: 759106922952891557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeanSprite_3
+      name: Boss_Phoenix_NormalSprite_2
       rect:
         serializedVersion: 2
-        x: 3000
+        x: 4000
         y: 2000
-        width: 1000
-        height: 1000
+        width: 2000
+        height: 2000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,20 +180,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce0490143a3cef380800000000000000
-      internalID: -8935489504718274324
+      spriteID: a552dd756549adb40800000000000000
+      internalID: 5465844196329727322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeanSprite_4
+      name: Boss_Phoenix_NormalSprite_3
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2000
+        width: 2000
+        height: 2000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3311493dc16ac8610800000000000000
+      internalID: 1624856208312897843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Phoenix_NormalSprite_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 1000
-        width: 1000
-        height: 1000
+        y: 0
+        width: 2000
+        height: 2000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,83 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 662729795bf482ba0800000000000000
-      internalID: -6113548852804816282
+      spriteID: cdd206f939b6b0930800000000000000
+      internalID: 4110497366683954652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeanSprite_5
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4d4dab28c6625fb0800000000000000
-      internalID: -4660549654462771893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BeanSprite_6
+      name: Boss_Phoenix_NormalSprite_5
       rect:
         serializedVersion: 2
         x: 2000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1dcf458f023dad4a0800000000000000
-      internalID: -6567704968007713583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BeanSprite_7
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 1000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bb6274ef7ccc86c0800000000000000
-      internalID: -4139709107794711624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BeanSprite_8
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 0
-        width: 1000
-        height: 1000
+        width: 2000
+        height: 2000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d445056d22488510800000000000000
-      internalID: 1551562834364941527
+      spriteID: cbbbf3bc5f23867d0800000000000000
+      internalID: -2925031926718809156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeanSprite_9
+      name: Boss_Phoenix_NormalSprite_6
       rect:
         serializedVersion: 2
-        x: 1000
+        x: 4000
         y: 0
-        width: 1000
-        height: 1000
+        width: 2000
+        height: 2000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,8 +264,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 239984b8ce69455a0800000000000000
-      internalID: -6533431216714507982
+      spriteID: 483572b4d98a347c0800000000000000
+      internalID: -4088238643198078076
       vertices: []
       indices: 
       edges: []
