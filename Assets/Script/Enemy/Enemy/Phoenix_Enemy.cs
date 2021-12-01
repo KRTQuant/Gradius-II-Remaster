@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PheonixMinion_Moveset
+{ 
+    POSITION,
+    WAVE
+}
+
 public class Phoenix_Enemy : UnitAbs
 {
     [SerializeField] private Transform player;
@@ -13,11 +19,27 @@ public class Phoenix_Enemy : UnitAbs
     [SerializeField] private bool isFlyDown;
     [SerializeField] private bool isFinish;
 
+    [SerializeField] private PheonixMinion_Moveset moveset;
+
+    private void Start()
+    {
+        player = GameObject.Find("Player").transform;
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (!isFinish)
-            FlyinVertical();
+        {
+            if(moveset == PheonixMinion_Moveset.POSITION)
+            {
+                FlyinVertical();
+            }
+            else
+            {
+
+            }
+        }
     }
 
     private void FlyinHorizontal()
