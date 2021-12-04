@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BigEyeBoss : MonoBehaviour
+public class BigEyeBoss : UnitAbs
 {
     [SerializeField] private enum Behavior { OPEN , CLOSE }
     [SerializeField] private Behavior currentBehavior;
@@ -20,33 +20,35 @@ public class BigEyeBoss : MonoBehaviour
     [SerializeField] private Transform armBottomPos;
     [SerializeField] private float armTimer;
     [SerializeField] private float gunCooldown;
+
+    [SerializeField] private Animator animator;
     void Start()
     {
-        
+        SetHealth();
     }
 
     // Update is called once per frame
     void Update()
     {
+        CheckDeath();
         HandleTimer();
         if (currentBehavior == Behavior.OPEN)
             HandleOpenEye();
         if (currentBehavior == Behavior.CLOSE)
             HandleCloseEye();
         HandleArmBullet();
-
     }
 
     private void HandleOpenEye()
     {
         box.isTrigger = false;
-        sprite.color = Color.red;
+        animator.SetBool("isEyeClose", false);
     }
 
     private void HandleCloseEye()
     {
         box.isTrigger = false;
-        sprite.color = Color.black;
+        animator.SetBool("isEyeClose", true);
     }
 
     private void HandleTimer()
@@ -88,6 +90,17 @@ public class BigEyeBoss : MonoBehaviour
             bulletTop.GetComponent<Rigidbody2D>().velocity = Vector2.left * bulletSpeed ;
             bulletBottom.GetComponent<Rigidbody2D>().velocity = Vector2.left * bulletSpeed ;
             armTimer = gunCooldown;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("PlayerBullet"))
+        {
+            if(currentBehavior == Behavior.OPEN)
+            {
+                TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            }
         }
     }
 }

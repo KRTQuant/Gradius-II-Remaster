@@ -32797,7 +32797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &368058388
 Transform:
   m_ObjectHideFlags: 0
@@ -58380,6 +58380,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1531476854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2190243240497279017, guid: 646bfa9d2f76388419407a5e60458591, type: 3}
+  m_PrefabInstance: {fileID: 1664213572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1531476855
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531476854}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1532005383
 GameObject:
   m_ObjectHideFlags: 0
@@ -62047,6 +62073,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2546332435018039503, guid: 646bfa9d2f76388419407a5e60458591, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1531476855}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 646bfa9d2f76388419407a5e60458591, type: 3}
 --- !u!4 &1664213573 stripped

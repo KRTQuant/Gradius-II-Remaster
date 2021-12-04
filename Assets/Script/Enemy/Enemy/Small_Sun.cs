@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Small_Sun : UnitAbs
 {
+    [Header("Fire Planet")]
     [SerializeField] private float delayTime;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed;
     // Start is called before the first frame update
 
+    private void Start()
+    {
+        SetHealth();
+    }
+
     IEnumerator Delay()
     {
         yield return new WaitForSeconds(delayTime);
         TargetPlayer();
+        SetHealth(1);
     }
 
     private void TargetPlayer()
@@ -25,7 +32,7 @@ public class Small_Sun : UnitAbs
 
     private void MoveTowardPlayer(Vector2 dir)
     {
-        rb.velocity = dir * speed * Time.deltaTime;
+        rb.velocity = speed * dir;
     }
 
     public override void OnBecameVisible()

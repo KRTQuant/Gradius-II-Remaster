@@ -36,6 +36,7 @@ public class PheonixBoss : MonoBehaviour
     [SerializeField] private float timer;
     [SerializeField] private int waveCounter;
     [SerializeField] private bool isBurst = false;
+    [SerializeField] private float fireballDelayTime;
 
     private void Start()
     {
@@ -48,21 +49,19 @@ public class PheonixBoss : MonoBehaviour
 
     private void Update()
     {
-
-        if(Input.GetKeyDown(KeyCode.Keypad0))
-        {
-            Fly();
-        }
-        if (Input.GetKeyDown(KeyCode.Keypad1))
-        {
-            Spreadshot();
-        }
-        if (Input.GetKeyDown(KeyCode.Keypad2))
-        {
-            if (!isBurst)
-                Fireball();
-        }
-
+        //if(Input.GetKeyDown(KeyCode.Keypad0))
+        //{
+        //    Fly();
+        //}
+        //if (Input.GetKeyDown(KeyCode.Keypad1))
+        //{
+        //    Spreadshot();
+        //}
+        //if (Input.GetKeyDown(KeyCode.Keypad2))
+        //{
+        //    if (!isBurst)
+        //        Fireball();
+        //}
 
         if (currentBehavior == behaviorState.FLY || currentBehavior == behaviorState.INIT)
         {
@@ -74,12 +73,6 @@ public class PheonixBoss : MonoBehaviour
                 Spreadshot();
             }
         }
-        if (currentBehavior == behaviorState.SHOOTFIREBALL)
-        {
-        }
-
-
-
     }
 
     private void Fly()
@@ -134,11 +127,13 @@ public class PheonixBoss : MonoBehaviour
             //Debug.Log("Bullet Dir : " + spreadBulletDir);
 
             GameObject bullet = Instantiate(spreadPrefab, bulletSpawnPos.position, Quaternion.identity);
+            bullet.SetActive(true);
             bullet.GetComponent<Rigidbody2D>().velocity = spreadBulletDir * speed * Time.deltaTime;
 
             angle += angleStep;
         }
-        Fireball();
+        Invoke("Fireball", fireballDelayTime);
+        //Fireball();
     }
     private void SpreadSolution2()
     {
@@ -209,6 +204,7 @@ public class PheonixBoss : MonoBehaviour
 
 
             GameObject bullet = Instantiate(fireballPrefab, bulletSpawnPos.position, Quaternion.identity);
+            bullet.SetActive(true);
             bullet.GetComponent<Rigidbody2D>().velocity = bulletDir * speed * Time.deltaTime;
 
             angle += angleStep;

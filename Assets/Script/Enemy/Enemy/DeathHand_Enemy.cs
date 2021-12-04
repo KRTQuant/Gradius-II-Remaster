@@ -81,7 +81,10 @@ public class DeathHand_Enemy : UnitAbs
         baseNode = childArm[childArm.IndexOf(baseNode) - 1];
         Debug.Log(childArm.IndexOf(baseNode));
         //baseNode.transform.position = Vector2.MoveTowards(baseNode.transform.position, basePosition.transform.position, moveSpeed * Time.deltaTime);
-        StartCoroutine(MoveObject(baseNode, baseNode.transform, basePosition.transform, moveSpeed));
+        //StartCoroutine(MoveObject(baseNode, baseNode.transform, basePosition.transform, moveSpeed));
+
+        baseNode.transform.localPosition = Vector3.zero;
+
     }
 
     IEnumerator MoveObject(GameObject gameObject, Transform start, Transform end, float speed)

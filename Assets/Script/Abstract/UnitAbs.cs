@@ -5,7 +5,7 @@ using UnityEngine;
 public class UnitAbs : MonoBehaviour
 {
     [Header("Game Manager")]
-    [SerializeField] private GameManager gameManager;
+    [SerializeField] public GameManager gameManager;
 
     [Header("Score")]
     [SerializeField] public int score;
@@ -22,6 +22,11 @@ public class UnitAbs : MonoBehaviour
         health = maxHealth;
     }
 
+    public void SetHealth(int health)
+    {
+        this.health = health;
+    }
+
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -29,9 +34,10 @@ public class UnitAbs : MonoBehaviour
 
     public virtual void TriggerOnDeath()
     {
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         gameManager.IncreaseScore(score);
+        Debug.Log("TriggerOnDeath was call");
     }
 
     public virtual void OnBecameVisible()
@@ -42,7 +48,8 @@ public class UnitAbs : MonoBehaviour
 
     public virtual void CheckDeath()
     {
-        if (health < 0)
+        //Debug.Log("Checking");
+        if (health <= 0)
         {
             TriggerOnDeath();
         }

@@ -14,9 +14,13 @@ public class Ammonite_Enemy : UnitAbs
     [SerializeField] private float waitTime;
     [SerializeField] private float timer;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        SetHealth();
+    }
     void Update()
     {
+        CheckDeath();
         if (isStart)
             Move();
     }
@@ -57,6 +61,15 @@ public class Ammonite_Enemy : UnitAbs
         if (timer >= 0)
         {
             timer -= Time.deltaTime;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
         }
     }
 }

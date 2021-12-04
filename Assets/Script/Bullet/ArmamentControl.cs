@@ -8,6 +8,7 @@ public class ArmamentControl : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private BoxCollider2D col;
     [SerializeField] private SpriteRenderer sprite;
+    [SerializeField] private BoxCollider2D boxCollider;
     [SerializeField] private float speed;
     [SerializeField] private float waitTime; //wait time before disappear
     [SerializeField] public enum AmmoType { SINGLE, PULSE, BEAM, TAIL, SECOND, MISSILE, SPREAD, TORPEDO, TWOWAYUP, TWOWAYDOWN }
@@ -21,6 +22,8 @@ public class ArmamentControl : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        boxCollider = GetComponent<BoxCollider2D>();
+
         target = GameObject.Find("Player");
         animator = GetComponent<Animator>();
     }
@@ -146,7 +149,7 @@ public class ArmamentControl : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 //Debug.Log(isStop);
                 RuntimeAnimatorController rac = Resources.Load("SurfaceShooting") as RuntimeAnimatorController;
-               
+                boxCollider.enabled = false;
                 animator.runtimeAnimatorController = rac;
                 animator.Play("SurfaceShootingEffect");
             }
@@ -161,6 +164,7 @@ public class ArmamentControl : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 //Debug.Log(isStop);
                 RuntimeAnimatorController rac = Resources.Load("BombBlast") as RuntimeAnimatorController;
+                boxCollider.enabled = false;
                 rb.gravityScale = 0;
                 animator.runtimeAnimatorController = rac;
                 Debug.Log("Triggered");
@@ -171,6 +175,7 @@ public class ArmamentControl : MonoBehaviour
     private void OnDisable()
     {
         isStop = false;
+        boxCollider.enabled = true;
         animator.runtimeAnimatorController = null;
         sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 255);
     }

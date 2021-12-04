@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D), typeof(SpriteRenderer))]
+[RequireComponent(typeof(Animator))]
 public class GigaBoss : MonoBehaviour
 {
     [SerializeField] private enum Behavior { PATTERN1, PATTERN2, PATTERN3 }
@@ -32,6 +34,11 @@ public class GigaBoss : MonoBehaviour
     [SerializeField] private Transform middleRightPoint;
     [SerializeField] private float jumpBackOffset;
     #endregion
+
+    private void Start()
+    {
+        player = GameObject.Find("Player").transform;
+    }
 
     #region Pattern 2 Variables
     [Header("Pattern 2 Variables")]
@@ -146,14 +153,6 @@ public class GigaBoss : MonoBehaviour
         {
             HandlePattern2();
         }
-
-/*        if(currentBehavior == Behavior.PATTERN3)
-        {
-            HandlePattern3();
-        }*/
-
-        if (Input.GetKeyDown(KeyCode.Keypad0))
-            JumpBack();
     }
 
     private void FixedUpdate()

@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class Hatch_Enemy : UnitAbs
 {
+    [Header("Hatch")]
     [SerializeField] private float detectRange;
     [SerializeField] private GameObject rushPrefab;
     [SerializeField] private float rushAmount;
     [SerializeField] private float waitTime;
+    [SerializeField] private Animator anim;
 
     [SerializeField] private float delayAfterActive;
 
-    private void Update()
+    private void Start()
     {
-
+        anim = GetComponent<Animator>();
+        SetHealth();
     }
 
-    private void Detect()
+    private void Update()
     {
-
+        CheckDeath();
     }
 
     private void Takeoff()
@@ -28,6 +31,7 @@ public class Hatch_Enemy : UnitAbs
 
     private IEnumerator WaitLaunch()
     {
+        anim.SetBool("Open", true);
         for (int i = 0; i < rushAmount; i++)
         {
             yield return new WaitForSeconds(waitTime);
@@ -40,5 +44,14 @@ public class Hatch_Enemy : UnitAbs
     public override void OnBecameVisible()
     {
         Invoke("Takeoff", delayAfterActive);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
+        }
     }
 }

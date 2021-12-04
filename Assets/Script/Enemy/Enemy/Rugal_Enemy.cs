@@ -14,6 +14,7 @@ public class Rugal_Enemy : UnitAbs
     private void Start()
     {
         player = GameObject.Find("Player");
+        SetHealth();
     }
 
     private void Update()
@@ -41,19 +42,20 @@ public class Rugal_Enemy : UnitAbs
         isActive = true;
     }
 
-    private void CheckDeath()
-    {
-        if(health < 0)
-        {
-            TriggerOnDeath();
-        }
-    }
-
     private void SetPlayerRef()
     {
         if (player == null)
         {
             player = GameObject.Find("VicViper");
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
         }
     }
 }

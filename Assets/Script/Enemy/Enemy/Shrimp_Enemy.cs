@@ -12,12 +12,13 @@ public class Shrimp_Enemy : UnitAbs
 
     private void Start()
     {
-
+        SetHealth();
     }
 
     private void Update()
     {
         Solution1();
+        CheckDeath();
     }
 
     private void Solution1()
@@ -75,4 +76,12 @@ public class Shrimp_Enemy : UnitAbs
         //Debug.Log(rb.velocity);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
+        }
+    }
 }

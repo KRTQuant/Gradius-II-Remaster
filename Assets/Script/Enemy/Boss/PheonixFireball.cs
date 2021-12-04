@@ -13,7 +13,7 @@ public class PheonixFireball : MonoBehaviour
     {
         if (player == null)
         {
-            player = GameObject.Find("VicViper");
+            player = GameObject.Find("Player");
         }
     }
 
@@ -28,5 +28,10 @@ public class PheonixFireball : MonoBehaviour
     private void FixedUpdate()
     {
         Homing();
+    }
+
+    private void OnBecameInvisible()
+    {
+        this.gameObject.SetActive(false);
     }
 }
