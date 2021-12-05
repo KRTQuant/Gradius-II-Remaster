@@ -37,6 +37,7 @@ public class Fan_Enemy : UnitAbs
             RotateSprite();
             CheckDeath();
             Move();
+            DisableObject();
         }
     }
 
@@ -125,6 +126,14 @@ public class Fan_Enemy : UnitAbs
                 break;
         }
 
+    }
+
+    private void DisableObject()
+    {
+        if(currentStatus == enemyStatus.STOP)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
 

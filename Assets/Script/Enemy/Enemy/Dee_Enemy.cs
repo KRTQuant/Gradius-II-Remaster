@@ -5,82 +5,131 @@ using UnityEngine.UI;
 
 public class Dee_Enemy : UnitAbs
 {
-    [SerializeField] private Rigidbody2D rb;
     [SerializeField] private GameObject player;
-    [SerializeField] private Text text;
     [SerializeField] private float gunCooldown = 1.5f;
     [SerializeField] private float fireRate;
     [SerializeField] private float speed;
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private GameObject barrel;
+    [SerializeField] private bool isReverse;
 
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private List<Sprite> spriteList;
+
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+        spriteRenderer = GetComponentInParent<SpriteRenderer>();
+        SetHealth();
+    }
+
+    private void Update()
+    {
+        CheckDeath();
+    }
 
     private void FixedUpdate()
     {
         Solution2();
-        //Test();
-    }
-
-    private void Solution1()
-    {
-        float angle = Vector3.Angle(this.gameObject.transform.position, player.transform.position);
-        Debug.Log(angle);
     }
 
     private void Solution2()
     {
         Vector2 dir = player.transform.position - transform.position;
         Debug.DrawRay(transform.position, dir, Color.green);
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg ;
         Debug.Log((int)angle);
 
-        //transform.rotation = Quaternion.Slerp(transform.rotation, angleAxis, Time.deltaTime * 50);
-        if (angle > 144 && angle <= 180)
+        if(isReverse)
         {
-            text.text = "144 - 180";
-            Quaternion rotation = Quaternion.Euler(0, 0, 0);
-            transform.rotation = rotation;
-            Shoot();
-        }
-        if (angle > 108 && angle <= 144)
-        {
-            text.text = "108 - 144";
-            Quaternion rotation = Quaternion.Euler(0, 0, -45);
-            transform.rotation = rotation;
-            Shoot();
-        }
-        if (angle > 72 && angle <= 108)
-        {
-            text.text = "72 - 108";
-            Quaternion rotation = Quaternion.Euler(0, 0, -90);
-            transform.rotation = rotation;
-            Shoot();
-        }
-        if (angle > 36 && angle <= 72)
-        {
-            text.text = "36 - 72";
-            Quaternion rotation = Quaternion.Euler(0, 0, -135);
-            transform.rotation = rotation;
-            Shoot();
-        }
-        if (angle > 0 && angle <= 36)
-        {
-            text.text = "0 - 36";
-            Quaternion rotation = Quaternion.Euler(0, 0, -180);
-            transform.rotation = rotation;
-            Shoot();
+            if (angle < -144 && angle >= -180)
+            {
+                Quaternion rotation = Quaternion.Euler(0, 0, 0);
+                transform.rotation = rotation;
+                spriteRenderer.sprite = spriteList[0];
+                Shoot();
+            }
+            if (angle < -108 && angle >= -144)
+            {
+                Quaternion rotation = Quaternion.Euler(0, 0, 45);
+                transform.rotation = rotation;
+                spriteRenderer.sprite = spriteList[1];
+                Shoot();
+
+            }
+            if (angle < -72 && angle >= -108)
+            {
+                Quaternion rotation = Quaternion.Euler(0, 0, 90);
+                transform.rotation = rotation;
+                spriteRenderer.sprite = spriteList[2];
+                Shoot();
+
+            }
+            if (angle < -36 && angle >= -72)
+            {
+                Quaternion rotation = Quaternion.Euler(0, 0, 135);
+                transform.rotation = rotation;
+                spriteRenderer.sprite = spriteList[3];
+                Shoot();
+
+            }
+            if (angle < -0 && angle >= -36)
+            {
+                Quaternion rotation = Quaternion.Euler(0, 0, 180);
+                transform.rotation = rotation;
+                spriteRenderer.sprite = spriteList[4];
+                Shoot();
+            }
         }
 
+        if(!isReverse)
+        {
+            if (angle > 144 && angle <= 180)
+            {
+                Quaternion rotation = Quaternion.Euler(0, 0, 0);
+                transform.rotation = rotation;
+                spriteRenderer.sprite = spriteList[0];
+                Shoot();
+            }
+            if (angle > 108 && angle <= 144)
+            {
+                Quaternion rotation = Quaternion.Euler(0, 0, -45);
+                transform.rotation = rotation;
+                spriteRenderer.sprite = spriteList[1];
+                Shoot();
+            }
+            if (angle > 72 && angle <= 108)
+            {
+                Quaternion rotation = Quaternion.Euler(0, 0, -90);
+                transform.rotation = rotation;
+                spriteRenderer.sprite = spriteList[2];
+                Shoot();
+            }
+            if (angle > 36 && angle <= 72)
+            {
+                Quaternion rotation = Quaternion.Euler(0, 0, -135);
+                transform.rotation = rotation;
+                spriteRenderer.sprite = spriteList[3];
+                Shoot();
+            }
+            if (angle > 0 && angle <= 36)
+            {
+                Quaternion rotation = Quaternion.Euler(0, 0, -180);
+                transform.rotation = rotation;
+                spriteRenderer.sprite = spriteList[4];
+                Shoot();
+            }
+        }
     }
 
     private void Shoot()
     {
-        if(isStart)
+        if (isStart)
         {
             if (fireRate <= 0)
             {
                 GameObject bullet = Instantiate<GameObject>(bulletPrefab, transform.position, Quaternion.identity);
                 bullet.GetComponent<Rigidbody2D>().velocity = -transform.right * speed;
+                fireRate = gunCooldown;
             }
             else
             {
@@ -89,12 +138,19 @@ public class Dee_Enemy : UnitAbs
         }
     }
 
-    private void Test()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Vector2 dir = player.transform.position - transform.position;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        Quaternion angleAxis = Quaternion.AngleAxis(angle, Vector3.forward);
-        Debug.Log((int)angle);
-        Debug.Log(Mathf.Sin(45 * Mathf.Deg2Rad));
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
+        }
+    }
+
+    public override void TriggerOnDeath()
+    {
+        gameObject.transform.parent.gameObject.SetActive(false);
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        gameManager.IncreaseScore(score);
     }
 }

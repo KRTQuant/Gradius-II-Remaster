@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class ModhH_Enemy : UnitAbs
 {
-    [TextArea] [Header("Note")]
-    [SerializeField] private string Notes;
 
-    [Space(10)]
+    [Header("Modh H")]
     [SerializeField] private GameObject maksurion;
     [SerializeField] private GameObject makParent;
 
@@ -18,10 +16,17 @@ public class ModhH_Enemy : UnitAbs
     [SerializeField] private float timer;
     [SerializeField] private bool isSpawn;
 
+    [Tooltip("Delay before start spawn")]
+    [SerializeField] public float delay;
 
+    private void Start()
+    {
+        SetHealth();
+    }
     // Update is called once per frame
     void Update()
     {
+        CheckDeath();
         ManageTimer();
         ControlSpawning();
     }
@@ -35,10 +40,8 @@ public class ModhH_Enemy : UnitAbs
     {
         if (isStart & !isSpawn)
         {
-            if (isStartSpawn)
-            {
-                StartCoroutine(Spawner());
-            }
+            Invoke("Spawn", delay);
+            isSpawn = true;
         }
     }
 
@@ -51,6 +54,19 @@ public class ModhH_Enemy : UnitAbs
             Instantiate(maksurion, transform.position, Quaternion.identity, makParent.transform);
             yield return new WaitForSeconds(delayBtwSpawn);
         }
-        isSpawn = false;
+    }
+
+    private void Spawn()
+    {
+        StartCoroutine("Spawner");
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
+        }
     }
 }

@@ -8,8 +8,9 @@ public enum MaksurionBehavior
     CRAWLING
 }
 
-public class Maksurion_Enemy : MonoBehaviour
+public class Maksurion_Enemy : UnitAbs
 {
+    [Header("Maksurion")]
     [Header("Reference")]
     [SerializeField] private GameObject player;
     [SerializeField] private Rigidbody2D rb;
@@ -25,8 +26,18 @@ public class Maksurion_Enemy : MonoBehaviour
     [Header("MaksurionBehavior")]
     [SerializeField] private MaksurionBehavior currentBehavior;
 
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+        rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+        SetHealth();
+        Jump();
+    }
+
     private void Update()
     {
+        CheckDeath();
         if (currentBehavior == MaksurionBehavior.CRAWLING)
         {
             if (timer > 0)
@@ -43,17 +54,18 @@ public class Maksurion_Enemy : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        Jump();
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Floor"))
         {
             Crawl();
             Debug.Log("I hope you will log only one time");
+        }
+
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
         }
     }
 

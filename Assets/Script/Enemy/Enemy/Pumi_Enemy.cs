@@ -26,19 +26,20 @@ public class Pumi_Enemy : UnitAbs
     [SerializeField] private float bulletSpeed;
     [SerializeField] private float fireRate;
 
-
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        DrawRay();
+        SetHealth();
+        player = GameObject.Find("Player");
     }
 
-    private void FixedUpdate()
+    void Update()
     {
-        if(isStart)
+        CheckDeath();
+        if (isStart)
         {
-            HorizontalMove();
             Shoot();
+            DrawRay();
+            HorizontalMove();
         }
     }
 
@@ -89,16 +90,25 @@ public class Pumi_Enemy : UnitAbs
 
     void Shoot()
     {
+        Debug.Log("Shoot was call");
         if (fireRate <= 0)
         {
             GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             Vector2 dir = (player.transform.position - transform.position).normalized;
-            bullet.GetComponent<Rigidbody2D>().velocity = dir * speed * Time.deltaTime;
+            bullet.GetComponent<Rigidbody2D>().velocity = bulletSpeed * Time.deltaTime * dir;
             fireRate = gunCooldown;
         }
         else
         {
             fireRate -= Time.deltaTime;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
         }
     }
 }

@@ -16,14 +16,22 @@ public class Rush_Enemy : UnitAbs
     [SerializeField] private bool isMoveToRight;
     [SerializeField] private bool isFinishSetVelo;
 
+    private void Awake()
+    {
+        SetHealth();
+    }
+
     private void Start()
     {
+        sr = GetComponent<SpriteRenderer>();
         spriteSize = sr.bounds.extents;
-        player = GameObject.Find("VicViper");
+        player = GameObject.Find("Player");
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
+        CheckDeath();
         MoveInY();
         if (finishXaxisMove && !isFinishSetVelo)
         {
@@ -33,28 +41,30 @@ public class Rush_Enemy : UnitAbs
         if (isFinishSetVelo)
         {
             if (isMoveToRight)
-                rb.velocity = Vector2.right * speed * Time.deltaTime;
+                rb.velocity = Vector2.right * speed;
             if (!isMoveToRight)
-                rb.velocity = Vector2.left * speed * Time.deltaTime;
+                rb.velocity = Vector2.left * speed;
         }
     }
 
     private void MoveInY()
     {
-        if (player.transform.position.y > transform.position.y + spriteSize.y)
+        if (player.transform.position.y > transform.position.y + (spriteSize.y / 2))
         {
-            rb.velocity = Vector2.up * speed * Time.deltaTime;
+            rb.velocity = Vector2.up * speed;
         }
 
-        if (player.transform.position.y < transform.position.y + spriteSize.y)
+        if (player.transform.position.y < transform.position.y + (spriteSize.y / 2))
         {
-            rb.velocity = Vector2.down * speed * Time.deltaTime;
+            rb.velocity = Vector2.down * speed;
         }
 
-        if (player.transform.position.y <= transform.position.y + spriteSize.y && player.transform.position.y > transform.position.y - spriteSize.y)
+        if (player.transform.position.y <= transform.position.y + (spriteSize.y / 2) && player.transform.position.y > transform.position.y - (spriteSize.y/2))
         {
             finishXaxisMove = true;
+            Debug.Log(spriteSize.y / 2);
         }
+
     }
 
     private void MoveInX()
@@ -73,5 +83,14 @@ public class Rush_Enemy : UnitAbs
             isFinishSetVelo = true;
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
+        }
     }
 }
