@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCombat : MonoBehaviour
 {
     [SerializeField] public int live;
     [SerializeField] private int maxLive;
+    [SerializeField] private Text liveText;
 
     [SerializeField] private PoolManager poolManager;
     [SerializeField] private SkillManager skillManager;
@@ -13,7 +15,8 @@ public class PlayerCombat : MonoBehaviour
     private void Start()
     {
         live = maxLive;
-
+        liveText = GameObject.Find("LifeNumber").GetComponent<Text>();
+        liveText.text = live.ToString();
         poolManager = GameObject.FindObjectsOfType<PoolManager>()[0];
     }
 
