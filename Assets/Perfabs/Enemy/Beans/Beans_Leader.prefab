@@ -118,16 +118,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  score: 0
+  score: 60
   health: 0
-  maxHealth: 0
+  maxHealth: 1
   isStart: 0
   frequency: 10
   magnitude: 5
   speed: 3
   divisor: 50
   waitTime: 0.3
-  rb: {fileID: 0}
+  rb: {fileID: 3485796021534857817}
 --- !u!50 &3485796021534857817
 Rigidbody2D:
   serializedVersion: 4

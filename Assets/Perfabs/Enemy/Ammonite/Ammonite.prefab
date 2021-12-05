@@ -117,9 +117,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  score: 0
+  score: 100
   health: 0
-  maxHealth: 0
+  maxHealth: 10
   isStart: 0
   currentState: 0
   waypointA: {fileID: 0}

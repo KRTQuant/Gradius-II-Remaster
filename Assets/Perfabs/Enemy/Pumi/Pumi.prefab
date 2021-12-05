@@ -116,9 +116,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  score: 0
+  score: 100
   health: 0
-  maxHealth: 0
+  maxHealth: 1
   isStart: 0
   rb: {fileID: 0}
   player: {fileID: 0}
@@ -132,6 +132,6 @@ MonoBehaviour:
   speed: 0
   current: {fileID: 0}
   bulletPrefab: {fileID: 0}
-  gunCooldown: 0
-  bulletSpeed: 0
-  fireRate: 0
+  gunCooldown: 1
+  bulletSpeed: 1
+  fireRate: 1
