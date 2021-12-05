@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  score: 100
+  score: 30
   health: 0
   maxHealth: 10
   isStart: 0

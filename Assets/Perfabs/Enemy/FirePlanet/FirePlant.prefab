@@ -138,9 +138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  score: 0
+  score: 160
   health: 0
-  maxHealth: 0
+  maxHealth: 10
   isStart: 0
   delayTime: 0
   rb: {fileID: 0}
