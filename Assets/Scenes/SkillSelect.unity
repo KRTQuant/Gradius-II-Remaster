@@ -805,7 +805,7 @@ MonoBehaviour:
   minIndicator: 0
   waitSec: 0
   isSelected: 0
-  IO: {fileID: 1724743607}
+  gameManager: {fileID: 0}
 --- !u!1 &1724743605
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,7 +817,7 @@ GameObject:
   - component: {fileID: 1724743606}
   - component: {fileID: 1724743607}
   m_Layer: 0
-  m_Name: ImmortalObject
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -849,10 +849,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb793c21fbc96f243b120a3f59bd1443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mc_controller: {fileID: 0}
+  skillManager: {fileID: 0}
   skillSelectedType: 0
   waitSec: 0
   isParamsWasPass: 0
+  scoreText: {fileID: 0}
+  score: 0
 --- !u!1 &1954664035
 GameObject:
   m_ObjectHideFlags: 0
