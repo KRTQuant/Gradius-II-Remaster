@@ -23,10 +23,14 @@ public class Fan_Enemy : UnitAbs
     [SerializeField] private enum Direction { ABOVE, BELOW }
     [SerializeField] private Direction dir;
 
+    private void Awake()
+    {
+        SetHealth();
+    }
+
     private void Start()
     {
         SetReference();
-        SetHealth();
         SetDestination();
     }
 
@@ -93,6 +97,7 @@ public class Fan_Enemy : UnitAbs
 
     private void SetReference()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         player = GameObject.Find("Player");
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();

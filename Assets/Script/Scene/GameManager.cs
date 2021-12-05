@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -12,9 +13,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] float skillSelectedType = 0;
     [SerializeField] float waitSec;
     [SerializeField] bool isParamsWasPass;
-    [SerializeField] private Scene Level_1;
+    [SerializeField] private Text scoreText;
 
-    [SerializeField] public int score;
+    [SerializeField] public int score = 0;
 
     private void Awake()
     {
@@ -51,22 +52,32 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(waitSec);
         Debug.Log("Wait for " + waitSec + "seconds");
         Debug.Log("Load Scene");
-        SceneManager.LoadScene("Stage01_A");
+        SceneManager.LoadScene("Stage01_AE");
     }
 
     private void Update()
     {
-        if(SceneManager.GetActiveScene().name == "Stage01_A" && !isParamsWasPass)
+        if(SceneManager.GetActiveScene().name == "Stage01_AE" && !isParamsWasPass)
         {
             Debug.Log("Begin passing powerset");
             PassPowersetSelection();
             isParamsWasPass = true;
             Debug.Log((Skillset)skillSelectedType);
+            FindRef();
         }
     }
 
     public void IncreaseScore(int score)
     {
         this.score += score;
+        scoreText.text = this.score.ToString();
+    }
+
+    public void FindRef()
+    {
+        if(scoreText == null)
+        {
+            scoreText = GameObject.Find("ScoreNumber").GetComponent<Text>();
+        }
     }
 }

@@ -42,6 +42,8 @@ public class SkillSelectManager : MonoBehaviour
     {
         maxIndicator = powerStyle.Count - 1;
         minIndicator = 0;
+
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     private void SetIndicatorPos()
