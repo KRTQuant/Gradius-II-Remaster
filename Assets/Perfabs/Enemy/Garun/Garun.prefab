@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  score: 0
-  health: 0
-  maxHealth: 0
+  score: 60
+  health: 1
+  maxHealth: 1
   isStart: 0
   isSpawnCapsule: 0
   frequency: 8

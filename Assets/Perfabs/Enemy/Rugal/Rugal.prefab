@@ -47,9 +47,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c33e478023de74bb17429373f7f841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
-  health: 0
-  maxHealth: 0
+  gameManager: {fileID: 0}
+  score: 100
+  health: 1
+  maxHealth: 1
+  isStart: 0
   player: {fileID: 0}
   rb: {fileID: 289330041084202879}
   speed: 5

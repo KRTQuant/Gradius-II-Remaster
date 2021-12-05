@@ -48,9 +48,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  score: 0
-  health: 0
-  maxHealth: 0
+  score: 100
+  health: 1
+  maxHealth: 1
   isStart: 0
   player: {fileID: 0}
   rb: {fileID: 2196194250135302178}
