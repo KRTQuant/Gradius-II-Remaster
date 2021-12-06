@@ -159,7 +159,7 @@ MonoBehaviour:
   health: 0
   maxHealth: 0
   isStart: 0
-  rushPrefab: {fileID: 3226732203460187522, guid: ed24b5b34a816b440ab5cd502f154861, type: 3}
+  rushPrefab: {fileID: 8898886814764595459, guid: a8e028dfb4256be4c9afd17ca62a5510, type: 3}
   rushAmount: 6
   delayBetweenSpawning: 0.5
   delayAfterActive: 2
