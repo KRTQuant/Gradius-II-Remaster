@@ -33,18 +33,22 @@ public class Rush_Enemy : UnitAbs
     {
         CheckDeath();
         MoveInY();
-        if (finishXaxisMove && !isFinishSetVelo)
+        if(isStart)
         {
-            MoveInX();
+            if (finishXaxisMove && !isFinishSetVelo)
+            {
+                MoveInX();
+            }
+
+            if (isFinishSetVelo)
+            {
+                if (isMoveToRight)
+                    rb.velocity = Vector2.right * speed;
+                if (!isMoveToRight)
+                    rb.velocity = Vector2.left * speed;
+            }
         }
 
-        if (isFinishSetVelo)
-        {
-            if (isMoveToRight)
-                rb.velocity = Vector2.right * speed;
-            if (!isMoveToRight)
-                rb.velocity = Vector2.left * speed;
-        }
     }
 
     private void MoveInY()

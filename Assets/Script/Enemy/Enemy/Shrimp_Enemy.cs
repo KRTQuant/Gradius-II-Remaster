@@ -17,8 +17,11 @@ public class Shrimp_Enemy : UnitAbs
 
     private void Update()
     {
-        Solution1();
-        CheckDeath();
+        if(isStart)
+        {
+            Solution1();
+            CheckDeath();
+        }
     }
 
     private void Solution1()

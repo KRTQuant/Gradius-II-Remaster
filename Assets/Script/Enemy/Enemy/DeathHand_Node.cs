@@ -18,9 +18,9 @@ public class DeathHand_Node : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Keypad0) && isActiveCheat)
-        {
-            deathHand_Enemy.HandleBulletCollide();
-        }
+        //if(Input.GetKeyDown(KeyCode.Keypad0) && isActiveCheat)
+        //{
+        //    deathHand_Enemy.HandleBulletCollide();
+        //}
     }
 }

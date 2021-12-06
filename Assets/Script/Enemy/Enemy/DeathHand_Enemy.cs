@@ -33,7 +33,8 @@ public class DeathHand_Enemy : UnitAbs
 
     private void Update()
     {
-        UpdateBehav();
+        if(isStart)
+            UpdateBehav();
     }
 
     private void UpdateBehav()
