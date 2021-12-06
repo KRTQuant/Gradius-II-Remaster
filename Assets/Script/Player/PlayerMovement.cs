@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("enemy"))
+        if(collision.CompareTag("Enemy"))
         {
             this.gameObject.SetActive(false);
             //reset cam position and spawn at checkpoint

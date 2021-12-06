@@ -208,6 +208,7 @@ public class OptionFollowScript : MonoBehaviour
     {
         skillManager = GameObject.Find("Player").GetComponent<SkillManager>();
         playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        followTransform = GameObject.Find("Player").transform;
     }
 
     private void HandleTimer()
