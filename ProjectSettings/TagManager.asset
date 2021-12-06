@@ -5,9 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerBullet
-  - Capsule
   - Enemy
   - Obstacle
+  - BlueCapsule
+  - YellowCapsule
+  - Capsule
   layers:
   - Default
   - TransparentFX

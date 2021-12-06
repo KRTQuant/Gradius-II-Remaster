@@ -153,6 +153,18 @@ public class ArmamentControl : MonoBehaviour
                 animator.runtimeAnimatorController = rac;
                 animator.Play("SurfaceShootingEffect");
             }
+
+            if(collision.gameObject.CompareTag("LineWall"))
+            {
+
+                isStop = true;
+                rb.velocity = Vector2.zero;
+                boxCollider.isTrigger = true;
+                RuntimeAnimatorController rac = Resources.Load("SurfaceShooting") as RuntimeAnimatorController;
+                boxCollider.enabled = false;
+                animator.runtimeAnimatorController = rac;
+                animator.Play("SurfaceShootingEffect");
+            }
         }
 
         if(currentAmmoType == AmmoType.SPREAD)
@@ -167,8 +179,28 @@ public class ArmamentControl : MonoBehaviour
                 boxCollider.enabled = false;
                 rb.gravityScale = 0;
                 animator.runtimeAnimatorController = rac;
-                Debug.Log("Triggered");
             }
+
+            if (collision.gameObject.CompareTag("LineWall"))
+            {
+
+                isStop = true;
+                rb.velocity = Vector2.zero;
+                boxCollider.isTrigger = true;
+                RuntimeAnimatorController rac = Resources.Load("BombBlast") as RuntimeAnimatorController;
+                boxCollider.enabled = false;
+                rb.gravityScale = 0;
+                animator.runtimeAnimatorController = rac;
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("LineWall"))
+        {
+            isStop = true;
+            rb.velocity = Vector2.zero;
         }
     }
 
@@ -176,6 +208,7 @@ public class ArmamentControl : MonoBehaviour
     {
         isStop = false;
         boxCollider.enabled = true;
+        boxCollider.isTrigger = true;
         animator.runtimeAnimatorController = null;
         sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 255);
     }

@@ -70,7 +70,9 @@ public class GameManager : MonoBehaviour
     public void IncreaseScore(int score)
     {
         this.score += score;
-        scoreText.text = this.score.ToString();
+        FindRef();
+        if(scoreText != null)
+            scoreText.text = this.score.ToString();
     }
 
     public void FindRef()

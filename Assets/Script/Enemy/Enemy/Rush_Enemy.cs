@@ -49,20 +49,20 @@ public class Rush_Enemy : UnitAbs
 
     private void MoveInY()
     {
-        if (player.transform.position.y > transform.position.y + (spriteSize.y / 2))
+        if (player.transform.position.y > transform.position.y + (spriteSize.y / 4))
         {
             rb.velocity = Vector2.up * speed;
         }
 
-        if (player.transform.position.y < transform.position.y + (spriteSize.y / 2))
+        if (player.transform.position.y < transform.position.y + (spriteSize.y / 4))
         {
             rb.velocity = Vector2.down * speed;
         }
 
-        if (player.transform.position.y <= transform.position.y + (spriteSize.y / 2) && player.transform.position.y > transform.position.y - (spriteSize.y/2))
+        if (player.transform.position.y <= transform.position.y + (spriteSize.y / 4) && player.transform.position.y > transform.position.y - (spriteSize.y/4))
         {
             finishXaxisMove = true;
-            Debug.Log(spriteSize.y / 2);
+            //Debug.Log(spriteSize.y / 4);
         }
 
     }

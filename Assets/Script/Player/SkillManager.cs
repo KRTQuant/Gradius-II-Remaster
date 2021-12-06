@@ -121,7 +121,7 @@ public class SkillManager : MonoBehaviour
     //trigger when collide with 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Capsule"))
+        if (collision.CompareTag("YellowCapsule"))
         {
             IncreaseCapsule();
         }

@@ -119,4 +119,22 @@ public class Phoenix_Enemy : UnitAbs
         transform.position -= transform.right * Time.deltaTime * speed;
         transform.position = transform.position + transform.up * Mathf.Sin(Time.time * frequency) * magnitude / 100;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
+        }
+    }
+
+    public override void TriggerOnDeath()
+    {
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        gameManager.IncreaseScore(score);
+        Debug.Log("TriggerOnDeath was call");
+    }
 }

@@ -2,25 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hatch_Enemy : UnitAbs
+public class GreenStar : UnitAbs
 {
-    [Header("Hatch")]
+    [Header("Greenstar")]
     [SerializeField] private GameObject rushPrefab;
     [SerializeField] private float rushAmount;
-    [SerializeField] private float waitTime;
-    [SerializeField] private Animator anim;
+    [SerializeField] private float delayBetweenSpawning;
 
     [SerializeField] private float delayAfterActive;
+    [SerializeField] private float repeatTime;
 
     private void Start()
     {
-        anim = GetComponent<Animator>();
         SetHealth();
     }
 
     private void Update()
     {
-        CheckDeath();
+        //CheckDeath();
     }
 
     private void Takeoff()
@@ -30,19 +29,20 @@ public class Hatch_Enemy : UnitAbs
 
     private IEnumerator WaitLaunch()
     {
-        anim.SetBool("Open", true);
         for (int i = 0; i < rushAmount; i++)
         {
-            yield return new WaitForSeconds(waitTime);
+            yield return new WaitForSeconds(delayBetweenSpawning);
             GameObject rush = Instantiate<GameObject>(rushPrefab, transform.position, Quaternion.identity);
-            Debug.Log("Create at: " + Time.time);
+            //Debug.Log("Create at: " + Time.time);
             rush.transform.parent = this.gameObject.transform;
         }
     }
 
     public override void OnBecameVisible()
     {
-        Invoke("Takeoff", delayAfterActive);
+        repeatTime = (rushAmount * delayBetweenSpawning) + 1;
+        Debug.Log(repeatTime);
+        InvokeRepeating("Takeoff", delayAfterActive, repeatTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
