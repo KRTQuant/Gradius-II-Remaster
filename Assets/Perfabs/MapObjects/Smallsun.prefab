@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4292746500062953472}
   - component: {fileID: 4292746500062953475}
   - component: {fileID: 2019161943}
-  - component: {fileID: 2019161942}
+  - component: {fileID: -2474472523649034319}
   m_Layer: 3
   m_Name: Smallsun
   m_TagString: Obstacle
@@ -125,8 +125,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &2019161942
-BoxCollider2D:
+--- !u!58 &-2474472523649034319
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -135,19 +135,9 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.101873994, y: 0.043660223}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 4.000781}
-    newSize: {x: 5, y: 5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0.096682616, y: 0.0340382}
   serializedVersion: 2
-  m_Size: {x: 2.7484066, y: 2.8074017}
-  m_EdgeRadius: 0
+  m_Radius: 1.3946637

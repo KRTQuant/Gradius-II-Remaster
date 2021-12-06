@@ -38,7 +38,7 @@ public class PhoenixFollower_Enemy : UnitAbs
 
     IEnumerator DeactivateDelay()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         this.gameObject.SetActive(false);
     }
 }
