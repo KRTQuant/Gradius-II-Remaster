@@ -173,7 +173,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   player: {fileID: 0}
   moveset: 1
-  speed: 2
+  speed: 4
   dir: {x: 0, y: 0}
   delayTime: 0
   stopPoint: {fileID: 0}
