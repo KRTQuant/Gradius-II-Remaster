@@ -48,7 +48,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101890694835179000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8e2a2a804eaf514c9ddde530641d788, type: 3}
   m_Name: 
@@ -159,7 +159,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 2978255502340111421, guid: e3d8b541be611754686426ed8906c592, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -210,8 +210,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7013098139550995640, guid: 98fbc1b84fc140048b8b5146555d2464, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.95745295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013098139550995640, guid: 98fbc1b84fc140048b8b5146555d2464, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.95745295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013098139550995640, guid: 98fbc1b84fc140048b8b5146555d2464, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.95745295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7013098139550995640, guid: 98fbc1b84fc140048b8b5146555d2464, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.40999958
       objectReference: {fileID: 0}
     - target: {fileID: 7013098139550995640, guid: 98fbc1b84fc140048b8b5146555d2464, type: 3}
       propertyPath: m_LocalPosition.y
@@ -253,6 +265,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6147727706852301545, guid: 10f8aaee202d3054e8d06f60864d1c5a, type: 3}
+    - target: {fileID: 7013098139550995641, guid: 98fbc1b84fc140048b8b5146555d2464, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98fbc1b84fc140048b8b5146555d2464, type: 3}
 --- !u!1 &2101890694835179000 stripped
