@@ -33,6 +33,12 @@ public class PhoenixFollower_Enemy : UnitAbs
 
     private void OnBecameInvisible()
     {
+        StartCoroutine("DeactiveDelay");
+    }
+
+    IEnumerator DeactivateDelay()
+    {
+        yield return new WaitForSeconds(2);
         this.gameObject.SetActive(false);
     }
 }
