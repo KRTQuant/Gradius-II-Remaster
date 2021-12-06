@@ -33,7 +33,7 @@ public class PhoenixFollower_Enemy : UnitAbs
 
     private void OnBecameInvisible()
     {
-        StartCoroutine("DeactiveDelay");
+        StartCoroutine("DeactivateDelay");
     }
 
     IEnumerator DeactivateDelay()

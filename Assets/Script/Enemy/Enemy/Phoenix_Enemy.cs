@@ -38,7 +38,7 @@ public class Phoenix_Enemy : UnitAbs
     void Update()
     {
         CheckDeath();
-        if (!isFinish)
+        if (!isFinish && isStart)
         {
             if(moveset == PheonixMinion_Moveset.POSITION)
             {
@@ -137,4 +137,5 @@ public class Phoenix_Enemy : UnitAbs
         gameManager.IncreaseScore(score);
         Debug.Log("TriggerOnDeath was call");
     }
+    
 }

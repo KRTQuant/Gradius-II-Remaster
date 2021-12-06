@@ -29,7 +29,8 @@ public class Dee_Enemy : UnitAbs
 
     private void FixedUpdate()
     {
-        Solution2();
+        if(isStart)
+            Solution2();
     }
 
     private void Solution2()
