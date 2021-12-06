@@ -9,7 +9,7 @@ TagManager:
   - Obstacle
   - BlueCapsule
   - YellowCapsule
-  - Capsule
+  - LineWall
   layers:
   - Default
   - TransparentFX
