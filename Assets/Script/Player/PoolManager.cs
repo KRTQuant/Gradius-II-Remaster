@@ -26,7 +26,7 @@ public enum PoolObjectType
     public GameObject Container;
     public int order = 0;
 
-    [HideInInspector]
+
     public List<GameObject> pool = new List<GameObject>();
 }
 
@@ -50,13 +50,16 @@ public class PoolManager : MonoBehaviour
             objInstance = Instantiate(info.prefab, info.Container.transform.position, info.Container.transform.rotation, info.Container.transform);
             objInstance.SetActive(false);
             info.pool.Add(objInstance);
+            Debug.Log(info.type.ToString());
         }
     }
 
     public GameObject GetPoolObject(PoolObjectType type)
     {
         PoolInfo selected = GetPoolByType(type);
+        Debug.Log(selected.pool[selected.order]);
         List<GameObject> pool = selected.pool;
+        Debug.Log(pool[selected.order]);
         GameObject called = pool[selected.order];
         selected.order++;
 

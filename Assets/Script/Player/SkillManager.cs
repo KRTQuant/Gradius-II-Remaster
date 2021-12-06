@@ -115,7 +115,11 @@ public class SkillManager : MonoBehaviour
     private void Update()
     {
         HandleTimer();
-
+        if(isFieldActive)
+        {
+            GameObject ff = poolManager.GetPoolObject(PoolObjectType.ForceField);
+            ff.transform.position = transform.position;
+        }
     }
 
     //trigger when collide with 
@@ -258,6 +262,7 @@ public class SkillManager : MonoBehaviour
                     if (ffLevel != 0)
                     {
                         isFieldActive = true;
+                        Debug.Log("Active forcefield");
                         ActiveForceField();
                     }
                 }
@@ -313,9 +318,9 @@ public class SkillManager : MonoBehaviour
         if (isFieldActive)
         {
             Debug.Log("Call Force Field");
-            GameObject forcefield = poolManager.GetPoolObject(PoolObjectType.ForceField);
-            forcefield.transform.position = gameObject.transform.position;
-            forcefield.SetActive(true);
+            GameObject ff = poolManager.GetPoolObject(PoolObjectType.ForceField);
+            ff.transform.position = gameObject.transform.position;
+            ff.SetActive(true);
         }
     }
 
