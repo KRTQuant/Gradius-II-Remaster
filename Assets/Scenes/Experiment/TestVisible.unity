@@ -1355,8 +1355,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2101890694835179000, guid: 295c73ee74985324e98e3f6a8592b007, type: 3}
   m_PrefabInstance: {fileID: 1336305743}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1022104966
-BoxCollider2D:
+--- !u!114 &1022104964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022104962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e2a2a804eaf514c9ddde530641d788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  polygon: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  currentSprite: {fileID: 0}
+--- !u!60 &1022104965
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1368,7 +1383,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.4125959, y: -1.751549}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1378,9 +1393,24 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.64386916, y: 0.18702078}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.0239261, y: -1.5716727}
+      - {x: -1.0957035, y: -1.5511649}
+      - {x: -1.2392582, y: -1.4486258}
+      - {x: -1.2905277, y: -1.4178641}
+      - {x: -1.372559, y: -1.4076102}
+      - {x: -1.4853519, y: -1.4076102}
+      - {x: -1.5468754, y: -1.4178641}
+      - {x: -1.6801761, y: -1.4793875}
+      - {x: -1.7929691, y: -1.5511649}
+      - {x: -1.9057621, y: -1.6331961}
+      - {x: -2.049317, y: -1.7767508}
+      - {x: -2.049317, y: -1.8280203}
+      - {x: -2.028809, y: -1.8485281}
+      - {x: -0.9829105, y: -1.8485281}
+      - {x: -0.9726566, y: -1.8177664}
+      - {x: -0.9726566, y: -1.7152274}
 --- !u!1 &1052544259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,6 +1962,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6147727706852301545, guid: 10f8aaee202d3054e8d06f60864d1c5a, type: 3}
+    - target: {fileID: 2101890694835179000, guid: 295c73ee74985324e98e3f6a8592b007, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826156246862148816, guid: 295c73ee74985324e98e3f6a8592b007, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8826156246862148817, guid: 295c73ee74985324e98e3f6a8592b007, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1982,7 +2020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8826156246862148830, guid: 295c73ee74985324e98e3f6a8592b007, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 295c73ee74985324e98e3f6a8592b007, type: 3}
