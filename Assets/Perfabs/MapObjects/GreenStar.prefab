@@ -161,6 +161,6 @@ MonoBehaviour:
   isStart: 0
   rushPrefab: {fileID: 3226732203460187522, guid: 1263eadcfe30afc4fa7cc93e3ee28fff, type: 3}
   rushAmount: 6
-  delayBetweenSpawning: 0.5
-  delayAfterActive: 2
+  delayBetweenSpawning: 0.2
+  delayAfterActive: 5
   repeatTime: 1
