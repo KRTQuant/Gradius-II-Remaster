@@ -25,8 +25,9 @@ public class DeathHand_Enemy : UnitAbs
     [SerializeField] GameObject basePosition;
     [SerializeField] GameObject baseNode;
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         currentBehav = DeathHand_Behavior.INACTIVE;
         baseNode = childArm[childArm.Count - 1];
     }

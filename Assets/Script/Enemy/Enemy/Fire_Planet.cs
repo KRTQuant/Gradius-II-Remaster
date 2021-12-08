@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Small_Sun : UnitAbs
+public class Fire_Planet : UnitAbs
 {
     [Header("Fire Planet")]
     [SerializeField] private float delayTime;
@@ -10,9 +10,16 @@ public class Small_Sun : UnitAbs
     [SerializeField] private float speed;
     // Start is called before the first frame update
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         SetHealth();
+    }
+
+    private void Update()
+    {
+        CheckDeath();
+
     }
 
     IEnumerator Delay()
@@ -37,7 +44,23 @@ public class Small_Sun : UnitAbs
 
     public override void OnBecameVisible()
     {
+        base.OnBecameVisible();
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(Delay());
+    }
+
+    public override void OnEnable()
+    {
+        base.Start();
+        isStart = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
+        }
     }
 }

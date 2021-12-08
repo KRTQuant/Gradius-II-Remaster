@@ -50,7 +50,7 @@ public class PoolManager : MonoBehaviour
             objInstance = Instantiate(info.prefab, info.Container.transform.position, info.Container.transform.rotation, info.Container.transform);
             objInstance.SetActive(false);
             info.pool.Add(objInstance);
-            Debug.Log(info.type.ToString());
+            //Debug.Log(info.type.ToString());
         }
     }
 

@@ -22,8 +22,8 @@ public class LoopBackground : MonoBehaviour
     {
         if(transform.position.x < -width)
         {
-            Debug.Log("under condition");
-            Debug.Log(-width);
+            //Debug.Log("under condition");
+            //Debug.Log(-width);
             Reposition();
         }
     }

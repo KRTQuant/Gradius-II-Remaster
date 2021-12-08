@@ -391,9 +391,10 @@ GameObject:
   - component: {fileID: 4919315017852643986}
   - component: {fileID: 4919315017852643989}
   - component: {fileID: 4919315017852643984}
+  - component: {fileID: 1362563543}
   m_Layer: 0
   m_Name: Pheonix
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -407,7 +408,7 @@ Transform:
   m_GameObject: {fileID: 4919315017852643988}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.743109, y: 7.3740964, z: 36.510986}
-  m_LocalScale: {x: 3.8106, y: 3.8106, z: 3.8106}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4919315016098070095}
   m_Father: {fileID: 5418706021914906766}
@@ -453,7 +454,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 8504554855245811736, guid: 1314d6a7439476e49bfd32597ce9a5dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -476,6 +477,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7efc01de4d0b6eb4dbb8a002596f9c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  initPos: {x: 0, y: 0, z: 0}
+  score: 0
+  health: 0
+  maxHealth: 0
+  isStart: 0
+  deactiveDelay: 0
   moveDir:
   - {fileID: 4919315017509725828}
   - {fileID: 4919315018076746692}
@@ -483,26 +491,29 @@ MonoBehaviour:
   - {fileID: 4919315016303003689}
   currentDir: 0
   destination: 0
-  speed: 200
+  speed: 5
   rb: {fileID: 4919315017852643984}
   offset: 0.25
   bulletSpawnPos: {fileID: 4919315016098070095}
   currentBehavior: 0
-  bulletSpreadAmount: 7
+  bulletSpeed_Spread: 3
+  bulletSpreadAmount: 5
   spreadPrefab: {fileID: 4919315016283223916}
   endSpreadAngle: 220
   startSpreadAngle: 330
   spreadBulletDir: {x: 0, y: 0, z: 0}
+  bulletSpeed_Fireball: 3
   bulletFireballAmount: 3
-  bulletWave: 10
+  bulletWave: 5
   fireballPrefab: {fileID: 4919315016900822830}
   startFireBallAngle: 300
   endFireballAngle: 240
   fireballDir: {x: 0, y: 0, z: 0}
-  delayTime: 0.1
+  delayTime: 0.75
   timer: 0
   waveCounter: 0
   isBurst: 0
+  fireballDelayTime: 0.75
 --- !u!50 &4919315017852643984
 Rigidbody2D:
   serializedVersion: 4
@@ -524,6 +535,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &1362563543
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4919315017852643988}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.06596625, y: 0.32983232}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.526316, y: 10.526316}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5109093, y: 3.7977452}
+  m_EdgeRadius: 0
 --- !u!1 &4919315018076746695
 GameObject:
   m_ObjectHideFlags: 0

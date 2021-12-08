@@ -21,8 +21,9 @@ public class Rush_Enemy : UnitAbs
         SetHealth();
     }
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         sr = GetComponent<SpriteRenderer>();
         spriteSize = sr.bounds.extents;
         player = GameObject.Find("Player");
@@ -95,6 +96,15 @@ public class Rush_Enemy : UnitAbs
         {
             TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
             Debug.Log("Collide with bullet");
+        }
+    }
+
+    public override void OnBecameInvisible()
+    {
+        if (isStart)
+        {
+            Destroy(this.gameObject);
+            Debug.Log("Destroyed");
         }
     }
 }

@@ -7,8 +7,9 @@ public class Dragon_Enemy : UnitAbs
     [Header("Dragon Enemy")]
     public Transform player;
 
-    void Start()
+    public override void Start()
     {
+        base.Start();
         player = GameObject.Find("Player").transform;
         SetHealth();
     }

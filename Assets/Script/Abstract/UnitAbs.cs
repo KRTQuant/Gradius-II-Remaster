@@ -6,6 +6,7 @@ public class UnitAbs : MonoBehaviour
 {
     [Header("Game Manager")]
     [SerializeField] public GameManager gameManager;
+    [SerializeField] public Vector3 initPos;
 
     [Header("Score")]
     [SerializeField] public int score;
@@ -16,6 +17,24 @@ public class UnitAbs : MonoBehaviour
 
     [Header("Active")]
     [SerializeField] public bool isStart;
+
+    [Header("Deactive")]
+    [SerializeField] public float deactiveDelay;
+
+    public virtual void Start()
+    {
+        initPos = transform.position;
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = initPos;
+    }
+
+    public virtual void OnEnable()
+    {
+        isStart = false;
+    }
 
     public void SetHealth()
     {
@@ -37,14 +56,15 @@ public class UnitAbs : MonoBehaviour
         gameObject.SetActive(false);
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         gameManager.IncreaseScore(score);
-        Debug.Log("TriggerOnDeath was call");
+        //Debug.Log("TriggerOnDeath was call");
     }
 
     public virtual void OnBecameVisible()
     {
-        Debug.Log(name + " Activated");
+        //Debug.Log(name + " Activated");
         isStart = true;
     }
+
 
     public virtual void CheckDeath()
     {
@@ -52,6 +72,14 @@ public class UnitAbs : MonoBehaviour
         if (health <= 0)
         {
             TriggerOnDeath();
+        }
+    }
+
+    public virtual void OnBecameInvisible()
+    {
+        if (isStart)
+        {
+            this.gameObject.SetActive(false);
         }
     }
 }

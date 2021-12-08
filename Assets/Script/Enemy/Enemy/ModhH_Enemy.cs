@@ -19,8 +19,9 @@ public class ModhH_Enemy : UnitAbs
     [Tooltip("Delay before start spawn")]
     [SerializeField] public float delay;
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         SetHealth();
     }
     // Update is called once per frame

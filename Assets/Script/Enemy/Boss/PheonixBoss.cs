@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PheonixBoss : MonoBehaviour
+public class PheonixBoss : UnitAbs
 {
     [SerializeField] private List<Transform> moveDir = new List<Transform>();
     [SerializeField] private float currentDir;
@@ -15,6 +15,7 @@ public class PheonixBoss : MonoBehaviour
     [SerializeField] private behaviorState currentBehavior;
 
     [Header("Spreadshot")]
+    [SerializeField] private float bulletSpeed_Spread;
     [SerializeField] private int bulletSpreadAmount;
     [SerializeField] private GameObject spreadPrefab;
     [Range(0,360)]
@@ -24,6 +25,7 @@ public class PheonixBoss : MonoBehaviour
     [SerializeField] private Vector3 spreadBulletDir;
 
     [Header("Fireball")]
+    [SerializeField] private float bulletSpeed_Fireball;
     [SerializeField] private int bulletFireballAmount;
     [SerializeField] private int bulletWave;
     [SerializeField] private GameObject fireballPrefab;
@@ -38,12 +40,8 @@ public class PheonixBoss : MonoBehaviour
     [SerializeField] private bool isBurst = false;
     [SerializeField] private float fireballDelayTime;
 
-    private void Start()
+    public override void Start()
     {
-        Application.targetFrameRate = 45;
-        // fly to destination 1
-        Vector3 dir = (moveDir[0].transform.position - transform.position).normalized;
-        rb.velocity = dir * speed * Time.deltaTime;
 
     }
 
@@ -73,6 +71,7 @@ public class PheonixBoss : MonoBehaviour
                 Spreadshot();
             }
         }
+        CheckDeath();
     }
 
     private void Fly()
@@ -90,7 +89,7 @@ public class PheonixBoss : MonoBehaviour
         if (transform.position != moveDir[(int)destination].position)
         {
             Vector3 dir = (moveDir[(int)destination].position - transform.position).normalized;
-            rb.velocity = dir * speed * Time.deltaTime;
+            rb.velocity = dir * speed;
             Debug.Log(rb.velocity);
         }
     }
@@ -128,7 +127,7 @@ public class PheonixBoss : MonoBehaviour
 
             GameObject bullet = Instantiate(spreadPrefab, bulletSpawnPos.position, Quaternion.identity);
             bullet.SetActive(true);
-            bullet.GetComponent<Rigidbody2D>().velocity = spreadBulletDir * speed * Time.deltaTime;
+            bullet.GetComponent<Rigidbody2D>().velocity = spreadBulletDir * bulletSpeed_Spread;
 
             angle += angleStep;
         }
@@ -205,7 +204,7 @@ public class PheonixBoss : MonoBehaviour
 
             GameObject bullet = Instantiate(fireballPrefab, bulletSpawnPos.position, Quaternion.identity);
             bullet.SetActive(true);
-            bullet.GetComponent<Rigidbody2D>().velocity = bulletDir * speed * Time.deltaTime;
+            bullet.GetComponent<Rigidbody2D>().velocity = bulletDir * bulletSpeed_Fireball;
 
             angle += angleStep;
         }
@@ -222,4 +221,30 @@ public class PheonixBoss : MonoBehaviour
         isBurst = true;
         Fly();
     }
+
+    private void OnDisable()
+    {
+        currentBehavior = behaviorState.INIT;
+        destination = 0;
+    }
+
+    public override void OnEnable()
+    {
+        base.Start();
+        SetHealth();
+        Application.targetFrameRate = 45;
+        // fly to destination 1
+        Vector3 dir = (moveDir[0].transform.position - transform.position).normalized;
+        rb.velocity = dir * speed;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
+        }
+    }
+
 }

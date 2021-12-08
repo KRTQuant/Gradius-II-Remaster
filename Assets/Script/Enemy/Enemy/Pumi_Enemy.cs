@@ -26,8 +26,9 @@ public class Pumi_Enemy : UnitAbs
     [SerializeField] private float bulletSpeed;
     [SerializeField] private float fireRate;
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         SetHealth();
         player = GameObject.Find("Player");
     }

@@ -23,15 +23,29 @@ public class Fan_Enemy : UnitAbs
     [SerializeField] private enum Direction { ABOVE, BELOW }
     [SerializeField] private Direction dir;
 
+    public override void OnEnable()
+    {
+        base.OnEnable();
+        SetDestination();
+        currentStatus = enemyStatus.MOVE;
+    }
+
+    public void OnDisable()
+    {
+        currentStatus = enemyStatus.ARRIVED;
+        destination.Clear();
+        passedDestination = 0;
+    }
+
     private void Awake()
     {
         SetHealth();
     }
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         SetReference();
-        SetDestination();
     }
 
     private void Update()
@@ -41,8 +55,14 @@ public class Fan_Enemy : UnitAbs
             RotateSprite();
             CheckDeath();
             Move();
-            DisableObject();
+            if (currentStatus == enemyStatus.STOP && isStart)
+            {
+                this.gameObject.SetActive(false);
+            }
         }
+
+        if(destination.Count == 0)
+            SetDestination();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -105,7 +125,7 @@ public class Fan_Enemy : UnitAbs
 
     public override void OnBecameVisible()
     {
-        Debug.Log(name + " isStart = true");
+        //Debug.Log(name + " isStart = true");
         isStart = true;
     }
 
@@ -133,9 +153,9 @@ public class Fan_Enemy : UnitAbs
 
     }
 
-    private void DisableObject()
+    public override void OnBecameInvisible()
     {
-        if(currentStatus == enemyStatus.STOP)
+        if (currentStatus == enemyStatus.STOP && isStart)
         {
             this.gameObject.SetActive(false);
         }

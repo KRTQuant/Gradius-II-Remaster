@@ -13,8 +13,9 @@ public class Garun_Enemy : UnitAbs
     [Header("Reference")]
     [SerializeField] private GameObject capsule;
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         SetHealth();
     }
 
@@ -41,5 +42,18 @@ public class Garun_Enemy : UnitAbs
             TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
             Debug.Log("Collide with bullet");
         }
+    }
+    public void OnBecameInvisible()
+    {
+        if (isStart)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+
+    public override void TriggerOnDeath()
+    {
+        Instantiate<GameObject>(capsule, transform.position, Quaternion.identity);
+        base.TriggerOnDeath();
     }
 }

@@ -15,8 +15,9 @@ public class Dee_Enemy : UnitAbs
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private List<Sprite> spriteList;
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         player = GameObject.Find("Player");
         spriteRenderer = GetComponentInParent<SpriteRenderer>();
         SetHealth();

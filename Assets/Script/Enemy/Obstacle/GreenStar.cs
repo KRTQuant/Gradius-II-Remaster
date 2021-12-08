@@ -12,8 +12,9 @@ public class GreenStar : UnitAbs
     [SerializeField] private float delayAfterActive;
     [SerializeField] private float repeatTime;
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         SetHealth();
     }
 

@@ -12,8 +12,9 @@ public class Hatch_Enemy : UnitAbs
 
     [SerializeField] private float delayAfterActive;
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         anim = GetComponent<Animator>();
         SetHealth();
     }

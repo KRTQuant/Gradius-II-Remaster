@@ -32,6 +32,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "Stage01_AE" && !isParamsWasPass)
+        {
+            Debug.Log("Begin passing powerset");
+            PassPowersetSelection();
+            isParamsWasPass = true;
+            //Debug.Log((Skillset)skillSelectedType);
+            FindRef();
+        }
+    }
+
     public void HandleSkillSetSelection(int type)
     {
         skillSelectedType = type;
@@ -47,24 +59,13 @@ public class GameManager : MonoBehaviour
             skillManager.SetSkillPreset((Skillset)skillSelectedType);
         }
     }
+
     IEnumerator HandleSkillSelected()
     {
         yield return new WaitForSeconds(waitSec);
         Debug.Log("Wait for " + waitSec + "seconds");
         Debug.Log("Load Scene");
         SceneManager.LoadScene("Stage01_AE");
-    }
-
-    private void Update()
-    {
-        if(SceneManager.GetActiveScene().name == "Stage01_AE" && !isParamsWasPass)
-        {
-            Debug.Log("Begin passing powerset");
-            PassPowersetSelection();
-            isParamsWasPass = true;
-            Debug.Log((Skillset)skillSelectedType);
-            FindRef();
-        }
     }
 
     public void IncreaseScore(int score)
@@ -81,5 +82,23 @@ public class GameManager : MonoBehaviour
         {
             scoreText = GameObject.Find("ScoreNumber").GetComponent<Text>();
         }
+    }
+
+    public void HandlePlayerDeath()
+    {
+        StartCoroutine(DelayToMainMenu());
+    }
+
+    IEnumerator DelayToMainMenu()
+    {
+        yield return new WaitForSeconds(3);
+        Debug.Log("Load scene plz");
+        SceneManager.LoadScene(1);
+        StopCoroutine(DelayToMainMenu());
+    }
+
+    public void LoadScene(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
     }
 }

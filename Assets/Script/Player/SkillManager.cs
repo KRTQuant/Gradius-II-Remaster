@@ -128,6 +128,7 @@ public class SkillManager : MonoBehaviour
         if (collision.CompareTag("YellowCapsule"))
         {
             IncreaseCapsule();
+            collision.gameObject.SetActive(false);
         }
     }
 
@@ -147,6 +148,8 @@ public class SkillManager : MonoBehaviour
         laserLevel = 0;
         funnelLevel = 0;
         ffLevel = 0;
+        heldCapsule = 0;
+        powerupFrame.gameObject.SetActive(false);
     }
 
     //Increase number of capsule that player held
@@ -348,5 +351,10 @@ public class SkillManager : MonoBehaviour
             funnel.SetActive(true);
             //Debug.Log("Create funnel");
         }
+    }
+
+    private void OnEnable()
+    {
+        InitSkill_Level();
     }
 }

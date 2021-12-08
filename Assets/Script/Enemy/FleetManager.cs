@@ -6,6 +6,7 @@ public class FleetManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> fleetList;
     [SerializeField] private GameObject upgradeCapsule;
+    [SerializeField] private Vector3 tempPos;
 
     private void Start()
     {
@@ -27,26 +28,17 @@ public class FleetManager : MonoBehaviour
 
     public void CheckStatus()
     {
-        if (IsUnitsActive())
+        foreach(var unit in fleetList.ToArray())
         {
-            return;
-        }
-        else
-        {
-            Instantiate<GameObject>(upgradeCapsule, transform.position, Quaternion.identity);
-        }
-    }
-
-    public bool IsUnitsActive()
-    {
-        for (int i = 0; i < fleetList.Count; i++)
-        {
-            if (fleetList[i].activeInHierarchy)
+            if(!unit.activeSelf)
             {
-                return false;
+                if(fleetList.Count == 1)
+                {
+                    Instantiate<GameObject>(upgradeCapsule, fleetList[0].transform.position, Quaternion.identity);
+                }
+                fleetList.Remove(unit);
             }
         }
-        return true;
     }
 
     //Get all unit in fleet

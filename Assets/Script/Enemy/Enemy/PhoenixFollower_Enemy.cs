@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PhoenixFollower_Enemy : UnitAbs
 {
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         SetHealth();
     }
 
@@ -33,12 +34,12 @@ public class PhoenixFollower_Enemy : UnitAbs
 
     private void OnBecameInvisible()
     {
-        StartCoroutine("DeactivateDelay");
+        StartCoroutine(DeactivateDestroy());
     }
 
-    IEnumerator DeactivateDelay()
+    IEnumerator DeactivateDestroy()
     {
         yield return new WaitForSeconds(5);
-        this.gameObject.SetActive(false);
+        Destroy(this.gameObject);
     }
 }

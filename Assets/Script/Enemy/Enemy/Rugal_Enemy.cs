@@ -9,10 +9,13 @@ public class Rugal_Enemy : UnitAbs
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed;
     [SerializeField] private float rotateSpeed;
-    [SerializeField] private bool isActive = false;
+    [SerializeField] private float timer;
+    [SerializeField] private bool isSpawnCapsule;
+    [SerializeField] private GameObject capsule;
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         player = GameObject.Find("Player");
         SetHealth();
     }
@@ -22,9 +25,10 @@ public class Rugal_Enemy : UnitAbs
         SetPlayerRef();
         CheckDeath();
 
-        if (isActive)
+        if (isStart)
         {
             Homing();
+            timer += Time.deltaTime;
         }
     }
 
@@ -39,7 +43,15 @@ public class Rugal_Enemy : UnitAbs
 
     public override void OnBecameVisible()
     {
-        isActive = true;
+        isStart = true;
+    }
+
+    public override void OnBecameInvisible()
+    {
+        if(isStart && timer > 5)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     private void SetPlayerRef()
@@ -56,6 +68,8 @@ public class Rugal_Enemy : UnitAbs
         {
             TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
             Debug.Log("Collide with bullet");
+            if (isSpawnCapsule)
+                Instantiate<GameObject>(capsule, transform.position, Quaternion.identity);
         }
     }
 }

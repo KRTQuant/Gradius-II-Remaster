@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private SkillManager skillManager;
     [SerializeField] private PlayerCombat playerCombat;
+    [SerializeField] private GameManager gameManager;
 
     [Header("Velocity")]
     [SerializeField] public float constantSpeed;
@@ -20,11 +21,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public bool isLeftArrowPressed;
     [SerializeField] public bool isRightArrowPressed;
 
+    [Header("Initial Pos")]
+    [SerializeField] public Vector2 initPos;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         skillManager = GetComponent<SkillManager>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        initPos = transform.position;
     }
 
     private void Update()
@@ -41,11 +47,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if(collision.CompareTag("Enemy"))
         {
+            //player dead
             this.gameObject.SetActive(false);
+            HandleAfterDead();
             //reset cam position and spawn at checkpoint
         }
 
-        if(collision.CompareTag("enemyBullet"))
+        if(collision.CompareTag("EnemyBullet"))
         {
             if(skillManager.isFieldActive)
             {
@@ -55,6 +63,8 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 this.gameObject.SetActive(false);
+                //player dead
+                HandleAfterDead();
                 //reset and spawn at the checkpoint
             }
         }
@@ -161,4 +171,28 @@ public class PlayerMovement : MonoBehaviour
         if (!isRightArrowPressed && !isLeftArrowPressed)
             rb.velocity = new Vector2(0, rb.velocity.y);
     } 
+
+    public void HandleAfterDead()
+    {
+        playerCombat.live--;
+        if (playerCombat.live > 0)
+        {
+            //revive
+            PhaseManager phaseManager = GameObject.Find("PhaseManager").GetComponent<PhaseManager>();
+            phaseManager.LoadCheckPoint();
+            //reset enemy phase
+        }
+
+        else
+        {
+            //Go to Main Menu
+            Debug.Log("Go to main menu");
+            gameManager.HandlePlayerDeath();
+        }
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = initPos;
+    }
 }

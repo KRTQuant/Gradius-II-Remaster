@@ -26,8 +26,9 @@ public class Maksurion_Enemy : UnitAbs
     [Header("MaksurionBehavior")]
     [SerializeField] private MaksurionBehavior currentBehavior;
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         player = GameObject.Find("Player");
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();

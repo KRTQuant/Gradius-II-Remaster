@@ -12,8 +12,9 @@ public class Beans_Enemy : UnitAbs
 
     [SerializeField] private Rigidbody2D rb;
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         SetHealth();
     }
 

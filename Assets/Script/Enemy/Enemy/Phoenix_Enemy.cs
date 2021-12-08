@@ -14,6 +14,7 @@ public class Phoenix_Enemy : UnitAbs
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform player;
     [SerializeField] private PheonixMinion_Moveset moveset;
+    [SerializeField] private HordeFollowManager hordeFollow;
 
     [Header("In Order Movement")]
     [SerializeField] private float speed;
@@ -28,8 +29,10 @@ public class Phoenix_Enemy : UnitAbs
     [SerializeField] private float frequency;
 
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
+        hordeFollow = GetComponent<HordeFollowManager>();
         player = GameObject.Find("Player").transform;
         SetHealth();
     }
@@ -38,6 +41,7 @@ public class Phoenix_Enemy : UnitAbs
     void Update()
     {
         CheckDeath();
+        CheckDisable();
         if (!isFinish && isStart)
         {
             if(moveset == PheonixMinion_Moveset.POSITION)
@@ -137,5 +141,38 @@ public class Phoenix_Enemy : UnitAbs
         gameManager.IncreaseScore(score);
         Debug.Log("TriggerOnDeath was call");
     }
-    
+
+    private void CheckDisable()
+    {
+        if(IsAllUnitDeactive() && isStart)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+
+    private bool IsAllUnitDeactive()
+    {
+        if (hordeFollow.fleetBody.Count == 1)
+        {
+            return true;
+        }
+        if (hordeFollow.fleetBody.Count != 0)
+        {
+            foreach (var unit in hordeFollow.fleetBody)
+            {
+                if (unit.activeSelf)
+                {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+    public override void OnBecameInvisible()
+    {
+        return;
+    }
+
+
 }

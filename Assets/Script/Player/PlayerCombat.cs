@@ -189,4 +189,14 @@ public class PlayerCombat : MonoBehaviour
             }
         }
     }
+
+    public void UpdateLiveText()
+    {
+        liveText.text = live.ToString();
+    }
+
+    private void OnEnable()
+    {
+        UpdateLiveText();
+    }
 }

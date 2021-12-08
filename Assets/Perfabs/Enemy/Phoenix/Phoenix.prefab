@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5641531117794684394}
   - component: {fileID: 421596242}
   - component: {fileID: 421596241}
-  - component: {fileID: 4512935067365670603}
   - component: {fileID: 858809002}
+  - component: {fileID: 4512935067365670603}
   m_Layer: 0
   m_Name: Phoenix
   m_TagString: Enemy
@@ -153,6 +153,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2857143, y: 0.67946243}
   m_EdgeRadius: 0
+--- !u!114 &858809002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5641531117794684395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58dd4c0b1be110c49a5e1d860fec5f91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceBetween: 0.2
+  fleetParts:
+  - {fileID: 4449008909979241265, guid: 60eda10c67846324c9bcbc0c1154c0ee, type: 3}
+  - {fileID: 4449008909979241265, guid: 60eda10c67846324c9bcbc0c1154c0ee, type: 3}
+  - {fileID: 4449008909979241265, guid: 60eda10c67846324c9bcbc0c1154c0ee, type: 3}
+  - {fileID: 4449008909979241265, guid: 60eda10c67846324c9bcbc0c1154c0ee, type: 3}
+  - {fileID: 4449008909979241265, guid: 60eda10c67846324c9bcbc0c1154c0ee, type: 3}
+  fleetBody: []
+  player: {fileID: 0}
+  parent: {fileID: 0}
+  rb: {fileID: 0}
 --- !u!114 &4512935067365670603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,13 +189,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  initPos: {x: 0, y: 0, z: 0}
   score: 30
   health: 0
   maxHealth: 2
   isStart: 0
+  deactiveDelay: 0
   rb: {fileID: 0}
   player: {fileID: 0}
   moveset: 1
+  hordeFollow: {fileID: 0}
   speed: 4
   dir: {x: 0, y: 0}
   delayTime: 0
@@ -180,25 +206,4 @@ MonoBehaviour:
   isFlyDown: 0
   isFinish: 0
   magnitude: 3
-  frequency: 3
---- !u!114 &858809002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5641531117794684395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58dd4c0b1be110c49a5e1d860fec5f91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distanceBetween: 0.7
-  fleetParts:
-  - {fileID: 4449008909979241265, guid: 60eda10c67846324c9bcbc0c1154c0ee, type: 3}
-  - {fileID: 4449008909979241265, guid: 60eda10c67846324c9bcbc0c1154c0ee, type: 3}
-  - {fileID: 4449008909979241265, guid: 60eda10c67846324c9bcbc0c1154c0ee, type: 3}
-  fleetBody: []
-  player: {fileID: 0}
-  parent: {fileID: 0}
-  rb: {fileID: 0}
+  frequency: 4

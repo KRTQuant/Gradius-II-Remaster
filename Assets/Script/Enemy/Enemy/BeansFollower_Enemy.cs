@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class BeansFollower_Enemy : UnitAbs
 {
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         SetHealth();
     }
 
@@ -33,6 +34,6 @@ public class BeansFollower_Enemy : UnitAbs
 
     private void OnBecameInvisible()
     {
-        this.gameObject.SetActive(false);
+        Destroy(this.gameObject);
     }
 }

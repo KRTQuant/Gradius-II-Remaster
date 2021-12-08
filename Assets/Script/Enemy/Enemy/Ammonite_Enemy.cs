@@ -14,8 +14,9 @@ public class Ammonite_Enemy : UnitAbs
     [SerializeField] private float waitTime;
     [SerializeField] private float timer;
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         SetHealth();
     }
     void Update()

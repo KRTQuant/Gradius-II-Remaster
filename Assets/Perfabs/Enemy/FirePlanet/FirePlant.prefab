@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 1397246398894429761}
   - component: {fileID: 3636966352367594969}
   - component: {fileID: 5307634610920280149}
+  - component: {fileID: 789651765}
   m_Layer: 0
   m_Name: FirePlant
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +143,23 @@ MonoBehaviour:
   health: 0
   maxHealth: 10
   isStart: 0
-  delayTime: 0
+  deactiveDelay: 0
+  delayTime: 2
   rb: {fileID: 0}
-  speed: 0
+  speed: 3
+--- !u!58 &789651765
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397246398894429760}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.08030462, y: -0.06}
+  serializedVersion: 2
+  m_Radius: 0.6534076
