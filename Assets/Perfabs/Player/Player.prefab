@@ -267,7 +267,7 @@ MonoBehaviour:
   playerCombat: {fileID: 4494170791752013540}
   gameManager: {fileID: 0}
   constantSpeed: 3
-  addonSpeed: 3
+  addonSpeed: 0.25
   isUpArrowPressed: 0
   isDownArrowPressed: 0
   isLeftArrowPressed: 0
@@ -286,6 +286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: 0
+  normalBulletTimer: 0
+  normalBulletDelay: 0.25
   speedLevel: 0
   speedMaxLevel: 7
   missileType: 1
@@ -299,7 +301,7 @@ MonoBehaviour:
   laserLevel: 0
   laserMaxLevel: 2
   laserBulletDelay: 0.05
-  laserPulseDelay: 0
+  laserPulseDelay: 0.35
   laserTimer: 0
   funnelPrefab: {fileID: 0}
   funnelAmount: 0

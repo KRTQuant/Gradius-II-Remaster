@@ -37,9 +37,9 @@ public class Dee_Enemy : UnitAbs
     private void Solution2()
     {
         Vector2 dir = player.transform.position - transform.position;
-        Debug.DrawRay(transform.position, dir, Color.green);
+        //Debug.DrawRay(transform.position, dir, Color.green);
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg ;
-        Debug.Log((int)angle);
+        //Debug.Log((int)angle);
 
         if(isReverse)
         {

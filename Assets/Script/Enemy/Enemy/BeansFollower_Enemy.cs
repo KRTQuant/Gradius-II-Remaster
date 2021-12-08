@@ -32,8 +32,11 @@ public class BeansFollower_Enemy : UnitAbs
         Debug.Log("TriggerOnDeath was call");
     }
 
-    private void OnBecameInvisible()
+    public override void OnBecameInvisible()
     {
-        Destroy(this.gameObject);
+        if(isStart)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

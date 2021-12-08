@@ -20,6 +20,11 @@ public class PlayerCombat : MonoBehaviour
         poolManager = GameObject.FindObjectsOfType<PoolManager>()[0];
     }
 
+    private void Update()
+    {
+        FindReference();
+    }
+
     public void HandleFireGun()
     {
         switch (skillManager.weapon)
@@ -224,5 +229,11 @@ public class PlayerCombat : MonoBehaviour
     private void OnEnable()
     {
         UpdateLiveText();
+    }
+
+    private void FindReference()
+    {
+        if(poolManager == null)
+            poolManager = GameObject.FindObjectsOfType<PoolManager>()[0];
     }
 }

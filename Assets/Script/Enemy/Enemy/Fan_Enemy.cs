@@ -45,13 +45,13 @@ public class Fan_Enemy : UnitAbs
     public override void Start()
     {
         base.Start();
-        SetReference();
     }
 
     private void Update()
     {
         if(isStart)
         {
+            Debug.Log("Move");
             RotateSprite();
             CheckDeath();
             Move();
@@ -113,14 +113,6 @@ public class Fan_Enemy : UnitAbs
                     currentStatus = enemyStatus.ARRIVED;
                 break;
         }
-    }
-
-    private void SetReference()
-    {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        player = GameObject.Find("Player");
-        sprite = GetComponent<SpriteRenderer>();
-        rb = GetComponent<Rigidbody2D>();
     }
 
     public override void OnBecameVisible()

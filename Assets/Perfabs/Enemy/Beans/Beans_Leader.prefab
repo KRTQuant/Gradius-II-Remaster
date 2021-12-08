@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3485796021537628582}
   - component: {fileID: 3485796021534857817}
   - component: {fileID: 3485796021534857816}
+  - component: {fileID: -8752923323332089894}
   m_Layer: 0
   m_Name: Beans_Leader
   m_TagString: Enemy
@@ -118,10 +119,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  initPos: {x: 0, y: 0, z: 0}
   score: 60
   health: 0
   maxHealth: 1
   isStart: 0
+  deactiveDelay: 0
   frequency: 10
   magnitude: 5
   speed: 3
@@ -170,3 +173,29 @@ MonoBehaviour:
   player: {fileID: 0}
   parent: {fileID: 0}
   rb: {fileID: 3485796021534857817}
+--- !u!61 &-8752923323332089894
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3485796021537628578}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.8181818, y: 1.8181818}
+    newSize: {x: 2.222222, y: 2.222222}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.8181818, y: 1.8181818}
+  m_EdgeRadius: 0

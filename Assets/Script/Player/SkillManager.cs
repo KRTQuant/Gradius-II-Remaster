@@ -88,7 +88,7 @@ public class SkillManager : MonoBehaviour
     [SerializeField] private float funnelFlowTimer;
     [SerializeField] private float funnelFlowDuration;
     [SerializeField] public List<GameObject> listofFunnel;
-    [SerializeField] public GameObject FunnelPoolParent;
+    [SerializeField] public GameObject funnelPoolParent;
 
     [Header("Force Field")]
     [SerializeField] private int ffLevel;
@@ -106,9 +106,11 @@ public class SkillManager : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("Run start");
         weapon = ProjectileWeapon.NORMAL;
         InitSkill_Level();
         AccessComponent();
+        FindReference();
     }
 
     private void FixedUpdate()
@@ -118,12 +120,14 @@ public class SkillManager : MonoBehaviour
 
     private void Update()
     {
+        FindReference();
         HandleTimer();
         if(isFieldActive)
         {
             GameObject ff = poolManager.GetPoolObject(PoolObjectType.ForceField);
             ff.transform.position = transform.position;
         }
+
     }
 
     //trigger when collide with 
@@ -143,6 +147,28 @@ public class SkillManager : MonoBehaviour
         powerupFrame = GameObject.Find("border").GetComponent<SpriteRenderer>();
     }
 
+    private void FindReference()
+    {
+        if (powerupFrame == null)
+        {
+            powerupFrame = GameObject.Find("border").GetComponent<SpriteRenderer>();
+            if(GameObject.Find("border"))
+            {
+                Debug.Log("Find frame");
+            }
+        }
+
+        if (poolManager == null)
+        {
+            poolManager = GameObject.Find("PoolManager").GetComponent<PoolManager>();
+        }
+
+        if(funnelPoolParent == null)
+        {
+            funnelPoolParent = GameObject.Find("FunnelPoolParent").gameObject;
+        }
+    }
+
     //set skill level to Zero
     private void InitSkill_Level()
     {
@@ -153,6 +179,7 @@ public class SkillManager : MonoBehaviour
         funnelLevel = 0;
         ffLevel = 0;
         heldCapsule = 0;
+        powerupFrame = GameObject.Find("border").GetComponent<SpriteRenderer>();
         powerupFrame.gameObject.SetActive(false);
     }
 
@@ -210,8 +237,14 @@ public class SkillManager : MonoBehaviour
                 laserType = LaserType.RIPPLE;
                 break;
         }
-
-        poolManager.SetMissilePool();
+        if(poolManager == null)
+        {
+            AccessComponent();
+        }
+        else if(poolManager != null)
+        {
+            poolManager.SetMissilePool();
+        }
     }
 
     //Active when level increase

@@ -35,7 +35,7 @@ public class OptionFollowScript : MonoBehaviour
             SetPlayerReference();
         if(poolManager == null)
         {
-            poolManager = Instantiate<GameObject>(funnelPool, skillManager.FunnelPoolParent.transform).GetComponentInChildren<PoolManager>();
+            poolManager = Instantiate<GameObject>(funnelPool, skillManager.funnelPoolParent.transform).GetComponentInChildren<PoolManager>();
         }
         UpdatePositionList();
         FollowPlayer();

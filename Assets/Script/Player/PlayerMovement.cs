@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement Instance { get { return _instance; } }
+    public static PlayerMovement _instance;
+
     [Header("Reference")]
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
@@ -23,6 +26,11 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Initial Pos")]
     [SerializeField] public Vector2 initPos;
+
+    private void Awake()
+    {
+
+    }
 
     private void Start()
     {
@@ -69,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+
 
     private void GetInput()
     {

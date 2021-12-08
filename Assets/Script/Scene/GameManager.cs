@@ -39,7 +39,6 @@ public class GameManager : MonoBehaviour
             Debug.Log("Begin passing powerset");
             PassPowersetSelection();
             isParamsWasPass = true;
-            //Debug.Log((Skillset)skillSelectedType);
             FindRef();
         }
     }
