@@ -153,11 +153,13 @@ MonoBehaviour:
   rb: {fileID: 0}
   col: {fileID: 0}
   sprite: {fileID: 0}
+  boxCollider: {fileID: 0}
   speed: 5
   waitTime: 0
+  rac: {fileID: 0}
   currentAmmoType: 5
   isStop: 0
-  player: {fileID: 0}
+  target: {fileID: 0}
   animator: {fileID: 0}
 --- !u!61 &8921084051192609408
 BoxCollider2D:
@@ -372,11 +374,13 @@ MonoBehaviour:
   rb: {fileID: 0}
   col: {fileID: 1520506132540178329}
   sprite: {fileID: 0}
+  boxCollider: {fileID: 0}
   speed: 5
   waitTime: 5
+  rac: {fileID: 0}
   currentAmmoType: 1
   isStop: 0
-  player: {fileID: 0}
+  target: {fileID: 0}
   animator: {fileID: 0}
 --- !u!1 &6069077506162184555
 GameObject:
@@ -651,11 +655,13 @@ MonoBehaviour:
   rb: {fileID: 0}
   col: {fileID: 0}
   sprite: {fileID: 0}
-  speed: 5
-  waitTime: 5
+  boxCollider: {fileID: 0}
+  speed: 40
+  waitTime: 0
+  rac: {fileID: 0}
   currentAmmoType: 0
   isStop: 0
-  player: {fileID: 0}
+  target: {fileID: 0}
   animator: {fileID: 0}
 --- !u!61 &8921084052334096854
 BoxCollider2D:
@@ -855,11 +861,13 @@ MonoBehaviour:
   rb: {fileID: 0}
   col: {fileID: 0}
   sprite: {fileID: 0}
+  boxCollider: {fileID: 0}
   speed: -5
   waitTime: 0
+  rac: {fileID: 0}
   currentAmmoType: 7
   isStop: 0
-  player: {fileID: 0}
+  target: {fileID: 0}
   animator: {fileID: 0}
 --- !u!61 &8921084051388719645
 BoxCollider2D:
@@ -1029,11 +1037,13 @@ MonoBehaviour:
   rb: {fileID: 0}
   col: {fileID: 0}
   sprite: {fileID: 0}
+  boxCollider: {fileID: 0}
   speed: 5
   waitTime: 0
+  rac: {fileID: 0}
   currentAmmoType: 6
   isStop: 0
-  player: {fileID: 0}
+  target: {fileID: 0}
   animator: {fileID: 0}
 --- !u!61 &8921084051374674063
 BoxCollider2D:
@@ -1202,6 +1212,7 @@ MonoBehaviour:
     Container: {fileID: 6069077506274546692}
     order: 0
     pool: []
+  skillManager: {fileID: 0}
 --- !u!1 &6069077507121451306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,11 +1410,13 @@ MonoBehaviour:
   rb: {fileID: 0}
   col: {fileID: 0}
   sprite: {fileID: 0}
+  boxCollider: {fileID: 0}
   speed: 10
   waitTime: 3
+  rac: {fileID: 0}
   currentAmmoType: 2
   isStop: 0
-  player: {fileID: 0}
+  target: {fileID: 0}
   animator: {fileID: 0}
 --- !u!61 &8921084051671132764
 BoxCollider2D:

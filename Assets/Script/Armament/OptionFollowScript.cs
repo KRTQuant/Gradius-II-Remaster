@@ -86,6 +86,10 @@ public class OptionFollowScript : MonoBehaviour
                 {
                     HandleBulletType(PoolObjectType.LaserBullet);
                 }
+                if (skillManager.laserType == LaserType.RIPPLE)
+                {
+                    HandleBulletType(PoolObjectType.LaserPulse);
+                }
                 break;
         }
     }

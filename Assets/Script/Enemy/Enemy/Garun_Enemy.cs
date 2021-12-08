@@ -53,7 +53,11 @@ public class Garun_Enemy : UnitAbs
 
     public override void TriggerOnDeath()
     {
-        Instantiate<GameObject>(capsule, transform.position, Quaternion.identity);
+        if(isSpawnCapsule)
+        {
+            Instantiate<GameObject>(capsule, transform.position, Quaternion.identity);
+
+        }
         base.TriggerOnDeath();
     }
 }

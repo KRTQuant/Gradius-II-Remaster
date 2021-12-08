@@ -722,7 +722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listofPool:
   - type: 0
-    amount: 1
+    amount: 2
     prefab: {fileID: 3456441776991615759}
     Container: {fileID: 3456441777002230178}
     order: 0
@@ -752,7 +752,7 @@ MonoBehaviour:
     order: 0
     pool: []
   - type: 5
-    amount: 4
+    amount: 2
     prefab: {fileID: 3456441776682999311}
     Container: {fileID: 3456441776880540893}
     order: 0
@@ -787,6 +787,7 @@ MonoBehaviour:
     Container: {fileID: 2118888446}
     order: 0
     pool: []
+  skillManager: {fileID: 0}
 --- !u!1 &3456441778116962477
 GameObject:
   m_ObjectHideFlags: 0

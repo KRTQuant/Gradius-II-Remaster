@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 3458724117844693471}
   - component: {fileID: 3458724117844693470}
   - component: {fileID: 3458724117844693457}
+  - component: {fileID: 1363307313299310957}
+  - component: {fileID: 7919637524863794464}
+  - component: {fileID: 2519787926497791575}
   m_Layer: 0
   m_Name: SolarFlare
   m_TagString: Untagged
@@ -26,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3458724117844693456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.51, z: 0}
-  m_LocalScale: {x: 1.6459, y: 1.6459, z: 1.6459}
+  m_LocalPosition: {x: -0.41, y: 0.51, z: 0}
+  m_LocalScale: {x: 0.95745295, y: 0.95745295, z: 0.95745295}
   m_Children: []
   m_Father: {fileID: 5235574643825060089}
   m_RootOrder: 1
@@ -71,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7088577990224647210, guid: 10f8aaee202d3054e8d06f60864d1c5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -102,6 +105,77 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &1363307313299310957
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3458724117844693456}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.9999995, y: 3.6901188}
+    newSize: {x: 5.9999995, y: 3.942627}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.3022461, y: -1.6844656}
+      - {x: -1.5073242, y: -1.6844656}
+      - {x: -1.6508789, y: -1.6947196}
+      - {x: -1.7329102, y: -1.7767508}
+      - {x: -1.7329102, y: -1.8485281}
+      - {x: -1.0869141, y: -1.8485281}
+      - {x: -1.0869141, y: -1.7767508}
+      - {x: -1.2509766, y: -1.7049735}
+--- !u!114 &7919637524863794464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3458724117844693456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e2a2a804eaf514c9ddde530641d788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  polygon: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  currentSprite: {fileID: 0}
+--- !u!114 &2519787926497791575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3458724117844693456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2acb3ec44bf7ef4889b622837961e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  initPos: {x: 0, y: 0, z: 0}
+  score: 0
+  health: 0
+  maxHealth: 0
+  isStart: 0
+  deactiveDelay: 0
+  animator: {fileID: 0}
+  delay: 8
+  interval: 3
+  isEnabled: 0
 --- !u!1 &5235574643825060086
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,6 +187,7 @@ GameObject:
   - component: {fileID: 5235574643825060089}
   - component: {fileID: 5235574643825060088}
   - component: {fileID: 5235574643825060087}
+  - component: {fileID: 8181779910004903653}
   m_Layer: 3
   m_Name: BigSun_Flip
   m_TagString: Untagged
@@ -127,7 +202,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5235574643825060086}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 105.31566, y: 2.07, z: -34.223587}
   m_LocalScale: {x: 2.2145364, y: -2.214536, z: 2.2145364}
   m_Children:
@@ -175,7 +250,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 2978255502340111421, guid: e3d8b541be611754686426ed8906c592, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -206,6 +281,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8181779910004903653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5235574643825060086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1e140d696189c4a8c4813d845babd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  initPos: {x: 0, y: 0, z: 0}
+  score: 0
+  health: 0
+  maxHealth: 0
+  isStart: 0
+  deactiveDelay: 0
 --- !u!1 &8484791844751915842
 GameObject:
   m_ObjectHideFlags: 0

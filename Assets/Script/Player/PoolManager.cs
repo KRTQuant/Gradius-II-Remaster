@@ -33,9 +33,11 @@ public enum PoolObjectType
 public class PoolManager : MonoBehaviour
 {
     [SerializeField] List<PoolInfo> listofPool;
+    [SerializeField] SkillManager skillManager;
 
     private void Start()
     {
+        Debug.Log("Active poolManager");
         for(int i = 0; i < listofPool.Count; i++)
         {
             FillPool(listofPool[i]);
@@ -78,5 +80,17 @@ public class PoolManager : MonoBehaviour
                 return listofPool[i];
         }
         return null;
+    }
+
+    public void SetMissilePool()
+    {
+        skillManager = GameObject.Find("Player").GetComponent<SkillManager>();
+        if (skillManager.missileType == MissileType.MISSILE)
+        {
+            PoolInfo poolInfo = GetPoolByType(PoolObjectType.Missile);
+            Debug.Log("Set missile pool amount = 1");
+            poolInfo.amount = 1;
+            poolInfo.pool.RemoveAt(poolInfo.pool.Count-1);
+        }
     }
 }
