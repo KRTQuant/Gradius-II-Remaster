@@ -41,7 +41,8 @@ public class GreenStar : UnitAbs
 
     public override void OnBecameVisible()
     {
-        repeatTime = (rushAmount * delayBetweenSpawning) + 1;
+        base.OnBecameVisible();
+        repeatTime = (rushAmount * delayBetweenSpawning) + 5;
         Debug.Log(repeatTime);
         InvokeRepeating("Takeoff", delayAfterActive, repeatTime);
     }

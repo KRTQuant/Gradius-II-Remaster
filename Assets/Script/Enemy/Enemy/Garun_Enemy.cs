@@ -9,6 +9,7 @@ public class Garun_Enemy : UnitAbs
     [SerializeField] private float frequency;
     [SerializeField] private float magnitude;
     [SerializeField] private float speed;
+    [SerializeField] private PhaseManager phaseManager;
 
     [Header("Reference")]
     [SerializeField] private GameObject capsule;
@@ -17,6 +18,7 @@ public class Garun_Enemy : UnitAbs
     {
         base.Start();
         SetHealth();
+        phaseManager = GameObject.Find("PhaseManager").GetComponent<PhaseManager>();
     }
 
     private void Update()
@@ -55,7 +57,7 @@ public class Garun_Enemy : UnitAbs
     {
         if(isSpawnCapsule)
         {
-            Instantiate<GameObject>(capsule, transform.position, Quaternion.identity);
+            Instantiate<GameObject>(capsule, transform.position, Quaternion.identity, phaseManager.phase[phaseManager.currentPhase].phaseTransform.gameObject.transform);
 
         }
         base.TriggerOnDeath();

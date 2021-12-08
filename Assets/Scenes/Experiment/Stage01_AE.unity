@@ -665,6 +665,7 @@ MonoBehaviour:
   fleetList: []
   upgradeCapsule: {fileID: 3243220212160933349, guid: e5d397041c6a8fc4797816e5cb48fdcc, type: 3}
   tempPos: {x: 0, y: 0, z: 0}
+  phaseManager: {fileID: 0}
 --- !u!1001 &97733242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1789,6 +1790,7 @@ MonoBehaviour:
   fleetList: []
   upgradeCapsule: {fileID: 3243220212160933349, guid: e5d397041c6a8fc4797816e5cb48fdcc, type: 3}
   tempPos: {x: 0, y: 0, z: 0}
+  phaseManager: {fileID: 0}
 --- !u!4 &240619382 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8898886814764595457, guid: a8e028dfb4256be4c9afd17ca62a5510, type: 3}
@@ -3813,6 +3815,7 @@ MonoBehaviour:
   fleetList: []
   upgradeCapsule: {fileID: 3243220212160933349, guid: e5d397041c6a8fc4797816e5cb48fdcc, type: 3}
   tempPos: {x: 0, y: 0, z: 0}
+  phaseManager: {fileID: 0}
 --- !u!4 &590515525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5641531117794684392, guid: 79c0d31844ab4a343876a24995a90f36, type: 3}
@@ -4065,6 +4068,7 @@ MonoBehaviour:
   fleetList: []
   upgradeCapsule: {fileID: 3243220212160933349, guid: e5d397041c6a8fc4797816e5cb48fdcc, type: 3}
   tempPos: {x: 0, y: 0, z: 0}
+  phaseManager: {fileID: 0}
 --- !u!4 &630548705 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8898886814764595457, guid: a8e028dfb4256be4c9afd17ca62a5510, type: 3}
@@ -4149,7 +4153,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1169270051, guid: a3d1efe23f192f14e9a0c2fa933c403d, type: 3}
       propertyPath: delayBetweenSpawning
-      value: 1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3382603626824713710, guid: a3d1efe23f192f14e9a0c2fa933c403d, type: 3}
       propertyPath: m_RootOrder
@@ -4848,7 +4852,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1169270051, guid: a3d1efe23f192f14e9a0c2fa933c403d, type: 3}
       propertyPath: delayBetweenSpawning
-      value: 1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3382603626824713710, guid: a3d1efe23f192f14e9a0c2fa933c403d, type: 3}
       propertyPath: m_RootOrder
@@ -6639,16 +6643,6 @@ Transform:
   m_Father: {fileID: 2050774423}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1025627914 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 7783760829423640230, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-  m_PrefabInstance: {fileID: 1702906574}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1025627915 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 7783760829423640229, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-  m_PrefabInstance: {fileID: 1702906574}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1031303265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6831,6 +6825,7 @@ MonoBehaviour:
   fleetList: []
   upgradeCapsule: {fileID: 3243220212160933349, guid: e5d397041c6a8fc4797816e5cb48fdcc, type: 3}
   tempPos: {x: 0, y: 0, z: 0}
+  phaseManager: {fileID: 0}
 --- !u!1 &1042065704
 GameObject:
   m_ObjectHideFlags: 0
@@ -8941,6 +8936,7 @@ MonoBehaviour:
   fleetList: []
   upgradeCapsule: {fileID: 3243220212160933349, guid: e5d397041c6a8fc4797816e5cb48fdcc, type: 3}
   tempPos: {x: 0, y: 0, z: 0}
+  phaseManager: {fileID: 0}
 --- !u!1 &1339733377
 GameObject:
   m_ObjectHideFlags: 0
@@ -9456,6 +9452,7 @@ MonoBehaviour:
   fleetList: []
   upgradeCapsule: {fileID: 3243220212160933349, guid: e5d397041c6a8fc4797816e5cb48fdcc, type: 3}
   tempPos: {x: 0, y: 0, z: 0}
+  phaseManager: {fileID: 0}
 --- !u!4 &1410752959 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4072243785030913277, guid: 04543d7a4b125b44d9c87d6a83bbf9c0, type: 3}
@@ -10527,16 +10524,6 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 81691a52bd772544d92afd713b386836, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54f19a3205fc551438eb94888947b968, type: 3}
---- !u!50 &1679139682 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 7783760827697138981, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-  m_PrefabInstance: {fileID: 1702906574}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1679139683 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 7783760827697138980, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-  m_PrefabInstance: {fileID: 1702906574}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1683921438
 GameObject:
   m_ObjectHideFlags: 0
@@ -10593,26 +10580,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7783760827697138976, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 1679139682}
-    - target: {fileID: 7783760827697138976, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-      propertyPath: boxCollider
-      value: 
-      objectReference: {fileID: 1679139683}
-    - target: {fileID: 7783760827697138982, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7783760827697138982, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7783760827697138982, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7783760829047074424, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
       propertyPath: m_Name
       value: Background
@@ -10661,30 +10628,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7783760829423640225, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7783760829423640225, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 19.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7783760829423640225, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7783760829423640225, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7783760829423640231, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 1025627914}
-    - target: {fileID: 7783760829423640231, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
-      propertyPath: boxCollider
-      value: 
-      objectReference: {fileID: 1025627915}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21d320f56e2cc6549a385cef23927af3, type: 3}
 --- !u!4 &1708569168 stripped
@@ -12917,6 +12860,7 @@ MonoBehaviour:
   fleetList: []
   upgradeCapsule: {fileID: 3243220212160933349, guid: e5d397041c6a8fc4797816e5cb48fdcc, type: 3}
   tempPos: {x: 0, y: 0, z: 0}
+  phaseManager: {fileID: 0}
 --- !u!1001 &2038972610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13472,6 +13416,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1339733378}
     m_Modifications:
+    - target: {fileID: 1169270051, guid: a3d1efe23f192f14e9a0c2fa933c403d, type: 3}
+      propertyPath: delayBetweenSpawning
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 3382603626824713710, guid: a3d1efe23f192f14e9a0c2fa933c403d, type: 3}
       propertyPath: m_RootOrder
       value: 0

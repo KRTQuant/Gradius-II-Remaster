@@ -15,6 +15,7 @@ public class Rush_Enemy : UnitAbs
     [SerializeField] private bool finishXaxisMove = false;
     [SerializeField] private bool isMoveToRight;
     [SerializeField] private bool isFinishSetVelo;
+    [SerializeField] private bool isGetDir = false;
 
     private void Awake()
     {
@@ -54,17 +55,19 @@ public class Rush_Enemy : UnitAbs
 
     private void MoveInY()
     {
-        if (player.transform.position.y > transform.position.y + (spriteSize.y / 4))
+        if (player.transform.position.y > transform.position.y - (spriteSize.y / 2) && !isGetDir)
         {
             rb.velocity = Vector2.up * speed;
+            isGetDir = true;
         }
 
-        if (player.transform.position.y < transform.position.y + (spriteSize.y / 4))
+        else if (player.transform.position.y < transform.position.y + (spriteSize.y / 2) && !isGetDir)
         {
             rb.velocity = Vector2.down * speed;
+            isGetDir = true;
         }
 
-        if (player.transform.position.y <= transform.position.y + (spriteSize.y / 4) && player.transform.position.y > transform.position.y - (spriteSize.y/4))
+        if (player.transform.position.y <= transform.position.y + (spriteSize.y / 2) && player.transform.position.y > transform.position.y - (spriteSize.y/2))
         {
             finishXaxisMove = true;
             //Debug.Log(spriteSize.y / 4);

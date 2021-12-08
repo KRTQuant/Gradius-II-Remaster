@@ -18,12 +18,12 @@ public class PhaseManager : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
     [SerializeField] private PlayerMovement playerMovement;
-    [SerializeField] private List<PhaseInfo> phase;
+    [SerializeField] public List<PhaseInfo> phase;
     [SerializeField] private SceneCompose sceneCompose;
     [SerializeField] private float loadCheckpointDelay;
     [SerializeField] private CameraFollow camFollow;
     [SerializeField] public bool isDecrease;
-    [SerializeField] private int currentPhase = 0;
+    [SerializeField] public int currentPhase = 0;
 
     //[Header("Singleton")]
     //public static PhaseManager _instance;

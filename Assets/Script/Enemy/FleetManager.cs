@@ -7,10 +7,12 @@ public class FleetManager : MonoBehaviour
     [SerializeField] private List<GameObject> fleetList;
     [SerializeField] private GameObject upgradeCapsule;
     [SerializeField] private Vector3 tempPos;
+    [SerializeField] private PhaseManager phaseManager;
 
     private void Start()
     {
         GetAllUnitInFleet();
+        phaseManager = GameObject.Find("PhaseManager").GetComponent<PhaseManager>();
     }
 
     private void Update()
@@ -34,7 +36,7 @@ public class FleetManager : MonoBehaviour
             {
                 if(fleetList.Count == 1)
                 {
-                    Instantiate<GameObject>(upgradeCapsule, fleetList[0].transform.position, Quaternion.identity);
+                    Instantiate<GameObject>(upgradeCapsule, fleetList[0].transform.position, Quaternion.identity, phaseManager.phase[phaseManager.currentPhase].phaseTransform.gameObject.transform);
                 }
                 fleetList.Remove(unit);
             }
