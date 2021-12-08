@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: c0b66422316932645b51090cf1dfcfa7
+guid: fbf2c9303fda52841aa18b36f09c6ba2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2088851897384741695
-    second: BigEyeArm_0
+      213: -864863621936652443
+    second: Phoenix_Normal_Attack_Sprite_0
   - first:
-      213: 4442237768470721427
-    second: BigEyeArm_1
+      213: 4444268719484010737
+    second: Phoenix_Normal_Attack_Sprite_1
+  - first:
+      213: 1275423134503738485
+    second: Phoenix_Normal_Attack_Sprite_2
+  - first:
+      213: -358198335430767998
+    second: Phoenix_Normal_Attack_Sprite_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,69 +99,89 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BigEyeArm_0
+      name: Phoenix_Normal_Attack_Sprite_0
       rect:
         serializedVersion: 2
-        x: 401
-        y: 567
-        width: 198
-        height: 293
+        x: 0
+        y: 500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones:
-      - name: bone_1
-        position: {x: 98.99997, y: 6.5460205, z: 0}
-        rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-        length: 285.13235
-        parentId: -1
-      - name: bone_2
-        position: {x: 100.13144, y: -392.8656, z: 0}
-        rotation: {x: 0, y: 0, z: 0.7104819, w: 0.7037155}
-        length: 236.4897
-        parentId: -1
-      spriteID: f3ba404cbb71dfc10800000000000000
-      internalID: 2088851897384741695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigEyeArm_1
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 170
-        width: 198
-        height: 241
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3937585e6bff5ad30800000000000000
-      internalID: 4442237768470721427
+      spriteID: 56fde4b3e136ff3f0800000000000000
+      internalID: -864863621936652443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_Normal_Attack_Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f089378ad63dad30800000000000000
+      internalID: 4444268719484010737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_Normal_Attack_Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c1966559633b110800000000000000
+      internalID: 1275423134503738485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Phoenix_Normal_Attack_Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a4381038c670bf0800000000000000
+      internalID: -358198335430767998
       vertices: []
       indices: 
       edges: []

@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: c0b66422316932645b51090cf1dfcfa7
+guid: 9f11f4bb1fc29b84a91543b7ff815f3e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2088851897384741695
-    second: BigEyeArm_0
+      213: 2608402636401857169
+    second: BigEye_Small_Attack_Sprite_0
   - first:
-      213: 4442237768470721427
-    second: BigEyeArm_1
+      213: 3966808013815826953
+    second: BigEye_Small_Attack_Sprite_1
+  - first:
+      213: -4363184198108751164
+    second: BigEye_Small_Attack_Sprite_2
+  - first:
+      213: 1294196964802165233
+    second: BigEye_Small_Attack_Sprite_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,69 +99,89 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BigEyeArm_0
+      name: BigEye_Small_Attack_Sprite_0
       rect:
         serializedVersion: 2
-        x: 401
-        y: 567
-        width: 198
-        height: 293
+        x: 0
+        y: 500
+        width: 500
+        height: 500
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones:
-      - name: bone_1
-        position: {x: 98.99997, y: 6.5460205, z: 0}
-        rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-        length: 285.13235
-        parentId: -1
-      - name: bone_2
-        position: {x: 100.13144, y: -392.8656, z: 0}
-        rotation: {x: 0, y: 0, z: 0.7104819, w: 0.7037155}
-        length: 236.4897
-        parentId: -1
-      spriteID: f3ba404cbb71dfc10800000000000000
-      internalID: 2088851897384741695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigEyeArm_1
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 170
-        width: 198
-        height: 241
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3937585e6bff5ad30800000000000000
-      internalID: 4442237768470721427
+      spriteID: 192dcedb068e23420800000000000000
+      internalID: 2608402636401857169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEye_Small_Attack_Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a4aab1fdeec0730800000000000000
+      internalID: 3966808013815826953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEye_Small_Attack_Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca5126c61bd273c0800000000000000
+      internalID: -4363184198108751164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigEye_Small_Attack_Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9fb645849e5f110800000000000000
+      internalID: 1294196964802165233
       vertices: []
       indices: 
       edges: []
