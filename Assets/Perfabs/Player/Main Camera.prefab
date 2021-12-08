@@ -257,7 +257,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   timeOffset: 1
-  posOffset: {x: 0.25, y: 0.25}
+  posOffset: {x: 0, y: 0}
+  phaseManager: {fileID: 0}
   leftLimit: 0
   rightLimit: 0
   topLimit: 5

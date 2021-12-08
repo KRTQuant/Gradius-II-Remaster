@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   live: 0
-  maxLive: 3
+  maxLive: 2
   liveText: {fileID: 0}
   poolManager: {fileID: 0}
   skillManager: {fileID: 4494170791752013538}
@@ -265,12 +265,14 @@ MonoBehaviour:
   animator: {fileID: 4494170791752013541}
   skillManager: {fileID: 4494170791752013538}
   playerCombat: {fileID: 4494170791752013540}
+  gameManager: {fileID: 0}
   constantSpeed: 3
   addonSpeed: 3
   isUpArrowPressed: 0
   isDownArrowPressed: 0
   isLeftArrowPressed: 0
   isRightArrowPressed: 0
+  initPos: {x: 0, y: 0}
 --- !u!114 &4494170791752013538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,13 +325,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4494170791752013536}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.046910763, y: 0.009382173}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -340,7 +342,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6125, y: 0.9739245}
+  m_Size: {x: 0.805634, y: 0.18582347}
   m_EdgeRadius: 0
 --- !u!114 &1052387121
 MonoBehaviour:
@@ -354,3 +356,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a94f2d789169dd4d8fde3f1a9b0f7b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraFollow: {fileID: 0}
+  phaseManager: {fileID: 0}
