@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Stage01_AE" && !isParamsWasPass)
+        if ((SceneManager.GetActiveScene().name == "Stage01_AE" || SceneManager.GetActiveScene().name == "Stage02") && !isParamsWasPass)
         {
             Debug.Log("Begin passing powerset");
             PassPowersetSelection();
@@ -42,6 +42,21 @@ public class GameManager : MonoBehaviour
             //Debug.Log((Skillset)skillSelectedType);
             FindRef();
         }
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        isParamsWasPass = false;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     public void HandleSkillSetSelection(int type)
@@ -53,10 +68,11 @@ public class GameManager : MonoBehaviour
 
     public void PassPowersetSelection()
     {
-        if (GameObject.Find("SkillManager"))
+        if (GameObject.Find("Player"))
         {
             skillManager = GameObject.Find("Player").GetComponent<SkillManager>();
             skillManager.SetSkillPreset((Skillset)skillSelectedType);
+            Debug.Log((Skillset)skillSelectedType);
         }
     }
 
@@ -101,4 +117,5 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneIndex);
     }
+
 }

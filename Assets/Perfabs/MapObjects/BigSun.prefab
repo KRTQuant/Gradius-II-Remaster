@@ -56,6 +56,29 @@ MonoBehaviour:
   polygon: {fileID: 0}
   spriteRenderer: {fileID: 0}
   currentSprite: {fileID: 0}
+--- !u!114 &2080393956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101890694835179000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2acb3ec44bf7ef4889b622837961e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  initPos: {x: 0, y: 0, z: 0}
+  score: 0
+  health: 0
+  maxHealth: 0
+  isStart: 0
+  deactiveDelay: 0
+  animator: {fileID: 0}
+  delay: 8
+  interval: 3
+  isEnabled: 0
 --- !u!1 &5121921036597438314
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,9 +120,10 @@ GameObject:
   - component: {fileID: 8826156246862148817}
   - component: {fileID: 8826156246862148816}
   - component: {fileID: 8826156246862148831}
+  - component: {fileID: 2121119263696963841}
   m_Layer: 3
   m_Name: BigSun
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,6 +214,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2121119263696963841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8826156246862148830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1e140d696189c4a8c4813d845babd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  initPos: {x: 0, y: 0, z: 0}
+  score: 0
+  health: 0
+  maxHealth: 0
+  isStart: 0
+  deactiveDelay: 0
 --- !u!1001 &8969180249480386895
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class ArmamentControl : MonoBehaviour
     [SerializeField] private BoxCollider2D boxCollider;
     [SerializeField] private float speed;
     [SerializeField] private float waitTime; //wait time before disappear
+    [SerializeField] private RuntimeAnimatorController rac;
     [SerializeField] public enum AmmoType { SINGLE, PULSE, BEAM, TAIL, SECOND, MISSILE, SPREAD, TORPEDO, TWOWAYUP, TWOWAYDOWN }
     [SerializeField] public AmmoType currentAmmoType;
     [SerializeField] private bool isStop;
@@ -23,9 +24,9 @@ public class ArmamentControl : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
-
         target = GameObject.Find("Player");
         animator = GetComponent<Animator>();
+        rac = animator.runtimeAnimatorController;
     }
 
     private void Update()
@@ -211,6 +212,7 @@ public class ArmamentControl : MonoBehaviour
         boxCollider.isTrigger = true;
         animator.runtimeAnimatorController = null;
         sprite.color = new Color(sprite.color.r, sprite.color.g, sprite.color.b, 255);
+        animator.runtimeAnimatorController = rac;
     }
 
     private void Disable()

@@ -15,6 +15,7 @@ public class Phoenix_Enemy : UnitAbs
     [SerializeField] private Transform player;
     [SerializeField] private PheonixMinion_Moveset moveset;
     [SerializeField] private HordeFollowManager hordeFollow;
+    [SerializeField] private bool isTriggerOnDeathActive = false;
 
     [Header("In Order Movement")]
     [SerializeField] private float speed;
@@ -171,7 +172,16 @@ public class Phoenix_Enemy : UnitAbs
     }
     public override void OnBecameInvisible()
     {
-        return;
+        GetComponent<SpriteRenderer>().enabled = true;
+    }
+
+    public override void CheckDeath()
+    {
+        if (health <= 0 && !isTriggerOnDeathActive)
+        {
+            TriggerOnDeath();
+            isTriggerOnDeathActive = true;
+        }
     }
 
 

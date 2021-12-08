@@ -46,6 +46,10 @@ public class PlayerCombat : MonoBehaviour
                 {
                     HandleBulletType(PoolObjectType.LaserBullet);
                 }
+                if (skillManager.laserType == LaserType.RIPPLE)
+                {
+                    HandleBulletType(PoolObjectType.LaserPulse);
+                }
                 break;
         }
     }
@@ -174,6 +178,28 @@ public class PlayerCombat : MonoBehaviour
                 bullet2.transform.position = transform.position;
                 bullet2.SetActive(true);
             }
+        }
+        else if(type == PoolObjectType.NormalBullet)
+        {
+            if (skillManager.normalBulletTimer > 0)
+            {
+                //Debug.Log("Laser is reloading");
+            }
+            if (skillManager.normalBulletTimer <= 0)
+            {
+                GameObject bullet = poolManager.GetPoolObject(type);
+                if (bullet.activeSelf)
+                {
+                    //Debug.Log("Reloading");
+                }
+                if (!bullet.activeSelf)
+                {
+                    bullet.transform.position = transform.position;
+                    bullet.SetActive(true);
+                }
+                skillManager.normalBulletTimer = skillManager.normalBulletDelay;
+            }
+            
         }
         else
         {

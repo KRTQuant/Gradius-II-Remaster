@@ -50,7 +50,11 @@ public enum ProjectileWeapon
 public class SkillManager : MonoBehaviour
 {
     [Header("Weapon")]
-    [SerializeField] public ProjectileWeapon weapon; 
+    [SerializeField] public ProjectileWeapon weapon;
+
+    [Header("Normal")]
+    [SerializeField] public float normalBulletTimer;
+    [SerializeField] public float normalBulletDelay;
 
     [Header("Speed")]
     [SerializeField] public int speedLevel;
@@ -179,6 +183,7 @@ public class SkillManager : MonoBehaviour
     //Set skill preset
     public void SetSkillPreset(Skillset type)
     {
+        Debug.Log("SetSkillPreset was call");
         switch (type)
         {
             case Skillset.SET_A:
@@ -205,6 +210,8 @@ public class SkillManager : MonoBehaviour
                 laserType = LaserType.RIPPLE;
                 break;
         }
+
+        poolManager.SetMissilePool();
     }
 
     //Active when level increase
@@ -308,6 +315,13 @@ public class SkillManager : MonoBehaviour
                 laserTimer = 0;
         }
 
+        if(normalBulletTimer > 0)
+        {
+            normalBulletTimer -= Time.deltaTime;
+            if (normalBulletTimer < 0)
+                normalBulletTimer = 0;
+        }
+
         if (funnelFlowTimer > 0)
         {
             funnelFlowTimer -= Time.deltaTime;
@@ -356,5 +370,6 @@ public class SkillManager : MonoBehaviour
     private void OnEnable()
     {
         InitSkill_Level();
+        weapon = ProjectileWeapon.NORMAL;
     }
 }
