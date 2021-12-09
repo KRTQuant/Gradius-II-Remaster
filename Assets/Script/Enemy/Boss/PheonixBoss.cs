@@ -13,6 +13,7 @@ public class PheonixBoss : UnitAbs
     [SerializeField] private Transform bulletSpawnPos;
     [SerializeField] private enum behaviorState { INIT, FLY, SHOOTFIREBALL, SHOOTSPREADSHOT }
     [SerializeField] private behaviorState currentBehavior;
+    [SerializeField] private Animator animator;
 
     [Header("Spreadshot")]
     [SerializeField] private float bulletSpeed_Spread;
@@ -42,7 +43,7 @@ public class PheonixBoss : UnitAbs
 
     public override void Start()
     {
-
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -100,6 +101,7 @@ public class PheonixBoss : UnitAbs
         currentBehavior = behaviorState.SHOOTSPREADSHOT;
         rb.velocity = Vector2.zero;
         SpreadSolution1();
+        animator.SetTrigger("Attack1");
     }
 
     private void Fireball()
@@ -108,6 +110,7 @@ public class PheonixBoss : UnitAbs
         currentBehavior = behaviorState.SHOOTFIREBALL;
         rb.velocity = Vector2.zero;
         FireballSolution2();
+        animator.SetTrigger("Attack2");
     }
 
     private void SpreadSolution1()

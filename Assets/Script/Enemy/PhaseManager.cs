@@ -25,6 +25,8 @@ public class PhaseManager : MonoBehaviour
     [SerializeField] public bool isDecrease;
     [SerializeField] public int currentPhase = 0;
 
+    [SerializeField] public Sprite bg04;
+
     //[Header("Singleton")]
     //public static PhaseManager _instance;
     //public static PhaseManager Instance { get { return _instance; } }
@@ -59,7 +61,7 @@ public class PhaseManager : MonoBehaviour
                     temp = SceneManager.GetActiveScene().buildIndex;
                     gameManager.LoadScene(temp + 1);
                 }
-                if (SceneManager.GetActiveScene().buildIndex == 4)
+                if (SceneManager.GetActiveScene().name == "Stage02")
                 {
                     gameManager.LoadScene(1);
                 }
@@ -95,10 +97,24 @@ public class PhaseManager : MonoBehaviour
     private void HandleChangePhase()
     {
         //change phase
+        if(SceneManager.GetActiveScene().name == "Stage02" && currentPhase == 3)
+        {
+            SceneManager.LoadScene(1);
+        }
         ResetPhaseInfo();
         currentPhase++;
         if (phase[currentPhase].isActiveBoundary)
         {
+            if (SceneManager.GetActiveScene().name == "Stage02" && currentPhase == 1)
+            {
+                var spriteRenderer = GameObject.Find("BackgroundPlayer").GetComponentsInChildren<SpriteRenderer>();
+                foreach (var sprite in spriteRenderer)
+                {
+                    sprite.sprite = bg04;
+                }
+                camFollow.topLimit = 6.25f;
+                camFollow.bottomLimit = -6.25f;
+            }
             camFollow.enabled = true;
         }
         if(phase[currentPhase-1].isActiveBoundary)
@@ -109,6 +125,7 @@ public class PhaseManager : MonoBehaviour
         {
             sceneCompose.bgMovespeed = 0;
         }
+
         sceneCompose.backgroundHierachy = phase[currentPhase].phaseTransform;
     }
 
@@ -183,14 +200,6 @@ public class PhaseManager : MonoBehaviour
         }
     }
 
-    private void ManageBoundary()
-    {
-        if(phase[currentPhase].isActiveBoundary)
-        {
-
-        }
-    }
-
     private void ActiveFleet()
     {
         phase[currentPhase].phaseTransform.SetActive(true);
@@ -238,6 +247,8 @@ public class PhaseManager : MonoBehaviour
         ResetPhaseInfo();
         playerMovement.gameObject.SetActive(true);
         yield return new WaitForSeconds(loadCheckpointDelay);
+        PlayerCombat playerCombat = GameObject.Find("Player").GetComponent<PlayerCombat>();
+        playerCombat.UpdateLiveText();
         ActiveFleet();
     }
 

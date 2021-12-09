@@ -85,6 +85,7 @@ public class Fan_Enemy : UnitAbs
     {
         if (currentStatus == enemyStatus.MOVE)
         {
+            Debug.Log(destination[(int)passedDestination].gameObject);
             transform.position = Vector3.MoveTowards(transform.position, destination[(int)passedDestination].position, moveSpeed * Time.deltaTime);
             if (transform.position == destination[(int)passedDestination].position)
                 currentStatus = enemyStatus.ARRIVED;

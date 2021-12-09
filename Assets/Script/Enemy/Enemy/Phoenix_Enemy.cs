@@ -121,8 +121,8 @@ public class Phoenix_Enemy : UnitAbs
 
     private void WaveMovement()
     {
-        transform.position -= transform.right * Time.deltaTime * speed;
-        transform.position = transform.position + transform.up * Mathf.Sin(Time.time * frequency) * magnitude / 100;
+        transform.position -= transform.right * Time.deltaTime * speed * Time.deltaTime;
+        transform.position = transform.position + (transform.up * Mathf.Sin(Time.time * frequency) * magnitude / 100);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -167,7 +167,6 @@ public class Phoenix_Enemy : UnitAbs
                 }
             }
         }
-
         return true;
     }
     public override void OnBecameInvisible()

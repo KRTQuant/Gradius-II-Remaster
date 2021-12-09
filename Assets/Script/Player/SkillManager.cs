@@ -111,6 +111,8 @@ public class SkillManager : MonoBehaviour
         InitSkill_Level();
         AccessComponent();
         FindReference();
+        powerupFrame = GameObject.Find("border").GetComponent<SpriteRenderer>();
+        poolManager = GameObject.Find("PoolManager").GetComponent<PoolManager>();
     }
 
     private void FixedUpdate()

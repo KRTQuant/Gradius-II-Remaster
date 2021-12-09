@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBoundary : MonoBehaviour
 {
@@ -32,7 +33,15 @@ public class PlayerBoundary : MonoBehaviour
         //Debug.Log(-screenBounds.y);
         if (cameraFollow.enabled)
         {
-            viewPos.y = Mathf.Clamp(viewPos.y, ((screenBounds.y + 5) * -1) + objectHeight, screenBounds.y - objectHeight + 5);
+            Debug.Log(SceneManager.GetActiveScene().name);
+            if(SceneManager.GetActiveScene().name == "Stage02")
+            {
+                viewPos.y = Mathf.Clamp(viewPos.y, ((screenBounds.y + 6.25f) * -1) + objectHeight, screenBounds.y - objectHeight + 6.25f);
+            }
+            else if(SceneManager.GetActiveScene().name == "Stage01_AE")
+            {
+                viewPos.y = Mathf.Clamp(viewPos.y, ((screenBounds.y + 5) * -1) + objectHeight, screenBounds.y - objectHeight + 5);
+            }
             //Debug.Log("CameraFollow enabled");
             Debug.Log((screenBounds.y * -1) + " : " + screenBounds.y);
         }

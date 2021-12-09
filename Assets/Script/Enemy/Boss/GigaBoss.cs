@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D), typeof(SpriteRenderer))]
 [RequireComponent(typeof(Animator))]
-public class GigaBoss : MonoBehaviour
+public class GigaBoss : UnitAbs
 {
     [SerializeField] private enum Behavior { PATTERN1, PATTERN2, PATTERN3 }
     [SerializeField] private Behavior currentBehavior;
@@ -35,9 +35,12 @@ public class GigaBoss : MonoBehaviour
     [SerializeField] private float jumpBackOffset;
     #endregion
 
-    private void Start()
+    public override void Start()
     {
         player = GameObject.Find("Player").transform;
+        rb = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
+        SetHealth();
     }
 
     #region Pattern 2 Variables
@@ -115,44 +118,49 @@ public class GigaBoss : MonoBehaviour
 
     private void Update()
     {
-        //Debug.DrawRay(transform.position, new Vector2(Mathf.Sin(degree * Mathf.Deg2Rad), Mathf.Cos(degree * Mathf.Deg2Rad)), Color.red);
-        if(currentBehavior == Behavior.PATTERN1)
+        if(isStart)
         {
-            if (isFinishAppear && !isActivePattern1) //Active Pattern 1
+            CheckDeath();
+            //Debug.DrawRay(transform.position, new Vector2(Mathf.Sin(degree * Mathf.Deg2Rad), Mathf.Cos(degree * Mathf.Deg2Rad)), Color.red);
+            if (currentBehavior == Behavior.PATTERN1)
             {
-                Jump();
-                isActivePattern1 = true;
-            }
-            if (statePattern1 == Pattern1.DROP)
-            {
-                HandleDrop();
-            }
-            if(statePattern1 == Pattern1.JUMPBACK)
-            {
-                HandleJumpBack();
-            }
-            if(finishJump)
-            {
-                JumpBack();
-                finishJump = false;
-                statePattern1 = Pattern1.DISABLED;
-            }
-            if(statePattern1 == Pattern1.DISABLED)
-            {
-                if (middleRightPoint.position.x - jumpBackOffset < transform.position.x && middleRightPoint.position.x + jumpBackOffset > transform.position.x)
+                if (isFinishAppear && !isActivePattern1) //Active Pattern 1
                 {
-                    Debug.Log("Stop from JumpBack");
-                    rb.velocity = Vector2.zero;
-                    rb.gravityScale = 0;
-                    currentBehavior = Behavior.PATTERN2;
+                    Jump();
+                    isActivePattern1 = true;
                 }
+                if (statePattern1 == Pattern1.DROP)
+                {
+                    HandleDrop();
+                }
+                if (statePattern1 == Pattern1.JUMPBACK)
+                {
+                    HandleJumpBack();
+                }
+                if (finishJump)
+                {
+                    JumpBack();
+                    finishJump = false;
+                    statePattern1 = Pattern1.DISABLED;
+                }
+                if (statePattern1 == Pattern1.DISABLED)
+                {
+                    if (middleRightPoint.position.x - jumpBackOffset < transform.position.x && middleRightPoint.position.x + jumpBackOffset > transform.position.x)
+                    {
+                        Debug.Log("Stop from JumpBack");
+                        rb.velocity = Vector2.zero;
+                        rb.gravityScale = 0;
+                        currentBehavior = Behavior.PATTERN2;
+                    }
+                }
+            }
+
+            if (currentBehavior == Behavior.PATTERN2)
+            {
+                HandlePattern2();
             }
         }
 
-        if(currentBehavior == Behavior.PATTERN2)
-        {
-            HandlePattern2();
-        }
     }
 
     private void FixedUpdate()
@@ -160,6 +168,15 @@ public class GigaBoss : MonoBehaviour
         if (currentBehavior == Behavior.PATTERN3)
         {
             HandlePattern3();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
+            Debug.Log("Collide with bullet");
         }
     }
 

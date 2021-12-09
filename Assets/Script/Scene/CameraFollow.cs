@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -50,8 +51,16 @@ public class CameraFollow : MonoBehaviour
 
     private void OnDisable()
     {
-        topLimit = 5;
-        bottomLimit = -5;
+        if (SceneManager.GetActiveScene().name == "Stage02")
+        {
+            topLimit = 6.25f;
+            bottomLimit = -6.25f;
+        }
+        if (SceneManager.GetActiveScene().name == "Stage01_AE")
+        {
+            topLimit = 5;
+            bottomLimit = -5;
+        }
         phaseManager.isDecrease = false;
     }
 }

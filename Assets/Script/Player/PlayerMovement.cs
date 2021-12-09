@@ -188,7 +188,9 @@ public class PlayerMovement : MonoBehaviour
         {
             //revive
             PhaseManager phaseManager = GameObject.Find("PhaseManager").GetComponent<PhaseManager>();
+            animator.SetTrigger("Dead");
             phaseManager.LoadCheckPoint();
+            gameManager.score = 0;
             //reset enemy phase
         }
 

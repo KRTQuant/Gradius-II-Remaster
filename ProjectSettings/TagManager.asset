@@ -12,6 +12,7 @@ TagManager:
   - LineWall
   - Capsule
   - EnemyBullet
+  - Canvas
   layers:
   - Default
   - TransparentFX

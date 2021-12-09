@@ -11,6 +11,7 @@ public class Rugal_Enemy : UnitAbs
     [SerializeField] private float rotateSpeed;
     [SerializeField] private float timer;
     [SerializeField] private bool isSpawnCapsule;
+    [SerializeField] private PhaseManager phaseManager;
     [SerializeField] private GameObject capsule;
 
     public override void Start()
@@ -18,6 +19,8 @@ public class Rugal_Enemy : UnitAbs
         base.Start();
         player = GameObject.Find("Player");
         SetHealth();
+        phaseManager = GameObject.Find("PhaseManager").GetComponent<PhaseManager>();
+
     }
 
     private void Update()
@@ -68,8 +71,16 @@ public class Rugal_Enemy : UnitAbs
         {
             TakeDamage((int)collision.GetComponent<ArmamentControl>().damage);
             Debug.Log("Collide with bullet");
-            if (isSpawnCapsule)
-                Instantiate<GameObject>(capsule, transform.position, Quaternion.identity);
         }
+    }
+
+    public override void TriggerOnDeath()
+    {
+        if (isSpawnCapsule)
+        {
+            Instantiate<GameObject>(capsule, transform.position, Quaternion.identity, phaseManager.phase[phaseManager.currentPhase].phaseTransform.gameObject.transform);
+
+        }
+        base.TriggerOnDeath();
     }
 }

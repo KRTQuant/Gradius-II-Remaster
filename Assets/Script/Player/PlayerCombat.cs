@@ -235,5 +235,6 @@ public class PlayerCombat : MonoBehaviour
     {
         if(poolManager == null)
             poolManager = GameObject.FindObjectsOfType<PoolManager>()[0];
+
     }
 }
