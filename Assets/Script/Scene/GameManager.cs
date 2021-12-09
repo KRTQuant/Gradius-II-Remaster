@@ -41,6 +41,16 @@ public class GameManager : MonoBehaviour
             isParamsWasPass = true;
             FindRef();
         }
+
+        if(SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            FindObjectOfType<AudioManager>().Play("SkillSelect");
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            FindObjectOfType<AudioManager>().Play("S1P1");
+        }
     }
 
     private void OnEnable()
