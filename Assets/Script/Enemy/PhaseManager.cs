@@ -180,7 +180,7 @@ public class PhaseManager : MonoBehaviour
         }
 
         //deactive all unit in current phase list
-        if (Input.GetKeyDown(KeyCode.Keypad1))
+        if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.I))
         {
             var units = phase[currentPhase].phaseTransform.GetComponentsInChildren<UnitAbs>();
             foreach (var unit in units)
@@ -194,7 +194,7 @@ public class PhaseManager : MonoBehaviour
             playerMovement.HandleAfterDead();
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad3))
+        if (Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.O))
         {
             playerMovement.gameObject.GetComponent<BoxCollider2D>().enabled = !playerMovement.gameObject.GetComponent<BoxCollider2D>().enabled;
         }
