@@ -13,12 +13,14 @@ public class SnakeManager : MonoBehaviour
     [SerializeField] private Transform parent;
     [SerializeField] private int rotateDir;
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Dragon_Enemy dragon_Enemy;
 
     float countUp = 0;
 
     private void Start()
     {
         player = GameObject.Find("Player").transform;
+        dragon_Enemy = GetComponentInParent<Dragon_Enemy>();
         rb = this.GetComponent<Rigidbody2D>();
         CreateBodyParts();
     }
@@ -29,7 +31,11 @@ public class SnakeManager : MonoBehaviour
         {
             CreateBodyParts();
         }
-        SnakeMovement();
+
+        if (dragon_Enemy.isStart)
+        {
+            SnakeMovement();
+        }
     }
 
     void SnakeMovement()

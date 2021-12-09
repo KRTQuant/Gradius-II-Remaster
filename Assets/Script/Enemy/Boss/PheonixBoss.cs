@@ -19,9 +19,9 @@ public class PheonixBoss : UnitAbs
     [SerializeField] private float bulletSpeed_Spread;
     [SerializeField] private int bulletSpreadAmount;
     [SerializeField] private GameObject spreadPrefab;
-    [Range(0,360)]
+    [Range(0,720)]
     [SerializeField] private float endSpreadAngle = 0;
-    [Range(0, 360)]
+    [Range(0, 720)]
     [SerializeField] private float startSpreadAngle = 0;
     [SerializeField] private Vector3 spreadBulletDir;
 
@@ -91,7 +91,7 @@ public class PheonixBoss : UnitAbs
         {
             Vector3 dir = (moveDir[(int)destination].position - transform.position).normalized;
             rb.velocity = dir * speed;
-            Debug.Log(rb.velocity);
+            //Debug.Log(rb.velocity);
         }
     }
 
@@ -127,8 +127,8 @@ public class PheonixBoss : UnitAbs
             Vector3 spreadBulletDir = (spreadVector - bulletSpawnPos.position).normalized;
 
             //Debug.Log("Bullet Dir : " + spreadBulletDir);
-
-            GameObject bullet = Instantiate(spreadPrefab, bulletSpawnPos.position, Quaternion.identity);
+            Debug.Log(angle);
+            GameObject bullet = Instantiate(spreadPrefab, bulletSpawnPos.position, Quaternion.Euler(0,0,angle + 360));
             bullet.SetActive(true);
             bullet.GetComponent<Rigidbody2D>().velocity = spreadBulletDir * bulletSpeed_Spread;
 

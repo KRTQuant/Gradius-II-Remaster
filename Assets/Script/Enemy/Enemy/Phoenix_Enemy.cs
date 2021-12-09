@@ -68,7 +68,7 @@ public class Phoenix_Enemy : UnitAbs
             dir = Vector2.left;
         }
 
-        rb.velocity = dir * speed * Time.deltaTime;
+        rb.velocity = dir * speed ;
         isFinish = true;
     }
 
@@ -93,7 +93,7 @@ public class Phoenix_Enemy : UnitAbs
     {
         if (isFlyDown)
         {
-            rb.velocity = dir * speed * Time.deltaTime;
+            rb.velocity = dir * speed ;
 
             if (transform.position.y < stopPoint.position.y)
             {
@@ -102,7 +102,7 @@ public class Phoenix_Enemy : UnitAbs
         }
         else
         {
-            rb.velocity = dir * speed * Time.deltaTime;
+            rb.velocity = dir * speed ;
 
             if (transform.position.y > stopPoint.position.y)
             {
@@ -121,7 +121,7 @@ public class Phoenix_Enemy : UnitAbs
 
     private void WaveMovement()
     {
-        transform.position -= transform.right * Time.deltaTime * speed * Time.deltaTime;
+        transform.position -= transform.right  * speed;
         transform.position = transform.position + (transform.up * Mathf.Sin(Time.time * frequency) * magnitude / 100);
     }
 

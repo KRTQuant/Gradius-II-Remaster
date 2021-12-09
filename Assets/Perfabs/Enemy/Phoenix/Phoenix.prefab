@@ -199,7 +199,8 @@ MonoBehaviour:
   player: {fileID: 0}
   moveset: 1
   hordeFollow: {fileID: 0}
-  speed: 4
+  isTriggerOnDeathActive: 0
+  speed: 1
   dir: {x: 0, y: 0}
   delayTime: 0
   stopPoint: {fileID: 0}

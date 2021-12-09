@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 936686857804829014}
   - component: {fileID: 936686857804829015}
   - component: {fileID: 936686857804829017}
+  - component: {fileID: 5960374291879090978}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -3951149680982197064, guid: e974fe633c4e02d4f95714bff9312ad5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -118,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceBetween: 0.1
-  speed: 5
+  speed: 2.87
   turnSpeed: 300
   bodyParts:
   - {fileID: 936686858186170619}
@@ -133,6 +134,20 @@ MonoBehaviour:
   parent: {fileID: 936686858880190049}
   rotateDir: 5
   rb: {fileID: 0}
+  dragon_Enemy: {fileID: 0}
+--- !u!114 &5960374291879090978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936686857804829019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7df37f036a58b47a55063aed758d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragon: {fileID: 0}
 --- !u!1 &936686857890125744
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,6 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936686857890125745}
   - component: {fileID: 936686857890125742}
+  - component: {fileID: 7495313033271489779}
   m_Layer: 0
   m_Name: Body6
   m_TagString: Untagged
@@ -215,6 +231,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7495313033271489779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936686857890125744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7df37f036a58b47a55063aed758d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragon: {fileID: 0}
 --- !u!1 &936686858146148158
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936686858146148159}
   - component: {fileID: 936686858146148156}
+  - component: {fileID: 3912355739597768033}
   m_Layer: 0
   m_Name: Tail
   m_TagString: Untagged
@@ -297,6 +327,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3912355739597768033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936686858146148158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7df37f036a58b47a55063aed758d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragon: {fileID: 0}
 --- !u!1 &936686858186170619
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,6 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936686858186170616}
   - component: {fileID: 936686858186170617}
+  - component: {fileID: 871903967862824352}
   m_Layer: 0
   m_Name: Body1
   m_TagString: Untagged
@@ -379,6 +423,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &871903967862824352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936686858186170619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7df37f036a58b47a55063aed758d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragon: {fileID: 0}
 --- !u!1 &936686858487431466
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936686858487431467}
   - component: {fileID: 936686858487431464}
+  - component: {fileID: 7820152143136542415}
   m_Layer: 0
   m_Name: Body5
   m_TagString: Untagged
@@ -461,6 +519,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7820152143136542415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936686858487431466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7df37f036a58b47a55063aed758d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragon: {fileID: 0}
 --- !u!1 &936686858774489902
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936686858774489903}
   - component: {fileID: 936686858774489900}
+  - component: {fileID: 7235064756887802228}
   m_Layer: 0
   m_Name: Body2
   m_TagString: Untagged
@@ -543,6 +615,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7235064756887802228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936686858774489902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7df37f036a58b47a55063aed758d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragon: {fileID: 0}
 --- !u!1 &936686858780389864
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936686858780389865}
   - component: {fileID: 936686858780389862}
+  - component: {fileID: 7651320840714463876}
   m_Layer: 0
   m_Name: Body4
   m_TagString: Untagged
@@ -625,6 +711,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7651320840714463876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936686858780389864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7df37f036a58b47a55063aed758d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragon: {fileID: 0}
 --- !u!1 &936686858880190048
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,9 +733,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 936686858880190049}
+  - component: {fileID: 3258615020023249517}
   m_Layer: 0
   m_Name: Dragon
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -663,6 +763,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3258615020023249517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936686858880190048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0299e861ce0b34f82f80561763a208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  initPos: {x: 0, y: 0, z: 0}
+  score: 500
+  health: 0
+  maxHealth: 10
+  isStart: 0
+  deactiveDelay: 0
+  player: {fileID: 0}
 --- !u!1 &936686859228047707
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,6 +793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936686859228047704}
   - component: {fileID: 936686859228047705}
+  - component: {fileID: 8675691730723075992}
   m_Layer: 0
   m_Name: Body3
   m_TagString: Untagged
@@ -745,3 +866,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8675691730723075992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936686859228047707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d7df37f036a58b47a55063aed758d09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragon: {fileID: 0}

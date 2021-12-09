@@ -22,7 +22,7 @@ public class PheonixFireball : MonoBehaviour
         dirToPlayer = (player.transform.position - transform.position).normalized;
         float angle = Mathf.Atan2(dirToPlayer.y, dirToPlayer.x) * Mathf.Rad2Deg;
         //Debug.Log(angle);
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        //transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 
     private void FixedUpdate()
